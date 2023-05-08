@@ -1,0 +1,103 @@
+{ "projects": [
+    {
+      "name": "Movies App",
+      "pc": true,
+      "mobile": true,
+      "url": "https://movies-henanarevalo.netlify.app/",
+      "descriptionEn": "React.JS website to see movies information.",
+      "descriptionEs": "React.JS app para ver información sobre películas.",
+      "size": "l",
+      "image_name": "movies-app.png",
+      "github_url": "https://github.com/HernanArevalo/movies-app"
+      
+      
+
+    },
+    {
+      "name": "ToDo App",
+      "pc": true,
+      "mobile": false,
+      "url": "https://todo-app-hernanarevalo.vercel.app/",
+      "descriptionEn": "React.JS website to manage your responsabilities.",
+      "descriptionEs": "React.JS app para manejar tus tareas.",
+      "size": "l",
+      "image_name": "todo-app.png",
+      "github_url": "https://github.com/HernanArevalo/todo-app"
+
+    },
+    {
+      "name": "Journal App",
+      "pc": true,
+      "mobile": true,
+      "url": "https://journal-app-ha.vercel.app/",
+      "descriptionEn": "React.JS website to save your journal with comments and images.",
+      "descriptionEs": "React.JS app para guardar tu diario con comentarios e imágenes.",
+      "size": "l",
+      "image_name": "journal-app.png",
+      "github_url": "https://github.com/HernanArevalo/journal-app"
+
+    },
+    {
+      "name": "Space Tourism",
+      "pc": true,
+      "mobile": true,
+      "url": "https://space-tourism-hernanarevalo.vercel.app/",
+      "descriptionEn": "React.JS website about space travels.",
+      "descriptionEs": "React.JS app sobre viajes en el espacio.",
+      "size": "s",
+      "image_name": "space-tourism.png",
+      "github_url": "https://github.com/HernanArevalo/space-tourism-app"
+
+    },
+    {
+      "name": "Twitter clone",
+      "pc": true,
+      "mobile": true,
+      "url": "https://twitter-app-alpha.vercel.app/",
+      "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
+      "descriptionEs": "Clon de twitter con React.js. Solo maquetado.",
+      "size": "s",
+      "image_name": "twitter.png",
+      "github_url": "https://github.com/HernanArevalo/twitter-app"
+
+    },
+
+    {
+      "name": "Landing 1",
+      "pc": true,
+      "mobile": false,
+      "url": "https://hernanarevalo.github.io/landing-1/",
+      "descriptionEn": "SPA (Single-page application)",
+      "descriptionEs": "Aplicación de una sola página.",
+      "size": "s",
+      "image_name": "landing-1.png",
+      "github_url": "https://github.com/HernanArevalo/landing-1"
+
+    },
+    {
+      "name": "Landing 2",
+      "pc": true,
+      "mobile": false,
+      "url": "https://hernanarevalo.github.io/landing-2/",
+      "descriptionEn": "SPA (Single-page application)",
+      "descriptionEs": "Aplicación de una sola página.",
+      "size": "s",
+      "image_name": "landing-2.png",
+      "github_url": "https://github.com/HernanArevalo/landing-2"
+
+    }
+],
+  "oterprojects":[
+    {
+      "name": "Gifs App",
+      "pc": true,
+      " mobile": false,
+      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "descriptionEn": "React.JS simple website to search gifs.",
+      "descriptionEs": "React.JS app simple para buscar gifs.",
+
+      "size": "s",
+      "image_name": "gifs-app.png",
+      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app"
+    }
+]}

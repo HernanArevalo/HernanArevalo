@@ -1,0 +1,51 @@
+{ "skills": [
+    {
+      "name": "React.js",
+      "image_file": "reactjs.svg"
+    },
+    {
+      "name": "Next.js",
+      "image_file": "next.svg"
+    },
+    {
+      "name": "React Redux",
+      "image_file": "redux.svg"
+    },
+    { 
+      "name": "Javascript",
+      "image_file": "javascript.svg"
+    }, 
+    { 
+      "name": "Html Css",
+      "image_file": "htmlcss.svg"
+    },
+    {
+      "name": "python",
+      "image_file": "python.svg"
+    },
+    {
+      "name": "Typescript",
+      "image_file": "typescript.svg"
+    },
+    {
+      "name": "SCRUM",
+      "image_file": "scrum.svg"
+    },
+    {
+      "name": "Figma",
+      "image_file": "figma.svg"
+    },
+  {
+    "name": "Adobe Illustrator",
+    "image_file": "illustrator.svg"
+  },
+  {
+    "name": "Adobe Photoshop",
+    "image_file": "photoshop.svg"
+  },
+    {
+      "name": "Adobe Premiere",
+      "image_file": "premiere.svg"
+    }
+     
+  ]}
