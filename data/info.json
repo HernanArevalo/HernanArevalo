@@ -1,7 +1,6 @@
-{
-	"en":{
+{ 	"en":{
 		"me":{
-			"title":"Me",
+			"title":["M","e"],
 			"name":"Hernán Arévalo",
 			"charge":"Frontend Developer",
 			"studies1":"Information systems engineering student.",
@@ -19,10 +18,10 @@
 			"respository":"GitHub repository"
 		},
 		"skills":{
-			"title":"Skills"
+			"title":["S","k","i","l","l","s"]
 		},
 		"contact":{
-			"title":"Contact",
+			"title":["C","o","n","t","a","c","t"],
 			"emailCopied":"email copied!",
 			"name":"Name",
 			"email":"Email",
@@ -34,7 +33,7 @@
 	},
 	"es":{
 		"me":{
-			"title":"Yo",
+			"title":["Y","o"],
 			"name":"Hernán Arévalo",
 			"charge":"Desarrollador Frontend",
 			"studies1":"Estudiante de Ingeniería en Sistemas.",
@@ -53,10 +52,10 @@
 			"respository":"Repositorio GitHub"
 		},
 		"skills":{
-			"title":"Habilidades"
+			"title":["H","a","b","i","l","i","d","a","d","e","s"]
 		},
 		"contact":{
-			"title":"Contacto",
+			"title":["C","o","n","t","a","c","t","o"],
 			"emailCopied":"email copiado!",
 			"name":"Nombre",
 			"email":"Correo electrónico",

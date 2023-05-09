@@ -46,7 +46,7 @@ body{
 
 .section-title-word:hover{
   color: #ee754a;
-  transition: .3s;
+  transition: .2s ease-in-out;
 }
 
 .medidas-fix{

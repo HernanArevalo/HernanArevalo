@@ -1,12 +1,12 @@
 import { ProjectItem } from './components/ProjectItem';
 // import { ProjectItemReduced } from './components/ProjectItemReduced';
-import { projects } from './projects-data.json'
+import data from './projects-data.json'
 import { colors } from '../../app/theme';
 import Image from 'next/image';
 
 export const ProjectsSection = ({info}) => {
 
-
+  const projects = data.projects
 
   return (
     <>
@@ -16,8 +16,8 @@ export const ProjectsSection = ({info}) => {
           <div className="project1-gri1-container">
             <div className="section-title">
               { info.projects.title.map(
-                letter => 
-                (<span key={letter} className='section-title-word'>{letter}</span>)
+                (letter,idx) => 
+                (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
               )}
             </div>
           </div>

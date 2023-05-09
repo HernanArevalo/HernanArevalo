@@ -9,7 +9,10 @@ export const MeSection = ( { info } ) => {
     <>
       <div className="me-container" id="me">
             <div className="section-title animate__animated animate__fadeInLeft">
-              { info.me.title }
+              { info.me.title.map(
+                (letter,idx) => 
+                (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
+              )}
             </div>
             <div className="me1-container">
               <div className="me1-grid1-container animate__animated animate__fadeInLeft">
@@ -39,7 +42,7 @@ export const MeSection = ( { info } ) => {
                 
               </div>
               <div className="me2-grid2-container">
-                <Image src="/profile.jpg " alt="profile-picture" width='280'height='280'/>
+                <Image src="/profile.jpg " alt="profile-picture" width='280'height='280' priority={true}/>
               </div>
             </div>
 

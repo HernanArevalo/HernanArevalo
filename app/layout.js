@@ -2,7 +2,7 @@ import { Provider } from 'react-redux'
 import './globals.css'
 import Head from 'next/head'
 import { store } from '@/store'
-import { Likes, Navbar } from '@/components'
+import { Language, Likes, Navbar } from '@/components'
 
 export default function RootLayout({ children }) {
   return (
@@ -18,8 +18,9 @@ export default function RootLayout({ children }) {
       <Provider store={store}>
         <div>
           <Navbar />
-          <Likes />
-          {/* <Language />  */}
+          {/* <Likes /> */}
+          <Language />
+
           { children }
         </div>
 

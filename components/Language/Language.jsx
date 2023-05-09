@@ -1,20 +1,20 @@
+import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { useHref, useNavigate } from 'react-router-dom'
 
 export const Language = () => {
 
-  const href = useHref()
-  const navigate = useNavigate()
+  const router = useRouter()
+  const { asPath } = useRouter()
 
-  const [spanish, setSpanish] = useState(href.includes("es"))
+  const [spanish, setSpanish] = useState(asPath == '/es')
 
   const activeSpanish = () => {
     setSpanish(true)
-    navigate('/es')  
+    router.push('/es')  
   }
   const activeEnglish = () => {
     setSpanish(false)
-    navigate('/en')
+    router.push('/en')
   }
 
   return (

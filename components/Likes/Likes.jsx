@@ -3,22 +3,33 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { startAddingLike, startLoadLikes, startRemovingLike } from '../../store/likes/thunks.js';
 
+//! NEW
+import { doc, getDoc, setDoc } from "firebase/firestore/lite";
+import { FirebaseDB } from "../../firebase/config";
+// !
+
+
 export const Likes = () => {
+
+
 
     const dispatch = useDispatch();
     dispatch( startLoadLikes() )
 
     const { likesCounter } = useSelector( state => state.likes );
     const { isSaving } = useSelector( state => state.likes );
+    const { isLoaded } = useSelector( state => state.likes );
+
 
     useEffect(() => {
         if ( localStorage.getItem("liked") == null){
              localStorage.setItem("liked", "false")
         }
+        setLiked( localStorage.getItem("liked") )
 
     }, [])
     
-
+    
 
     const [liked, setLiked] = useState( false )    
     const [likes, setLikes] = useState( likesCounter )
@@ -32,7 +43,6 @@ export const Likes = () => {
     const onLikeClicked = (e) => {
         e.preventDefault()
 
-        console.log('clicked!')
 
         if ( localStorage.getItem("liked") == "true" ) {
             dispatch( startRemovingLike() )
@@ -45,29 +55,34 @@ export const Likes = () => {
     }
 
 
+    
+
   return (
     <>
-        <button className="likes-container animate__animated animate__flipInY animate__delay-2s"
-             onClick={ onLikeClicked }
-             disabled={ isSaving }
-             opacity={ "0.5" }
-             >
-                { liked == "true"?
-                        <box-icon type="solid"
-                        name='heart'
-                        className="likes-heart"
-                        color="rgb(238, 117, 74)">
-                        </box-icon>
-                    :
-                        <box-icon type="regular"
-                        name='heart'
-                        className="likes-heart"
-                        color="rgb(238, 117, 74)">
-                        </box-icon>
-                }
+        { isLoaded &&
+            <button className="likes-container animate__animated animate__flipInY animate__delay-2s"
+                onClick={ onLikeClicked }
+                disabled={ isSaving }
+                opacity={ "0.5" }
+                
+            >
 
-            <div className="likes-counter">{ likes }</div>
-        </button>
+                <box-icon type={liked == "true"? "solid":"regular"}
+                name='heart'
+                className="likes-heart"
+                color="rgb(238, 117, 74)">
+                </box-icon>
+                    
+
+                <div className="likes-counter">
+                    { likes }
+                </div>
+
+            </button>
+
+        }
+
+
 
     <style jsx>{`
 

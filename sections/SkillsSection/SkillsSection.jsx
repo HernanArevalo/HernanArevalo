@@ -1,16 +1,20 @@
 import { SkillsItem } from './components/SkillsItem'
-import { skills } from './skills-data.json'
+import data from './skills-data.json'
 
 
 export const SkillsSection = ({info}) => {
 
-
+    const skills = data.skills
 
   return (
     <>
       <div className="skills-container" id="skills">
-          <div className="section-title">{info.skills.title}</div>
-
+      <div className="section-title">
+            { info.skills.title.map(
+            (letter,idx) => 
+            (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
+            )}
+        </div>
 
           <div className="skills">
             <div className="skills-grid">

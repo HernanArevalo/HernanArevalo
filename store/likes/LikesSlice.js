@@ -12,10 +12,10 @@ export const likesSlice = createSlice({
             state.likesCounter = action.payload;
         },
         addLike: ( state, action ) => {
-            state.likesCounter = action.payload;
+            state.likesCounter = state.likesCounter+1;
         },
         removeLike: ( state, action ) => {
-            state.likesCounter = action.payload;
+            state.likesCounter = state.likesCounter-1;
         },
         isSaving: ( state ) => {
             state.isSaving = true;

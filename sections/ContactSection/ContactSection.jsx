@@ -28,8 +28,12 @@ export const ContactSection = ({info}) => {
     <>
       <div className="contact-container" id="contact">
 
-          <div className="section-title">{ info.contact.title }</div>
-
+        <div className="section-title">
+            { info.contact.title.map(
+            (letter,idx) => 
+            (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
+            )}
+        </div>
           <div className="contact">
             <div className="contact-left">
               <box-icon color="rgb(238, 117, 74)" 
