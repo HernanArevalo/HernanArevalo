@@ -3,6 +3,7 @@ import './globals.css'
 import Head from 'next/head'
 import { store } from '@/store'
 import { Language, Likes, Navbar } from '@/components'
+import { colors } from './theme'
 
 export default function RootLayout({ children }) {
   return (
@@ -27,97 +28,103 @@ export default function RootLayout({ children }) {
       </Provider>
 
 
-      <style jsx>{`
+      <style jsx global>{`
       .App {
-            font-family: sans-serif;
-            text-align: center;
-            overflow-y: hidden;
-            width: calc(100vw - 18px);
+        font-family: sans-serif;
+        text-align: center;
+        overflow-y: hidden;
+        width: calc(100vw - 18px);
+      }
 
-          }
-          :root{
-            scroll-behavior: smooth;
-          }
+      :root{
+        scroll-behavior: smooth;
+      }
 
-          * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            font-family: 'Source Serif Pro', serif;
-            font-weight: 700;
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Source Serif Pro', serif;
+      }
 
-          }
+      body{
+        background-color: ${ colors.blue };
+        font-family: 'Source Serif Pro', serif;
+        width: 100%;
+      }
 
-          body{
-            background-color: rgb(42, 93, 131);
-            font-family: 'Source Serif Pro', serif;
-            width: 100%;
+      .content{
+        padding-left: 88px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-          }
+      .content > div{
+        padding: 0px 40px;
+        text-align: left;
+      }
 
-          .content{
-            padding-left: 88px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-          .content > div{
-            padding: 0px 40px;
-            text-align: left;
-          }
+      .section-title{
+        font-size: 200px;
+        font-weight: 700;
+        color: ${ colors.yellow };
+        margin: 0;
+        height: 260px;
+        cursor: default;
+      }
 
-          .section-title{
-            font-size: 200px;
-            color: rgb(246, 218, 85);
-            margin: 0;
-            height: 260px;
-          }
+      .section-title-word:hover{
+        color: ${ colors.orange };
+        transition: .2s ease-in-out;
+      }
 
-          .medidas-fix{
-            position: fixed;
-            top: 0;
-            right: 50%;
-            color: white;
-            z-index: 999;
-          }
+      .medidas-fix{
+        position: fixed;
+        top: 0;
+        right: 50%;
+        color: white;
+        z-index: 999;
+      }
 
-          @media (max-width: 1400px) {
+      @media (max-width: 1400px) {
 
-            .section-title{
-                font-size: 13vw;
-                height: 215px;
+        .section-title{
+            font-size: 13vw;
+            height: 215px;
 
-            }
-          }
+        }
+      }
 
-          @media (max-height: 800px) {
+      @media (max-height: 800px) {
 
-            .section-title{
-                font-size: 11vw;
-                height: auto;
-            }
-          }
+        .section-title{
+            font-size: 11vw;
+            height: auto;
+        }
+      }
 
-          @media (max-width: 500px) {
-            .App {
-              width: 100%;
-            }
-            .content{
-              width: 100%;
-              padding-left: 0;
-            }
-            .content > div{
-              padding: 0px 10px;
-              padding-top: 80px;
-            }
+      @media (max-width: 500px) {
+        .App {
+          width: 100%;
+        }
+        .content{
+          width: 100%;
+          padding-left: 0;
+        }
+        .content > div{
+          padding: 0px 10px;
+          padding-top: 80px;
+        }
 
-            .section-title{
-              font-size: 16vw;
-              height: auto;
+        .section-title{
+          font-size: 16vw;
+          height: auto;
 
 
-          }
+      }
+      }
           }
 
       `}</style>

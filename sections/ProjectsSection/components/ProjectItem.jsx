@@ -1,3 +1,4 @@
+import { colors } from '@/app/theme'
 import { useEffect, useState } from 'react'
 
 export const ProjectItem = ( {project} ) => {
@@ -33,13 +34,13 @@ export const ProjectItem = ( {project} ) => {
                 <div className="project-devices">
                   {project.mobile == true? 
                       <box-icon name='mobile' 
-                                color="rgb(246, 218, 85)"
+                                color={ colors.yellow }
                                 size={ project.size == "s"? "sm":"md"}
 
                       ></box-icon> : null}
                   {project.pc == true? 
                       <box-icon name='laptop' 
-                                color="rgb(246, 218, 85)"
+                                color={ colors.yellow }
                                 size={ project.size == "s"? "sm":"md"}
                       ></box-icon>
                       : null}
@@ -56,7 +57,7 @@ export const ProjectItem = ( {project} ) => {
                 <a href={ project.github_url } target="_blank">
                   <box-icon type='logo' 
                             name='github' 
-                            color="rgb(238, 117, 74)" 
+                            color={ colors.orange }
                             size="40px" 
                             className="github-logo"
                   ></box-icon>
@@ -125,7 +126,7 @@ export const ProjectItem = ( {project} ) => {
                 align-items: center;
                 z-index: 999;
                 position: absolute;
-                background-color: rgb(246, 218, 85);
+                background-color: ${ colors.yellow };
 
             }
             .project-image-div{
@@ -153,7 +154,7 @@ export const ProjectItem = ( {project} ) => {
 
 
             .project-name{
-                color: rgb(238, 117, 74);
+                color: ${ colors.orange };
                 width: 70%;
             }
 
@@ -189,7 +190,7 @@ export const ProjectItem = ( {project} ) => {
 
             }
             .project-description{
-                color: rgb(246, 218, 85);
+                color: ${ colors.yellow };
                 font-weight: 400;
                 width: calc(100% - 50px);
             }
@@ -209,7 +210,7 @@ export const ProjectItem = ( {project} ) => {
 
             .github-repository{
                 font-size: 35px;
-                color: rgb(238, 117, 74);
+                color: ${ colors.orange };
                 display: flex;
                 gap: 10px;
                 margin-top: 40px;
@@ -272,7 +273,7 @@ export const ProjectItem = ( {project} ) => {
 
                 .project-image{
                     width: 100%;
-                    background-color: rgb(246, 218, 85);
+                    background-color: ${ colors.yellow };
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -321,7 +322,7 @@ export const ProjectItem = ( {project} ) => {
 
 
                 .project-name{
-                    color: rgb(238, 117, 74);
+                    color: ${ colors.orange };
                     width: 70%;
                 }
 
@@ -357,7 +358,7 @@ export const ProjectItem = ( {project} ) => {
 
                 }
                 .project-description{
-                    color: rgb(246, 218, 85);
+                    color: ${ colors.yellow };
                     font-weight: 400;
                     width: 75%;
                 }
@@ -368,7 +369,7 @@ export const ProjectItem = ( {project} ) => {
 
                 .github-repository{
                     font-size: 35px;
-                    color: rgb(238, 117, 74);
+                    color: ${ colors.orange };
                     display: flex;
                     gap: 10px;
                     margin-top: 40px;

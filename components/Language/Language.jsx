@@ -1,3 +1,4 @@
+import { colors } from '@/app/theme'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -34,10 +35,10 @@ export const Language = () => {
 
       <style jsx>{`
         .lang-container{
-            background-color: #ee754a;
+            background-color: ${ colors.orange };
             border-radius: 10px;
-            border: 3px solid #ee754a;
-            color: #2a5d83;
+            border: 3px solid ${ colors.orange };
+            color: ${ colors.blue };
             font-size:  13px;
             height: 30px;
             left: 5px;
@@ -71,7 +72,7 @@ export const Language = () => {
         }
 
         .background-active{
-            background-color: #f6da55;
+            background-color: ${ colors.yellow };
             position: absolute;
             top: 0%;
             left: 0%;

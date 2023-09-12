@@ -1,3 +1,4 @@
+import { colors } from '@/app/theme'
 import { SkillsItem } from './components/SkillsItem'
 import data from './skills-data.json'
 
@@ -37,7 +38,7 @@ export const SkillsSection = ({info}) => {
           flex-direction: row;
           gap: 20px;
           justify-content: flex-end;
-          color: rgb(246, 218, 85);
+          color: ${ colors.yellow };
 
       }
 
@@ -70,7 +71,7 @@ export const SkillsSection = ({info}) => {
 
 
       .image-background{
-          background-color: rgb(246, 218, 85);
+          background-color: ${ colors.yellow };
           height: 100px;
           width: 100px;
           position: relative;
@@ -102,7 +103,7 @@ export const SkillsSection = ({info}) => {
       }
 
       .skill-image:hover .image-background{
-          background-color: rgb(238, 117, 74);
+          background-color: ${ colors.orange };
       }
       .skills{
           height: calc(100vh - 260px);
@@ -206,7 +207,7 @@ export const SkillsSection = ({info}) => {
           }
           
           .skill-image:hover .image-background{
-              background-color: rgb(246, 218, 85);
+              background-color: ${ colors.yellow };
           }
       }
     `}</style>

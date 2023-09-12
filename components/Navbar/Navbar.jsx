@@ -1,3 +1,4 @@
+import { colors } from '@/app/theme'
 import { useEffect, useState } from 'react'
 
 export const Navbar = () => {
@@ -24,7 +25,7 @@ export const Navbar = () => {
 					<a href="#me">
 						<span>Me</span>
 						<div className="navbar-icon">
-								<box-icon type='solid' name='user' size="md" color="rgb(42, 93, 131)"></box-icon>
+								<box-icon type='solid' name='user' size="md" color={ colors.blue }></box-icon>
 						</div>
 					</a>
 				</li>
@@ -33,7 +34,7 @@ export const Navbar = () => {
 						<a href="#projects">
               <span>Projects</span>
               <div className="navbar-icon">
-                <box-icon type='solid' name='collection' size="md" color="rgb(42, 93, 131)"></box-icon>
+                <box-icon type='solid' name='collection' size="md" color={ colors.blue }></box-icon>
               </div>
 						</a>
 				</li>
@@ -42,7 +43,7 @@ export const Navbar = () => {
           <a href="#skills">
             <span>Skills</span>
             <div className="navbar-icon">
-              <box-icon name='select-multiple' size="md" color="rgb(42, 93, 131)"></box-icon>
+              <box-icon name='select-multiple' size="md" color={ colors.blue }></box-icon>
             </div>
           </a>
 				</li>
@@ -51,7 +52,7 @@ export const Navbar = () => {
           <a href="#contact">
             <span>Contacts </span>
             <div className="navbar-icon">
-              <box-icon type='solid' name='send' size="md" color="rgb(42, 93, 131)"></box-icon>
+              <box-icon type='solid' name='send' size="md" color={ colors.blue }></box-icon>
             </div>
           </a>
 				</li>		
@@ -65,7 +66,7 @@ export const Navbar = () => {
 .navbar{
     height: 100vh;
     width: 200px;
-    background-color: rgb(246, 218, 85);
+    background-color: ${ colors.yellow };
     position: fixed;
     left: -112px;
     top: 0;
@@ -78,7 +79,7 @@ export const Navbar = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 8px solid rgb(238, 117, 74);
+    border-right: 8px solid ${ colors.orange };
     justify-content: center;
     box-sizing: border-box;
 
@@ -96,9 +97,9 @@ export const Navbar = () => {
 
 .navbar-item{
     list-style: none;
-    background-color: rgb(246, 218, 85);
+    background-color: ${ colors.yellow };
     width: 200px;
-    border-right: 8px solid rgb(238, 117, 74);
+    border-right: 8px solid ${ colors.orange };
     box-sizing: border-box;
     height: 80px;
     position: relative;
@@ -123,7 +124,7 @@ export const Navbar = () => {
     margin: auto;
     font-family: 'Source Serif Pro', serif;
     font-weight: 700;
-    color: rgb(42, 93, 131);
+    color: ${ colors.blue };
     font-size: 23px;
 }
 .navbar-icon{
@@ -135,7 +136,7 @@ export const Navbar = () => {
 }
 
 .navbar-icon box-icon{
-    color: rgb(42, 93, 131);
+    color: ${ colors.blue };
 }
 
 @media (max-width: 500px) {
@@ -144,7 +145,7 @@ export const Navbar = () => {
         height: 80px;
         left: 0px;
         top: 0;
-        border-bottom: 5px solid rgb(238, 117, 74);
+        border-bottom: 5px solid ${ colors.orange };
 
     }
     .navbar nav{

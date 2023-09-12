@@ -27,7 +27,7 @@ export const ProjectsSection = ({info}) => {
               { info.projects.respository }
               <box-icon type='logo' 
                         name='github' 
-                        color="rgb(246, 218, 85)" 
+                        color={ colors.yellow } 
                         size="50px" 
                         className="github-logo"
               ></box-icon>
@@ -60,7 +60,7 @@ export const ProjectsSection = ({info}) => {
                 </div>
 
                 <div className="extra-project-description">
-                  Created a Python Twitter Bot that tweets songs from an band at regular intervals using the Twitter API. 
+                  Created a Python Twitter Bot that tweets songs from a band at regular intervals using the Twitter API. 
                   Increased engagement and reach within the music community, boosting followers and user interaction. 
                   Developed skills include Python, Twitter API, bot programming, and problem-solving.
                 </div>
@@ -103,7 +103,7 @@ export const ProjectsSection = ({info}) => {
       .project1-container > span{
           font-size: 220px;
           line-height: 180px;
-          color: rgb(246, 218, 85);
+          color: ${ colors.yellow };
           margin: 0;
       }
 
@@ -145,14 +145,14 @@ export const ProjectsSection = ({info}) => {
           justify-content: flex-end;
           align-items: center;
           gap: 10px;
-          color: rgb(238, 117, 74);
+          color: ${ colors.orange };
           font-size: 30px;
           transition: .3s;
       }
 
       .github-repository a:hover{
         background-color: ${ colors.orange };
-        color: rgb(246, 218, 85);
+        color: ${ colors.yellow };
       }
 
       .projects-extra{

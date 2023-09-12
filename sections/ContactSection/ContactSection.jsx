@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useForm } from '../../hooks/useForm/useForm'
+import { colors } from '@/app/theme'
 
 export const ContactSection = ({info}) => {
 
@@ -36,7 +37,7 @@ export const ContactSection = ({info}) => {
         </div>
           <div className="contact">
             <div className="contact-left">
-              <box-icon color="rgb(238, 117, 74)" 
+              <box-icon color={ colors.orange }
                         name='at'
                         size="lg"
                         onClick={ onClickEmail }>
@@ -47,7 +48,7 @@ export const ContactSection = ({info}) => {
                 {copied? <div className='copied'>{ info.contact.emailCopied }</div>: null}
               </div>
 
-              <box-icon color="rgb(238, 117, 74)" 
+              <box-icon color={ colors.orange }
                         name='linkedin-square'
                         type='logo'
                         size="lg">
@@ -121,7 +122,7 @@ export const ContactSection = ({info}) => {
 
 
         .contact-left{
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
             gap: 15px;
             
         }
@@ -133,7 +134,7 @@ export const ContactSection = ({info}) => {
         .contact-right form{
             display: flex;
             flex-direction: column;
-            color: rgb(238, 117, 74);
+            color: ${ colors.orange };
             width: 100%;
             gap: 10px;
         }
@@ -145,12 +146,12 @@ export const ContactSection = ({info}) => {
 
         textarea, input{
             width: 80%;
-            background-color: rgb(246, 218, 85);
+            background-color: ${ colors.yellow };
             border: none;
             border-radius: 15px;
             font-size: 25px;
             line-height: 25px;
-            color: rgb(42, 93, 131);
+            color: ${ colors.blue };
             padding: 10px 10px;
             font-weight: 600;
             resize: none;
@@ -158,13 +159,13 @@ export const ContactSection = ({info}) => {
         }
 
         input:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0 50px rgb(246, 218, 85) inset;
-            -webkit-text-fill-color: rgb(42, 93, 131);
+            -webkit-box-shadow: 0 0 0 50px ${ colors.yellow } inset;
+            -webkit-text-fill-color: ${ colors.blue };
         }
 
         input:-webkit-autofill:focus {
-            -webkit-box-shadow: 0 0 0 50px rgb(246, 218, 85) inset;
-            -webkit-text-fill-color: rgb(42, 93, 131);
+            -webkit-box-shadow: 0 0 0 50px ${ colors.yellow } inset;
+            -webkit-text-fill-color: ${ colors.blue };
         } 
 
         textarea:focus{
@@ -185,7 +186,7 @@ export const ContactSection = ({info}) => {
 
         .linkedin-link a{
             text-decoration: none;
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
         }
 
         .linkedin-link:hover{
@@ -198,14 +199,14 @@ export const ContactSection = ({info}) => {
         }
 
         .copied{
-            color: rgb(238, 117, 74);
+            color: ${ colors.orange };
             font-size: 20px;
         }
 
         .submit-button{
             font-family: 'Source Serif Pro', serif;
-            color: rgb(42, 93, 131);
-            background-color: rgb(238, 117, 74);
+            color: ${ colors.blue };
+            background-color: ${ colors.orange };
             font-size: 25px;
             height: 45px;
             width: 35%;

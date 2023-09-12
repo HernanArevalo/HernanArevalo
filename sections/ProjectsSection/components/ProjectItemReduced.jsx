@@ -52,13 +52,13 @@ export const ProjectItemReduced = ( {project} ) => {
                         <div className="project-devices">
                             { project.mobile ? 
                                 <box-icon name='mobile' 
-                                        color="rgb(246, 218, 85)"
+                                        color="${ colors.yellow }"
                                         size={ deviceIconSize }
 
                                 ></box-icon> : null}
                             { project.pc ? 
                                 <box-icon name='laptop' 
-                                        color="rgb(246, 218, 85)"
+                                        color="${ colors.yellow }"
                                         size={ ()=>{ return "70px"} }
                                 ></box-icon>
                                 : null}
@@ -72,7 +72,7 @@ export const ProjectItemReduced = ( {project} ) => {
                         <a href={ project.github_url } target="_blank">
                             <box-icon type='logo' 
                                     name='github' 
-                                    color="rgb(238, 117, 74)" 
+                                    color={ colors.yellow }
                                     size={ GithubIconSize } 
                                     className="github-logo"
                             ></box-icon>
@@ -114,7 +114,7 @@ export const ProjectItemReduced = ( {project} ) => {
 
             .project-rectangle{
                 width: 100%;
-                background-color: rgb(246, 218, 85);
+                background-color: ${ colors.yellow };
                 display: flex;
                 justify-content: center;
                 align-items: center;

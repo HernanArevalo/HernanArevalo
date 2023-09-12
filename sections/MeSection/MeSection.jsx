@@ -1,3 +1,4 @@
+import { colors } from '@/app/theme'
 import Image from 'next/image'
 
 
@@ -74,14 +75,14 @@ export const MeSection = ( { info } ) => {
         .me1-grid1-container > h2{
             font-size: 90px;
             line-height: 90px;
-            color: rgb(238, 117, 74);
+            color: ${ colors.orange };
             position: relative;
         }
 
         .me1-grid1-container > h3{
             font-size: 40px;
             line-height: 40px;
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
             margin: 0;
             position: relative;
             top: -10px;
@@ -99,13 +100,13 @@ export const MeSection = ( { info } ) => {
         .studies{
             font-size: 26px;
             gap: 5px;
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
             display: flex;
             flex-direction: column;
         }
 
         .ubication{
-            color: rgb(238, 117, 74);
+            color: ${ colors.orange };
             font-size: 20px;
             margin-top: 5px;
         }
@@ -123,7 +124,7 @@ export const MeSection = ( { info } ) => {
         }
 
         .me2-grid1-container{
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
             text-align: left;
             display: flex;
             flex-direction: column;
@@ -137,10 +138,10 @@ export const MeSection = ( { info } ) => {
         }
 
         .me2-grid1-container > .span-1{
-            color: rgb(246, 218, 85);
+            color: ${ colors.yellow };
         }
         .me2-grid1-container > .span-2{
-            color: rgb(238, 117, 74);
+            color: ${ colors.orange };
         }
 
         .me2-grid2-container{
@@ -150,7 +151,7 @@ export const MeSection = ( { info } ) => {
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            border: 6px solid rgb(238, 117, 74);
+            border: 6px solid ${ colors.orange };
             overflow: hidden;
         }
 
