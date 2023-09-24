@@ -4,63 +4,52 @@ import { useSelector, useDispatch } from 'react-redux'
 import { startAddingLike, startLoadLikes, startRemovingLike } from '../../store/likes/thunks.js';
 
 //! NEW
-import { doc, getDoc, setDoc } from "firebase/firestore/lite";
-import { FirebaseDB } from "../../firebase/config";
+import { colors } from '@/app/theme.js';
 // !
-
 
 export const Likes = () => {
 
 
-
     const dispatch = useDispatch();
-    dispatch( startLoadLikes() )
 
-    const { likesCounter } = useSelector( state => state.likes );
-    const { isSaving } = useSelector( state => state.likes );
-    const { isLoaded } = useSelector( state => state.likes );
+    useEffect(() => {
+        dispatch( startLoadLikes() );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    
 
+    const { likesCounter, isSaving, isLoaded } = useSelector( state => state.likes );
+    const [liked, setLiked] = useState( "false" );
 
     useEffect(() => {
         if ( localStorage.getItem("liked") == null){
-             localStorage.setItem("liked", "false")
+             localStorage.setItem("liked", "false");
         }
-        setLiked( localStorage.getItem("liked") )
+        setLiked( localStorage.getItem("liked") );
 
-    }, [])
-    
-    
+    }, []);
 
-    const [liked, setLiked] = useState( false )    
-    const [likes, setLikes] = useState( likesCounter )
-
-
-    useEffect(() => {
-        setLikes( likesCounter )
-    }, [ likesCounter ])
-    
 
     const onLikeClicked = (e) => {
-        e.preventDefault()
+        e.preventDefault();
 
+        if ( isSaving ) return;
 
-        if ( localStorage.getItem("liked") == "true" ) {
+        if( liked == "true" ){
+            setLiked("false");
             dispatch( startRemovingLike() )
-            setLiked( "false" )
         }else{
+            setLiked("true");
             dispatch( startAddingLike() )
-            setLiked( "true" )
-
         }
-    }
 
-
-    
+    };
 
   return (
     <>
         { isLoaded &&
-            <button className="likes-container animate__animated animate__flipInY animate__delay-2s"
+            // <button className="likes-container animate__animated animate__flipInY animate__delay-2s"
+            <button className="likes-container animate__animated animate__flipInY"
                 onClick={ onLikeClicked }
                 disabled={ isSaving }
                 opacity={ "0.5" }
@@ -70,19 +59,17 @@ export const Likes = () => {
                 <box-icon type={liked == "true"? "solid":"regular"}
                 name='heart'
                 className="likes-heart"
-                color="rgb(238, 117, 74)">
+                color={ isSaving? colors.grey : colors.orange }>
                 </box-icon>
                     
 
                 <div className="likes-counter">
-                    { likes }
+                    { likesCounter }
                 </div>
 
             </button>
 
         }
-
-
 
     <style jsx>{`
 
@@ -92,7 +79,7 @@ export const Likes = () => {
             height: 45px;
             padding: 0 10px;
             border-radius: 20%;
-            background-color: rgb(246, 218, 85);
+            background-color: ${ colors.yellow };
             border: none;
             top: 3%;
             right: 3.5%;
@@ -100,7 +87,7 @@ export const Likes = () => {
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            color: rgb(42, 93, 131);
+            color: ${ colors.blue };
             cursor: pointer;
             -webkit-touch-callout: none; /* iOS Safari */
             -webkit-user-select: none; /* Safari */
@@ -124,13 +111,14 @@ export const Likes = () => {
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
             
-            border-top: 10px solid rgb(246, 218, 85);
+            border-top: 10px solid ${ colors.yellow };
         }
 
         .likes-counter{
             margin-left: 5px;
             font-size: 18px;
             font-weight: 700;
+            color: ${isSaving? colors.grey : colors.blue }
         }
 
         @media (max-width: 500px) {

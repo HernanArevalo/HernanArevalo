@@ -20,40 +20,38 @@ export const startAddingLike = () => {
     return async(dispatch, getState) =>{
 
         dispatch( isSaving() );
-        
-        
+        console.log('Adding like')
+
         const { likesCounter } = getState().likes;
-        const newValue = likesCounter+1;
         
-        dispatch( addLike(newValue) );
+        dispatch( addLike() );
 
         await setDoc(doc( FirebaseDB, "likes", "counter"), {
-            count: newValue
+            count: likesCounter+1
           });
 
         localStorage.setItem("liked", true);
 
         dispatch( notSaving() );
-    }
+    };
 }
 
 export const startRemovingLike = () => {
     return async(dispatch, getState) =>{
 
-        dispatch( isSaving() )
+        dispatch( isSaving() );
 
+        console.log('Removing like');
         const { likesCounter } = getState().likes;
-        const newValue = likesCounter-1
 
-        dispatch( removeLike( newValue ) ) 
+        dispatch( removeLike() );
 
         await setDoc(doc( FirebaseDB, "likes", "counter"), {
-            count: newValue
+            count: likesCounter-1
         });
 
         localStorage.setItem("liked", false)
 
-        dispatch( notSaving() )
-
-    }
+        dispatch( notSaving() );
+    };
 }

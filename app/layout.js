@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <Provider store={store}>
         <div>
           <Navbar />
-          {/* <Likes /> */}
+          <Likes />
           <Language />
 
           { children }
