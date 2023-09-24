@@ -1,4 +1,5 @@
 import { colors } from '@/app/theme'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -9,23 +10,23 @@ export const Language = () => {
 
   const [spanish, setSpanish] = useState(asPath == '/es')
 
-  const activeSpanish = () => {
-    setSpanish(true)
-    router.push('/es')  
+  const onClickActiveSpanish = () => {
+    setSpanish(true);
+    router.push('/es');  
   }
-  const activeEnglish = () => {
-    setSpanish(false)
-    router.push('/en')
+  const onClickActiveEnglish = () => {
+    setSpanish(false);
+    router.push('/en');
   }
 
   return (
     <>
       <div className='lang-container  animate__animated animate__fadeIn animate__delay-2s'>
         <div className='lang'>
-          <div className='lang-es active' onClick={ activeSpanish }>
+          <div className='lang-es active' onClick={ onClickActiveSpanish }>
             ES
           </div>
-          <div className='lang-en' onClick={ activeEnglish }>
+          <div className='lang-en' onClick={ onClickActiveEnglish }>
             EN
           </div>
           <div className={`background-active ${spanish? "es-active":"en-active"}`}></div>
@@ -44,6 +45,7 @@ export const Language = () => {
             left: 5px;
             overflow: hidden;
             position: fixed;
+            {/* position: absolute; */}
             top: 10px;
             width: 70PX;
             z-index: 99999999;
