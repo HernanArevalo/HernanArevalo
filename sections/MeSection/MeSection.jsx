@@ -8,51 +8,23 @@ export const MeSection = ( { info } ) => {
 
   return (
     <>
-      <div className="me-container" id="me">
-            <div className="section-title animate__animated animate__fadeInLeft">
-              { info.me.title.map(
-                (letter,idx) => 
-                (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
-              )}
+    <div className="me-container" id="me">
+        <div className="me2-container">
+            <div className="me2-grid1-container">
+                <span className='span-1'>{ info.me.description1 }</span>
+                <span className='span-2'>{ info.me.description2 }</span>
+                <span className='span-1'>{ info.me.description3 }</span>
+                <span className='span-2'>{ info.me.description4 }</span>
+                <span className='span-1'>{ info.me.description5 }</span>
             </div>
-            <div className="me1-container">
-              <div className="me1-grid1-container animate__animated animate__fadeInLeft">
-                <h2>Hernán Arévalo</h2>
-                <h3>{ info.me.charge }</h3>
-              </div>
-
-              <div className="me1-grid2-container">
-                <div className="studies">
-                    <span>{ info.me.studies1 }</span>
-                    <span>{ info.me.studies2 }</span>
-                    <span>{ info.me.studies3 }</span>
-                </div>
-                <p className="ubication">
-                  Córdoba, Argentina
-                </p>
-              </div>
-
-            </div>
-            <div className="me2-container">
-              <div className="me2-grid1-container">
-                    <span className='span-1'>{ info.me.description1 }</span>
-                    <span className='span-2'>{ info.me.description2 }</span>
-                    <span className='span-1'>{ info.me.description3 }</span>
-                    <span className='span-2'>{ info.me.description4 }</span>
-                    <span className='span-1'>{ info.me.description5 }</span>
-                
-              </div>
-              <div className="me2-grid2-container">
-                <Image src="/profile.jpg " alt="profile-picture" width='280'height='280' priority={true}/>
-              </div>
-            </div>
+        </div>
 
             
       </div>
 
       <style jsx>{`
         .me-container{
-          height: 100vh;
+          min-height: 100vh;
           width: 100%;
           text-align: left;
           box-sizing: border-box;
@@ -61,7 +33,7 @@ export const MeSection = ( { info } ) => {
           justify-content: flex-start;
       }
 
-        .me1-container{
+        .me-container-1-1{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -165,7 +137,7 @@ export const MeSection = ( { info } ) => {
         }
 
         @media (max-width: 1400px) {
-            .me1-container{
+            .me-container-1-1{
                 top: -55px;
             }
 
@@ -205,7 +177,7 @@ export const MeSection = ( { info } ) => {
         }
 
         @media (max-width: 800px) {
-            .me1-container{
+            .me-container-1-1{
                 top: -150px;
             }
 
@@ -217,7 +189,7 @@ export const MeSection = ( { info } ) => {
                 height: auto;
                 width: 100%;
             }
-            .me1-container{
+            .me-container-1-1{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;

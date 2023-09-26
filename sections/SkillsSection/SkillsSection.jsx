@@ -9,21 +9,18 @@ export const SkillsSection = ({info}) => {
 
   return (
     <>
-      <div className="skills-container" id="skills">
-      <div className="section-title">
-            { info.skills.title.map(
-            (letter,idx) => 
-            (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
-            )}
-        </div>
-
-          <div className="skills">
-            <div className="skills-grid">
-              { skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}
+        <div className="skills-container" id="skills">
+            <div className="section-title">
+                {info.skills.title}
             </div>
-          </div>
 
-      </div>
+            <div className="skills">
+                <div className="skills-grid">
+                    { skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}
+                </div>
+            </div>
+
+        </div>
 
     <style jsx>{`
     

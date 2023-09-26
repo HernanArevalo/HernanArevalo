@@ -8,7 +8,10 @@ export const Language = () => {
   const router = useRouter()
   const { asPath } = useRouter()
 
-  const [spanish, setSpanish] = useState(asPath == '/es')
+  const [spanish, setSpanish] = useState(asPath !== '/en')
+
+
+  console.log(spanish)
 
   const onClickActiveSpanish = () => {
     setSpanish(true);
@@ -70,6 +73,7 @@ export const Language = () => {
             justify-content: center;
             width: 50%;
             z-index: 999;
+            font-weight: 700;
 
         }
 

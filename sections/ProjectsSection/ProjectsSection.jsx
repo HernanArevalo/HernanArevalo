@@ -15,10 +15,7 @@ export const ProjectsSection = ({info}) => {
 
           <div className="project1-gri1-container">
             <div className="section-title">
-              { info.projects.title.map(
-                (letter,idx) => 
-                (<span key={`${letter}${idx}`} className='section-title-word'>{letter}</span>)
-              )}
+              {info.projects.title}
             </div>
           </div>
 

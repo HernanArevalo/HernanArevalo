@@ -50,7 +50,7 @@ export const Navbar = () => {
 
 				<li className="navbar-item">
           <a href="#contact">
-            <span>Contacts </span>
+            <span>Contact</span>
             <div className="navbar-icon">
               <box-icon type='solid' name='send' size="md" color={ colors.blue }></box-icon>
             </div>

@@ -5,6 +5,7 @@ import data from '../../data/info.json'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
 import RootLayout from '@/app/layout'
+import { HomeSection } from '@/sections/HomeSection'
 
 
 
@@ -40,6 +41,8 @@ export default function Home() {
           <div className="content">
           <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
           
+
+          <HomeSection info={ info }/>
           <MeSection info={ info }/>
           <ProjectsSection info={info}/>
           <SkillsSection info={info}/>
