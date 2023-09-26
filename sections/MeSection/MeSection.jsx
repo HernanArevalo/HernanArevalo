@@ -9,6 +9,9 @@ export const MeSection = ( { info } ) => {
   return (
     <>
     <div className="me-container" id="me">
+    <div className="section-title">
+              {info.me.title}
+            </div>
         <div className="me2-container">
             <div className="me2-grid1-container">
                 <span className='span-1'>{ info.me.description1 }</span>

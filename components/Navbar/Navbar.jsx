@@ -21,6 +21,15 @@ export const Navbar = () => {
     <nav>
 			<ul className="navbar-list">
 
+        <li className="navbar-item">
+					<a href="#home">
+						<span>Home</span>
+						<div className="navbar-icon">
+								<box-icon type='solid' name='home' size="md" color={ colors.blue }></box-icon>
+						</div>
+					</a>
+				</li>
+
 				<li className="navbar-item">
 					<a href="#me">
 						<span>Me</span>
@@ -34,7 +43,7 @@ export const Navbar = () => {
 						<a href="#projects">
               <span>Projects</span>
               <div className="navbar-icon">
-                <box-icon type='solid' name='collection' size="md" color={ colors.blue }></box-icon>
+                <box-icon name='collection' size="md" color={ colors.blue }></box-icon>
               </div>
 						</a>
 				</li>

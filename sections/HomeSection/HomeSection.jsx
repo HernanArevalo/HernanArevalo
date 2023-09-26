@@ -10,10 +10,10 @@ export const HomeSection = ( { info } ) => {
         <div className="home-container-1">
             
             <div className="section-title-2 animate__animated animate__fadeInLeft">
-                {info.me.title}
+                {info.home.title}
             </div>
             <h1>Hernán Arévalo</h1>
-            <h2>{ info.me.charge }</h2>
+            <h2>{ info.home.charge }</h2>
 
         </div>
 
@@ -24,12 +24,12 @@ export const HomeSection = ( { info } ) => {
             </div>
 
             <div className="studies">
-                <div>• { info.me.studies1 }</div>
-                <div>• { info.me.studies2 }</div>
-                <div>• { info.me.studies3 }</div>
+                <div>• { info.home.studies1 }</div>
+                <div>• { info.home.studies2 }</div>
+                <div>• { info.home.studies3 }</div>
             </div>
             <p className="ubication">
-                Córdoba, Argentina
+                { info.home.location }
             </p>
         </div>
 
