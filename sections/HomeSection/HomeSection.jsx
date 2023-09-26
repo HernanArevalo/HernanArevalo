@@ -57,8 +57,8 @@ export const HomeSection = ( { info } ) => {
     }
 
     .section-title-2{
-        font-size: 200px;
-        line-height: 140px;
+        font-size: 240px;
+        line-height: 170px;
         font-weight: 600;
         color: ${ colors.yellow };
         margin: 0;
@@ -67,8 +67,8 @@ export const HomeSection = ( { info } ) => {
     }
 
     .home-container-1 > h1{
-        font-size: 90px;
-        line-height: 90px;
+        font-size: 110px;
+        line-height: 110px;
         color: ${ colors.orange };
         position: relative;
         margin-bottom: 5px;
@@ -110,7 +110,7 @@ export const HomeSection = ( { info } ) => {
         color: ${ colors.orange };
         font-size: 20px;
         margin-top: 5px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .home2-container{
