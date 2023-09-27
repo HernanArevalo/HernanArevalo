@@ -1,5 +1,6 @@
 import { colors } from '@/app/theme'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export const HomeSection = ( { info } ) => {
@@ -14,6 +15,19 @@ export const HomeSection = ( { info } ) => {
             </div>
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
+            <div className="home-icons">
+                <a href="https://www.linkedin.com/in/arevalo-hernan" target="_blank">
+                    <div className="home-icon-div">
+                        <i className='home-icon-font bx bxl-linkedin'></i>
+                    </div>
+                </a>
+                <a href="https://www.github.com/HernanArevalo" target="_blank">
+                    <div className="home-icon-div">
+                        <i className='home-icon-font bx bxl-github'></i>
+                    </div>
+                </a>
+
+            </div>
 
         </div>
 
@@ -37,6 +51,9 @@ export const HomeSection = ( { info } ) => {
 
 
     <style jsx>{`
+    a{
+        text-decoration: none;
+    }
     .home-container{
         min-height: 100vh;
         width: 100%;
@@ -47,6 +64,7 @@ export const HomeSection = ( { info } ) => {
         align-items: center;
         gap: 80px;
         padding: 0;
+        padding-right: 15px;
     }
 
     .home-container-1{
@@ -135,6 +153,32 @@ export const HomeSection = ( { info } ) => {
         overflow: hidden;
         margin-bottom: 20px;
     }
+    .home-icons{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: flex-end;
+        gap: 10px;
+
+    }
+    .home-icon-div{
+        background-color: ${ colors.orange };
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .home-icon-div:hover{
+        background-color: ${ colors.yellow };
+
+    }
+    .home-icon-font{
+        font-size: 35px;
+        color: ${ colors.blue };
+    }
+
 
     @media (max-width: 1500px) {
         .home-container{

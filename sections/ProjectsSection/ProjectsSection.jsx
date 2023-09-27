@@ -136,7 +136,7 @@ export const ProjectsSection = ({info}) => {
 
       .github-repository a{
           padding: 15px;
-          border-radius: 30px;
+          border-radius: 10px;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;

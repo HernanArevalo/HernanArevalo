@@ -11,8 +11,6 @@ export const Language = () => {
   const [spanish, setSpanish] = useState(asPath !== '/en')
 
 
-  console.log(spanish)
-
   const onClickActiveSpanish = () => {
     setSpanish(true);
     router.push('/es');  

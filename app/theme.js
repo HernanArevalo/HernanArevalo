@@ -11,3 +11,9 @@ export const colors = {
     blue: '#0e3b61'
 }
 
+export const borders = {
+    s: '5px',
+    m: '15px',
+    l: '30px'
+}
+
