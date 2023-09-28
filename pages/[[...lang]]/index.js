@@ -12,23 +12,24 @@ export default function Home() {
   const router = useRouter()
   const { asPath, query } = useRouter();
 
-  const [info, setInfo] = useState( data.en )
+  const [info, setInfo] = useState( data.en );
 
   useEffect(()=>{
     if(!router.isReady) return;
 
     if (asPath == '/es') {
-      setInfo(data.es)
+      setInfo(data.es);
     }else{
-      router.push('/en')
-      setInfo(data.en)
+      router.push('/en');
+      setInfo(data.en);
 
     }
 
-}, [router.isReady, asPath ]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, [ router.isReady, asPath ]);
 
 
-  
+
 
 
   return (

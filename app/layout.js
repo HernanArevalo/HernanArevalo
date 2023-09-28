@@ -8,14 +8,6 @@ import { useEffect } from 'react'
 
 export default function RootLayout({ children }) {
 
-  useEffect(() => {
-  
-    window.onbeforeunload = function(e) {
-        localStorage.setItem('scrollpos', window.scrollY);
-    };
-    
-  }, []);
-  
     
   return (
     <>
