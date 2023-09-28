@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
-
-import { MeSection, ProjectsSection, SkillsSection, ContactSection } from '../../sections'
-import data from '../../data/info.json'
-import { useRouter } from 'next/router'
 import Script from 'next/script'
-import RootLayout from '@/app/layout'
-import { HomeSection } from '@/sections/HomeSection'
+import { useRouter } from 'next/router'
 
+import RootLayout from '@/app/layout'
+import { HomeSection, MeSection, ProjectsSection, SkillsSection, ContactSection } from '../../sections'
+import data from '../../data/info.json'
 
 
 export default function Home() {
@@ -14,24 +12,23 @@ export default function Home() {
   const router = useRouter()
   const { asPath, query } = useRouter();
 
-
-  const [lang, setLang] = useState(query.lang)
-  const [info, setInfo] = useState( data.es )
+  const [info, setInfo] = useState( data.en )
 
   useEffect(()=>{
     if(!router.isReady) return;
 
-    if (asPath == '/en') {
-      setLang('en')
-      setInfo(data.en)
-    }else{
-      router.push('/es')
-      setLang('es')
+    if (asPath == '/es') {
       setInfo(data.es)
+    }else{
+      router.push('/en')
+      setInfo(data.en)
 
     }
 
 }, [router.isReady, asPath ]);
+
+
+  
 
 
   return (
@@ -41,12 +38,18 @@ export default function Home() {
           <div className="content">
           <Script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></Script>
           
+          {
+          router.asPath !== "/[[...lang]]"
+          &&
+          <>
+            <HomeSection info={ info }/>
+            <MeSection info={ info }/>
+            <ProjectsSection info={info}/>
+            <SkillsSection info={info}/>
+            <ContactSection info={info}/>
+          </>
 
-          <HomeSection info={ info }/>
-          <MeSection info={ info }/>
-          <ProjectsSection info={info}/>
-          <SkillsSection info={info}/>
-          <ContactSection info={info}/>
+          }
 
           </div>
 

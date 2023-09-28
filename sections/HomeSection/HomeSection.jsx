@@ -168,7 +168,7 @@ export const HomeSection = ( { info } ) => {
         align-items: center;
         padding: 5px;
         border-radius: 5px;
-        transition: .5s;
+        transition: .3s;
     }
     .home-icon-div:hover{
         background-color: ${ colors.yellow };

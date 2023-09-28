@@ -1,14 +1,22 @@
 import { colors } from '@/app/theme'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const Language = () => {
 
-  const router = useRouter()
-  const { asPath } = useRouter()
+  const router = useRouter();
+  const { asPath } = useRouter();
 
-  const [spanish, setSpanish] = useState(asPath !== '/en')
+
+  const [spanish, setSpanish] = useState(asPath !== '/en');
+
+  useEffect(() => {
+
+    setSpanish(asPath !== '/en')
+
+  }, []);
+  
 
 
   const onClickActiveSpanish = () => {
