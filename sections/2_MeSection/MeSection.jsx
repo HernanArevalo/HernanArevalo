@@ -18,10 +18,11 @@ export const MeSection = ( { info } ) => {
             </div>
 
             <div className="me-content-grid">
-                <span className='span-1'>{ info.me.description1 }</span>
-                <span className='span-2'>{ info.me.description2 }</span>
+                <span className='span-2'>{ info.me.description1 }</span>
+                <span className='span-1'>{ info.me.description2 }</span>
                 <span className='span-1'>{ info.me.description3 }</span>
                 <span className='span-2'>{ info.me.description4 }</span>
+                <span className='span-2'>{ info.me.description5 }</span>
                 <span className='span-1' dangerouslySetInnerHTML={{ __html: info.me.description6 }}></span>
             </div>
 
@@ -60,7 +61,7 @@ export const MeSection = ( { info } ) => {
 
         .me-content-descr{
             background-color: ${ colors.orange };
-            box-shadow: 8px 8px 0px ;
+            box-shadow: 8px 8px 0px ${ colors.yellow };
             color: ${ colors.yellow };
             font-size: 28px;
             font-weight: 500;
