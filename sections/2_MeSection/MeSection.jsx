@@ -15,7 +15,10 @@ export const MeSection = ( { info } ) => {
         <div className="me-content">
 
             <div className="me-content-descr">
-                Hola! soy <b>Hernán Arévalo</b>, estudiante de Ingeniería en <b>Sistemas</b>, que también se dedica al mundo del <b>desarrollo web</b>.<br/>Hoy en día realizando la parte <b>frontend</b> de mis proyectos. <br/>También tuve la oportunidad de desarrollar proyectos con <b>Python</b> y con <b>JavaScript</b> nativo, como también la creación del <b>backend</b> para una aplicación con el stack MERN (MongoDB, Express, React y Node). ¡Estoy emocionado por lo que el futuro me tiene preparado en este emocionante campo!
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hola! soy <b>Hernán Arévalo</b>, estudiante de Ingeniería en <b>Sistemas</b>, que también se dedica al mundo del <b>desarrollo web</b>.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desde chico fui una persona curiosa y apasionada por entender cómo funcionaban las cosas. Hoy aplico esa misma pasión para aprender nuevas <b>soluciones tecnológicas</b> y plasmar el conocimiento en nuevos desafíos.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualmente realizo la parte <b>frontend</b> de mis proyectos con React y Next. <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;También tuve la oportunidad de desarrollar proyectos con <b>Python</b> y con <b>JavaScript</b> nativo, como también la creación del <b>backend</b> para una aplicación con el stack MERN (MongoDB, Express, React y Node). <br/>
             </div>
             <div className="me-content-grid">
                 <span className='span-1'>{ info.me.description1 }</span>
