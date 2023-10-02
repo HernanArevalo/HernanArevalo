@@ -14,19 +14,17 @@ export const MeSection = ( { info } ) => {
         </div>
         <div className="me-content">
 
-            <div className="me-content-descr">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hola! soy <b>Hernán Arévalo</b>, estudiante de Ingeniería en <b>Sistemas</b>, que también se dedica al mundo del <b>desarrollo web</b>.<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desde chico fui una persona curiosa y apasionada por entender cómo funcionaban las cosas. Hoy aplico esa misma pasión para aprender nuevas <b>soluciones tecnológicas</b> y plasmar el conocimiento en nuevos desafíos.<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualmente realizo la parte <b>frontend</b> de mis proyectos con React y Next. <br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;También tuve la oportunidad de desarrollar proyectos con <b>Python</b> y con <b>JavaScript</b> nativo, como también la creación del <b>backend</b> para una aplicación con el stack MERN (MongoDB, Express, React y Node). <br/>
+            <div className="me-content-descr" dangerouslySetInnerHTML={{ __html: info.me.description0 }}>
             </div>
+
             <div className="me-content-grid">
                 <span className='span-1'>{ info.me.description1 }</span>
                 <span className='span-2'>{ info.me.description2 }</span>
                 <span className='span-1'>{ info.me.description3 }</span>
                 <span className='span-2'>{ info.me.description4 }</span>
-                <span className='span-1'>{ info.me.description5 }</span>
+                <span className='span-1' dangerouslySetInnerHTML={{ __html: info.me.description6 }}></span>
             </div>
+
         </div>
             
     </div>
@@ -67,7 +65,7 @@ export const MeSection = ( { info } ) => {
             font-size: 28px;
             font-weight: 500;
             max-width: 700px;
-            padding: 60px;
+            padding: 50px;
             text-align: center;
             text-align: justify;
 
