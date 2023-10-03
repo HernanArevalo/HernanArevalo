@@ -18,6 +18,7 @@ export const MeSection = ( { info } ) => {
             </div>
 
             <div className="me-content-grid">
+
                 <span className='span-2'>{ info.me.description1 }</span>
                 <span className='span-1'>{ info.me.description2 }</span>
                 <span className='span-1'>{ info.me.description3 }</span>
@@ -41,13 +42,6 @@ export const MeSection = ( { info } ) => {
           justify-content: flex-start;
         }
 
-        .me1-grid1-container > h2{
-            font-size: 90px;
-            line-height: 90px;
-            color: ${ colors.orange };
-            position: relative;
-        }
-
         .me-content{
             width: 100%;
             height: 65%;
@@ -55,7 +49,7 @@ export const MeSection = ( { info } ) => {
             align-items: center;
             justify-content: center;
             gap: 60px;
-
+            font-size: 24px;
 
         }
 
@@ -63,7 +57,6 @@ export const MeSection = ( { info } ) => {
             background-color: ${ colors.orange };
             box-shadow: 8px 8px 0px ${ colors.yellow };
             color: ${ colors.yellow };
-            font-size: 28px;
             font-weight: 500;
             max-width: 700px;
             padding: 50px;
@@ -84,7 +77,6 @@ export const MeSection = ( { info } ) => {
 
         .me-content-grid span{
             font-weight: 600;
-            font-size: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,62 +95,108 @@ export const MeSection = ( { info } ) => {
             background-color: ${ colors.yellow };
         }
 
-        @media (max-width: 1500px) {
-            .me-container{
-                width: 100%;
-            }
+        @media (max-width: 1600px) {
             .me-content{
-                bottom: 10px;
+                font-size: 20px;
             }
+            .me-content-descr{
+                font-size: 24px;
+            }
+            .me-content-grid{
+                grid-template-columns: repeat(2, 260px);
+
+            }
+            .me-content-grid span{
+                padding: 15px;
+            }
+
+            
         }
 
         @media (max-width: 1400px) {
-
-
-        }
-
-        @media (max-width: 1200px) {
-
-
-        }
-
-        @media (max-width: 800px) {
-
-
-        }
-        @media (max-width: 500px) {
-
             .me-content{
-                width: 100%;
-                bottom: 0px;
-                flex-direction: column-reverse;
-                margin-top: 20px;
-                gap: 30px;
+                font-size: 20px;
+            }
+            .me-content-descr{
+                font-size: 20px;
+            }
+
+        }
+
+        @media (max-height: 800px) {
+            .me-content{
+                font-size: 19px;
+            }
+
+        }
+        @media (max-height: 750px) {
+            .me-content-descr{
+                font-size: 20px;
+                padding: 45px;
+
+            }
+            .me-content-grid span{
+                font-size: 17px;
+
+            }
+        }
+        @media (max-height: 750px) {
+            .me-content-descr{
+                font-size: 22px;
+                padding: 40px;
+            }
+            .me-content-grid{
+                grid-template-columns: repeat(2, 220px);
+
+            }
+            .me-content-grid span{
+                font-size: 17px;
+
+            }
+        }
+        @media (max-width: 1400px) {
+            .me-content-descr{
+                font-size: 20px;
+                padding: 40px;
             }
             
+        }
+        @media (max-width: 1190px) {
+            .me-container{
+                height: auto;
+                margin-bottom: 60px;
+            }
+            .me-content{
+                flex-direction: column;
+                gap: 45px;
+
+            }
+            .me-content-descr{
+                max-width: fit-content;
+                width: 90%;
+                padding: 30px;
+            }
             .me-content-grid{
-                width: 100%;
+            color: ${ colors.yellow };
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+        
+        }
+        @media (max-width: 500px) {
+            .me-content{
+                margin-top: 30px;
             }
-            .me-content-grid > span{
-                font-size: 6vw;
+            .me-content-grid{
+
+                grid-template-columns: repeat(2, calc((80% / 2)));
+                justify-content: center;
+                font-size: 16px;
             }
+
+
 
         }
 
-        @media (max-height: 730px) {
-            .me-content-grid span {
-                font-size: 25px;
-            }
-
-        }
-
-
-        @media (max-height: 700px) {
-            .me-content-grid span {
-                font-size: 23px;
-            }
-
-        }
       `}</style>
 
     </>

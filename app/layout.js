@@ -118,7 +118,7 @@ export default function RootLayout({ children }) {
         }
         .content > div{
           padding: 0px 10px;
-          padding-top: 80px;
+          padding-top: 60px;
         }
 
         .section-title{

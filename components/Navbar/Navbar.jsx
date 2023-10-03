@@ -6,12 +6,24 @@ export const Navbar = () => {
     const [innerWidth, setInnerWidth] = useState( 501 )
 
 
+    const [windowWidth, setWindowWidth] = useState(null);
+  
     useEffect(() => {
-            
-        //console.log('window.innerHeight', window.innerHeight)
-        //setInnerWidth( window.innerHeight )
-        
-    }, [])
+      // Verificar si estamos en el lado del cliente antes de acceder a window
+      if (typeof window !== 'undefined') {
+        setWindowWidth(window.innerWidth);
+  
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+  
+        window.addEventListener('resize', handleResize);
+  
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }
+    }, []);
     
      
 
@@ -25,7 +37,7 @@ export const Navbar = () => {
 					<a href="#home">
 						<span>Home</span>
 						<div className="navbar-icon">
-								<box-icon type='solid' name='home' size="md" color={ colors.blue }></box-icon>
+								<box-icon type='solid' name='home' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
 						</div>
 					</a>
 				</li>
@@ -34,7 +46,7 @@ export const Navbar = () => {
 					<a href="#me">
 						<span>Me</span>
 						<div className="navbar-icon">
-								<box-icon type='solid' name='user' size="md" color={ colors.blue }></box-icon>
+								<box-icon type='solid' name='user' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
 						</div>
 					</a>
 				</li>
@@ -43,7 +55,7 @@ export const Navbar = () => {
 						<a href="#projects">
               <span>Projects</span>
               <div className="navbar-icon">
-                <box-icon name='collection' size="md" color={ colors.blue }></box-icon>
+                <box-icon name='collection' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
               </div>
 						</a>
 				</li>
@@ -52,7 +64,7 @@ export const Navbar = () => {
           <a href="#skills">
             <span>Skills</span>
             <div className="navbar-icon">
-              <box-icon name='select-multiple' size="md" color={ colors.blue }></box-icon>
+              <box-icon name='select-multiple' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
             </div>
           </a>
 				</li>
@@ -61,7 +73,7 @@ export const Navbar = () => {
           <a href="#contact">
             <span>Contact</span>
             <div className="navbar-icon">
-              <box-icon type='solid' name='send' size="md" color={ colors.blue }></box-icon>
+              <box-icon type='solid' name='send' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
             </div>
           </a>
 				</li>		
@@ -150,15 +162,17 @@ export const Navbar = () => {
 
 @media (max-width: 500px) {
     .navbar{
+        position: fixed;
         width: 100vw;
-        height: 80px;
+        height: 50px;
         left: 0px;
-        top: 0;
+        top: 0px;
         border-bottom: 5px solid ${ colors.orange };
+
 
     }
     .navbar nav{
-        height: auto;
+        height: 100%;
         border-right: 0px;
 
 
@@ -166,8 +180,9 @@ export const Navbar = () => {
     .navbar-list{
         flex-direction: row;
         justify-content: space-evenly;
+        align-items: center;
         width: 100%;
-        height: 70%;
+        height: 100%;
 
   
     }
@@ -175,18 +190,26 @@ export const Navbar = () => {
         display: none;
     }
     .navbar-item{
-        width: 80px;
         border-right: 0px;
         background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: auto;
+        width: auto;
     }
     .navbar-icon{
         margin: 0;
+        height: auto;
     }
     .navbar-item:hover{
         transform: translateX(0px);
+    }
+    .navbar-item a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
     }
 }
 	`}</style>
