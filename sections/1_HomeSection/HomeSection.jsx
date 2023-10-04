@@ -34,7 +34,7 @@ export const HomeSection = ( { info } ) => {
         <div className="home-container-2">
 
             <div className="profile-picture-div">
-                <Image src="/profile.jpg " alt="profile-picture" width='280'height='280' priority={true}/>
+                <img className='profile-picture' src="/profile.jpg " alt="profile-picture" priority={true}/>
             </div>
 
             <div className="studies">
@@ -64,7 +64,6 @@ export const HomeSection = ( { info } ) => {
         align-items: center;
         gap: 80px;
         padding: 0;
-        padding-right: 15px;
     }
 
     .home-container-1{
@@ -86,10 +85,10 @@ export const HomeSection = ( { info } ) => {
 
     .home-container-1 > h1{
         font-size: 110px;
-        line-height: 110px;
+        line-height: 95px;
         color: ${ colors.orange };
         position: relative;
-        margin-bottom: 5px;
+        
     }
 
     .home-container-1 > h2{
@@ -98,67 +97,17 @@ export const HomeSection = ( { info } ) => {
         color: ${ colors.yellow };
         margin: 0;
         position: relative;
-        top: -10px;
+        top: 0px;
         font-weight: 600;
     }
 
-    .home-container-2{
-        width: fit-content;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        position: relative;
-    }
-
-    .studies{
-        font-size: 26px;
-        gap: 5px;
-        color: ${ colors.yellow };
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-    }
-
-    .studies > div{
-        width: fit-content;
-    }
-
-    .ubication{
-        color: ${ colors.orange };
-        font-size: 20px;
-        margin-top: 5px;
-        font-weight: 600;
-    }
-
-    .home2-container{
-        height: 40vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        gap: 60px;
-
-    }
-
-    .profile-picture-div{
-        width: 280px;
-        height: 280px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 6px solid ${ colors.orange };
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
     .home-icons{
         display: flex;
         flex-direction: row;
         width: auto;
         justify-content: flex-end;
         gap: 10px;
+        margin-top: 10px;
 
     }
     .home-icon-div{
@@ -180,99 +129,164 @@ export const HomeSection = ( { info } ) => {
     }
 
 
-    @media (max-width: 1500px) {
-        .home-container{
-            width: 100%;
-        }
-        .home2-container{
-            bottom: 10px;
+    .home-container-2{
+        width: fit-content;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .profile-picture-div{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 6px solid ${ colors.orange };
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .profile-picture{
+        width: 100%;
+        height: 100%;
+    }
+    .studies{
+        font-size: 26px;
+        gap: 5px;
+        color: ${ colors.yellow };
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .studies > div{
+        width: fit-content;
+    }
+
+    .ubication{
+        color: ${ colors.orange };
+        font-size: 20px;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+
+    
+    @media (max-width: 1550px) {
+        .home-container-1 > h1{
+            font-size: 90px;
+            line-height: 80px;
         }
     }
 
-    @media (max-width: 1400px) {
-        .home-container-1-1{
-            top: -55px;
+    @media (max-width: 1380px) {
+        .section-title-2{
+            font-size: 200px;
+            line-height: 150px;
         }
-
-
         .home-container-1 > h1{
             font-size: 70px;
-        }
-
-        .home-container-2{
-            width: 50%;
+            line-height: 70px;
+            top: -10px;
         }
         .home-container-1 > h2{
             top: -15px;
         }
-
-        .home-container-2{
-            top: 20px;
-        }
-
-        .profile-picture-div > img{
-            height: 200px;
-            width: 200px;
-
-        }
-
-
-    }
-
-    @media (max-width: 1200px) {
-        .studies{
-            font-size: 22px;
-        }
-        .home-container-1{
-            width: 60%;
+        .home-icons{
+            margin: 0;
         }
 
     }
 
-    @media (max-width: 800px) {
-        .home-container-1-1{
-            top: -150px;
-        }
-
-
-
-    }
-    @media (max-width: 500px) {
-        .home-container{
-            height: auto;
-            width: 100%;
-        }
-
-        .home-container-1 {
-            width: 100%;
-        }
+    @media (max-width: 1250px) {
         .home-container-1 > h1{
-            font-size: 11vw;
+            font-size: 55px;
+            line-height: 55px;
+            top: -10px;
         }
         .home-container-1 > h2{
-            font-size: 7vw;
-            top: -25px;
+            font-size: 30px;
         }
-        .home-container-2{
-            width: 100%;
-            top: 0px;
-            margin-top: 20px;
+        .home-icons{
+            position: relative;
+            top: -10px;
         }
         .studies{
-            margin-top: 0px;
-            font-size: 5vw;
+            font-size: 20px;
         }
-        .home2-container{
-            height: auto;
-            bottom: 0px;
-            flex-direction: column-reverse;
-            margin-top: 20px;
-            gap: 30px;
+        .ubication{
+            font-size: 15px;
+
         }
-        
+
+    }
+
+    @media (max-width: 1000px) {
+      .section-title-2{
+        font-size: 140px;
+      }
+      .home-container-1 > h1{
+            font-size: 40px;
+            line-height: 40px;
+            top: -20px;
+        }
+        .home-container-1 > h2{
+            font-size: 25px;
+            top: -22px;
+        }
+        .home-icons{
+            position: relative;
+            top: -20px;
+        }
+        .studies{
+            font-size: 20px;
+        }
+        .ubication{
+            font-size: 15px;
+
+        }
         .profile-picture-div{
-            justify-content: center;
-            align-items: center;
+            width: 220px;
+            height: 220px;
+            box-sizing: content-box;
+
+        }
+        .profile-picture{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+    @media (max-width: 830px) {
+        .section-title-2{
+            font-size: 120px;
+        }
+        .home-container-1 > h1{
+            font-size: 30px;
+            line-height: 30px;
+            top: -20px;
+        }
+        .home-container-1 > h2{
+            font-size: 17px;
+            top: -22px;
+        }
+        .profile-picture-div{
+            width: 160px;
+            height: 160px;
+            box-sizing: content-box;
+
+        }
+        .home-container-2{
+            width: 35%;
+        }
+        .studies{
+            font-size: 18px;
+        }
+        .ubication{
+            font-size: 14px;
         }
     }
 
