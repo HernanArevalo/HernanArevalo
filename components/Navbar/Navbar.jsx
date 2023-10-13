@@ -159,10 +159,14 @@ export const Navbar = () => {
 .navbar-icon box-icon{
     color: ${ colors.blue };
 }
+@media (max-width: 500px) {
+    .navbar{
+        position: sticky;
+
 
 @media (max-width: 500px) {
     .navbar{
-        position: fixed;
+        position: sticky;
         width: 100vw;
         height: 50px;
         left: 0px;

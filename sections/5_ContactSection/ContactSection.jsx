@@ -145,14 +145,15 @@ export const ContactSection = ({info}) => {
             width: 80%;
             background-color: ${ colors.yellow };
             border: none;
-            border-radius: 15px;
             font-size: 25px;
+            box-shadow: 5px 5px ${ colors.orange };
             line-height: 25px;
             color: ${ colors.blue };
             padding: 10px 10px;
             font-weight: 600;
             resize: none;
             outline: none;
+            margin-bottom: 15px;
         }
 
         input:-webkit-autofill {
@@ -202,12 +203,13 @@ export const ContactSection = ({info}) => {
 
         .submit-button{
             font-family: 'Source Serif Pro', serif;
-            color: ${ colors.blue };
+            color: ${ colors.yellow };
             background-color: ${ colors.orange };
+            box-shadow: 5px 5px ${ colors.yellow };
+
             font-size: 25px;
             height: 45px;
             width: 35%;
-            border-radius: 15px;
             border: none;
             outline: none;
             cursor: pointer;
