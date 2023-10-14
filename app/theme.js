@@ -17,3 +17,6 @@ export const borders = {
     l: '30px'
 }
 
+export const boxShadow = {
+    normal: '5px 5px'
+}

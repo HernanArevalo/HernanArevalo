@@ -34,28 +34,63 @@ export const ContactSection = ({info}) => {
         </div>
           <div className="contact">
             <div className="contact-left">
-              <box-icon color={ colors.orange }
-                        name='at'
-                        size="lg"
-                        onClick={ onClickEmail }>
-                    
-              </box-icon>
-              <div className="email-container">
-                <div className='email' onClick={ onClickEmail }>hernanarevalo16@gmail.com</div>
-                {copied? <div className='copied'>{ info.contact.emailCopied }</div>: null}
-              </div>
 
-              <box-icon color={ colors.orange }
-                        name='linkedin-square'
-                        type='logo'
-                        size="lg">
-                    
-              </box-icon>
-              <div className="linkedin-link">
-                <a href="https://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
-                  linkedin.com/in/arevalo-hernan
+
+            <div className="contact-email">
+                <a>
+                    <box-icon 
+                            color={ colors.orange }
+                            name='at'
+                            size="lg"
+                            onClick={ onClickEmail }
+                            >
+                    </box-icon>
                 </a>
-              </div>
+                <div className="email-container">
+                <div className='email' onClick={ onClickEmail }>
+                    hernanarevalo16@gmail.com
+                </div>
+                {copied? 
+                    <div className='copied'>
+                        { info.contact.emailCopied }
+                    </div>
+                    : 
+                    null
+                }
+                </div>
+            </div>
+
+            <div className="linkedin-email">
+                <a href="https://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
+                    <box-icon 
+                            color={ colors.orange }
+                            name='linkedin-square'
+                            type='logo'
+                            size="lg">
+                    </box-icon>
+                </a>
+                <div className="linkedin-link">
+                    <a href="https://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/arevalo-hernan
+                    </a>
+                </div>
+            </div>
+
+            <div className="github-email">
+                <a href="https://github.com/HernanArevalo" target="_blank" rel="noopener noreferrer">
+                    <box-icon color={ colors.orange }
+                            name='github'
+                            type='logo'
+                            size="lg">
+                    </box-icon>
+                </a>
+                <div className="linkedin-link">
+                    <a href="https://github.com/HernanArevalo" target="_blank" rel="noopener noreferrer">
+                    github.com/HernanArevalo
+                    </a>
+                </div>
+            </div>
+
             </div>
             <div className="contact-right">
               <form 
@@ -120,11 +155,15 @@ export const ContactSection = ({info}) => {
 
         .contact-left{
             color: ${ colors.yellow };
-            gap: 15px;
+            gap: 30px;
             
         }
         .contact-left > div{
             font-weight: 600;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
         }
 
@@ -181,6 +220,9 @@ export const ContactSection = ({info}) => {
             font-size: 30px;
 
         }
+        .email:hover{
+            text-decoration: underline;
+        }
 
         .linkedin-link a{
             text-decoration: none;
@@ -226,7 +268,9 @@ export const ContactSection = ({info}) => {
             filter: grayscale();
 
         }
-
+        .contact-icon{
+            cursor: pointer;
+        }
 
         @media (max-width: 1400px) {
             .contact{

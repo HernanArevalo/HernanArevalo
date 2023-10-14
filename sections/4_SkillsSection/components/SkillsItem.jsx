@@ -94,17 +94,18 @@ export const SkillsItem = ({skill}) => {
     height: 80%;
     margin: 0% auto;
     margin: 0 10%;
-    filter: invert(59%) sepia(29%) saturate(3074%) hue-rotate(331deg) brightness(99%) contrast(88%);
+    filter: invert(53%) sepia(26%) saturate(7241%) hue-rotate(171deg) brightness(107%) contrast(103%);
     transition: .5s;
 }
 
-.skill-image:hover .skill-image-svg{
-    filter: invert(95%) sepia(80%) saturate(1617%) hue-rotate(318deg) brightness(110%) contrast(93%);;
+{/* .skill-image:hover .skill-image-svg{
+    filter: invert(86%) sepia(20%) saturate(349%) hue-rotate(344deg) brightness(108%) contrast(104%);
 }
 
 .skill-image:hover .image-background{
     background-color: ${ colors.orange };
-}
+} */}
+
 .skills{
     height: calc(100vh - 260px);
     margin: auto 0;
