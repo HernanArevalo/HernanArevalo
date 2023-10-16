@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import RootLayout from '@/app/layout'
 import { HomeSection, MeSection, ProjectsSection, SkillsSection, ContactSection } from '../../sections'
 import data from '../../data/info.json'
+import Footer from '@/components/Footer/Footer'
 
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
             <ProjectsSection info={info}/>
             <SkillsSection info={info}/>
             <ContactSection info={info}/>
+            <Footer />
           </>
 
           }

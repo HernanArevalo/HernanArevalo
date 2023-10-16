@@ -1,11 +1,9 @@
 import { colors } from '@/app/theme'
 import { SkillsItem } from './components/SkillsItem'
-import data from './skills-data.json'
 
 
-export const SkillsSection = ({info}) => {
+export const SkillsSection = ({ info }) => {
 
-    const skills = data.skills
 
   return (
     <>
@@ -16,7 +14,7 @@ export const SkillsSection = ({info}) => {
 
             <div className="skills">
                 <div className="skills-grid">
-                    { skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}
+                    { info.skills.skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}
                 </div>
             </div>
 
@@ -112,10 +110,10 @@ export const SkillsSection = ({info}) => {
 
       .skills-grid{
           display: grid;
-          grid-template-columns: repeat(4, 300px);
+          grid-template-columns: repeat(3, auto);
           grid-template-rows: auto auto auto;
           row-gap: 50px;
-          column-gap: 30px;
+          column-gap: 0px;
       }
 
 
@@ -123,9 +121,6 @@ export const SkillsSection = ({info}) => {
 
       @media (max-width: 1500px){
           
-          .skills-grid{
-              grid-template-columns: repeat(4,auto);
-          }
           
           .skill-item{
               width: 250px;

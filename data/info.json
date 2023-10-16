@@ -23,7 +23,36 @@
 			"respository":"GitHub repository"
 		},
 		"skills":{
-			"title":"Skills"
+			"title":"Skills",
+			"skills":[
+				{"name":"REACT.JS",
+				 "image_file":"reactjs.svg"
+				},
+				{"name":"NEXT.JS",
+				 "image_file":"next.svg"
+				},
+				{"name":"REACT REDUX",
+				 "image_file":"redux.svg"
+				},
+				{"name":"NODE.JS",
+				 "image_file":"node.svg"
+				},
+				{"name":"PYTHON",
+				 "image_file":"python.svg"
+				},
+				{"name":"HTML CSS",
+				 "image_file":"htmlcss.svg"
+				},
+				{"name":"TYPESCRIPT",
+				 "image_file":"typescript.svg"
+				},
+				{"name":"SCRUM",
+				 "image_file":"scrum.svg"
+				},
+				{"name":"FIGMA",
+				 "image_file":"figma.svg"
+				}
+			]
 		},
 		"contact":{
 			"title":"Contact",
@@ -62,7 +91,36 @@
 			"respository":"Repositorio GitHub"
 		},
 		"skills":{
-			"title":"Habilidades"
+			"title":"Habilidades",
+			"skills":[
+				{"name":"REACT.JS",
+				 "image_file":"reactjs.svg"
+				},
+				{"name":"NEXT.JS",
+				 "image_file":"next.svg"
+				},
+				{"name":"REACT REDUX",
+				 "image_file":"redux.svg"
+				},
+				{"name":"NODE.JS",
+				 "image_file":"node.svg"
+				},
+				{"name":"HTML CSS",
+				 "image_file":"htmlcss.svg"
+				},
+				{"name":"PYTHON",
+				 "image_file":"python.svg"
+				},
+				{"name":"TYPESCRIPT",
+				 "image_file":"typescript.svg"
+				},
+				{"name":"SCRUM",
+				 "image_file":"scrum.svg"
+				},
+				{"name":"FIGMA",
+				 "image_file":"figma.svg"
+				}
+			]
 		},
 		"contact":{
 			"title":"Contacto",

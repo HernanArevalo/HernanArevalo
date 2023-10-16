@@ -74,7 +74,6 @@ export default function RootLayout({ children }) {
         font-weight: 700;
         color: ${ colors.yellow };
         margin: 0;
-        height: 260px;
         cursor: default;
       }
 
