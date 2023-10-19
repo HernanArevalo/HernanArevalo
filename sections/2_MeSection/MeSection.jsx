@@ -60,7 +60,6 @@ export const MeSection = ( { info } ) => {
             font-weight: 500;
             max-width: 700px;
             padding: 50px;
-            text-align: center;
             text-align: justify;
 
         }

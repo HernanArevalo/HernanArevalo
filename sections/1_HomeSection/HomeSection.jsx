@@ -118,9 +118,11 @@ export const HomeSection = ( { info } ) => {
         padding: 5px;
         border-radius: 5px;
         transition: .3s;
+        box-shadow: 2px 2px ${ colors.yellow };
     }
     .home-icon-div:hover{
         background-color: ${ colors.yellow };
+        box-shadow: 3px 3px ${ colors.orange };
 
     }
     .home-icon-font{

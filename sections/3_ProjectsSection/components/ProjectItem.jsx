@@ -21,9 +21,9 @@ export const ProjectItem = ( {project} ) => {
         <div className={`project-item transUp ${project.size == "s"? "small":"large"}`}>
 
           <a className="project-image" href={ project.url } target="_blank" rel="noopener noreferrer">
-            <img className="project-screenshot" src={`/assets/projects-section/projects-screenshots/${project.image_name}`}/>
             <div className="project-image-div">
-                <img src={`/assets/projects-section/${project.image_name}`}/>
+                <img src={`/assets/projects-section/projects/${project.image1}.jpg`}/>
+                <img src={`/assets/projects-section/projects/${project.image2}.jpg`}/>
             </div>
           </a>
 
@@ -81,7 +81,7 @@ export const ProjectItem = ( {project} ) => {
             }
 
             .project-item.large{
-                width: 300px;
+                width: fit-content;
             }
 
             .project-item.small{
@@ -90,13 +90,14 @@ export const ProjectItem = ( {project} ) => {
 
             .project-image{
                 width: 100%;
+                height: fit-content;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
 
             .project-item.large > .project-image {
-                height: 168.75px;
+                height: auto;
             }
             .project-item.small > .project-image {
                 height: 112.5px;
@@ -111,45 +112,23 @@ export const ProjectItem = ( {project} ) => {
             }
 
 
-            .project-image{
-                box-sizing: border-box;
-                overflow: hidden;
-                cursor: pointer;
-                position: relative;
-            }
-
             .project-image-div{
                 width: 100%;
-                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                z-index: 999;
-                position: absolute;
                 background-color: ${ colors.yellow };
-
-            }
-            .project-image-div{
-                width: 100%;
                 transition: opacity 500ms;
-            }
-            .project-image-div > img{
-                height: 80%;
-                width: auto;
+
             }
 
-            .project-image-div:hover{
-                opacity: 0;
-            }
             .project-screenshot{
                 width: 100%;
                 z-index: 500;
             }
 
             .project-image > img{
-                height: 100%;
-                width: auto;
-                max-width: 100%;
+                width: 50%;
             }
 
 
@@ -259,7 +238,6 @@ export const ProjectItem = ( {project} ) => {
 
 
                 .project-image img{
-                    width: 70px;
 
                 }
 

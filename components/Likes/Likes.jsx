@@ -82,7 +82,7 @@ export const Likes = () => {
             background-color: ${ colors.yellow };
             border: none;
             top: 3%;
-            right: 3.5%;
+            right: 3%;
             display: flex;
             flex-direction: row;
             align-items: center;

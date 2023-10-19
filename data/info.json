@@ -10,7 +10,7 @@
 		},
 		"me":{
 			"title":"About me",
-			"description0":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm <b>Hernán</b>, a student of <b>Systems Engineering</b> who is also immersed in the world of <b>web development</b>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ever since I was a child, I've been a curious individual with a deepassion for understanding how things work. Today, I apply that same passion to learning new <b>technological solutions</b> and applying that knowledge to fresh challenges.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currently, I handle the <b>frontend</b> aspect of my projects using <b>React</b> and <b>Next.js</b>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've also had the opportunity to develop projects with <b>Python</b> and native <b>JavaScript</b>, as well as creating the <b>backend</b> for an application using MongoDB, Express, and Node.",
+			"description0":"&emsp;&emsp;Hi! I'm <b>Hernán</b>, a student of <b>Systems Engineering</b> who is also immersed in the world of <b>web development</b>.<br/>&emsp;&emsp;Ever since I was a child, I've been a curious individual with a deepassion for understanding how things work. Today, I apply that same passion to learning new <b>technological solutions</b> and applying that knowledge to fresh challenges.<br/>&emsp;&emsp;Currently, I handle the <b>frontend</b> aspect of my projects using <b>React</b> and <b>Next.js</b>.<br/>&emsp;&emsp;I've also had the opportunity to develop projects with <b>Python</b> and native <b>JavaScript</b>, as well as creating the <b>backend</b> for an application using MongoDB, Express, and Node.",
 			"description1":"Currently developing with React and Next",
 			"description2":"Looking to be part of a great team and collaborate on exciting projects",
 			"description3":"Constantly seeking ways to improve my skills and offer innovative solutions to technical challenges",
@@ -24,7 +24,7 @@
 		},
 		"skills":{
 			"title":"Skills",
-			"skills":[
+			"items":[
 				{"name":"REACT.JS",
 				 "image_file":"reactjs.svg"
 				},
@@ -61,7 +61,6 @@
 			"email":"Email",
 			"message":"Message",
 			"send":"Send"
-
 		}
 		
 	},
@@ -77,7 +76,7 @@
 		},
 		"me":{
 			"title":"Sobre mí",
-			"description0":"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hola! soy <b>Hernán</b>, estudiante de Ingeniería en <b>Sistemas</b>, que también se dedica al mundo del <b>desarrollo web</b>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desde chico fui una persona curiosa y apasionada por entender cómo funcionaban las cosas. Hoy aplico esa misma pasión para aprender nuevas <b>soluciones tecnológicas</b> y plasmar ese conocimiento en nuevos desafíos.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualmente realizo la parte <b>frontend</b> de mis proyectos con <b>React</b> y <b>Next</b>.<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;También tuve la oportunidad de desarrollar proyectos con <b>Python</b> y con <b>JavaScript</b> nativo, como también crear el <b>backend</b> de una aplicación, usando MongoDB, Express y Node.",
+			"description0":"&emsp;&emsp;Hola! soy <b>Hernán</b>, estudiante de Ingeniería en <b>Sistemas</b>, que también se dedica al mundo del <b>desarrollo web</b>.<br/>&emsp;&emsp;Desde chico fui una persona curiosa y apasionada por entender cómo funcionaban las cosas. Hoy aplico esa misma pasión para aprender nuevas <b>soluciones tecnológicas</b> y plasmar ese conocimiento en nuevos desafíos.<br/>&emsp;&emsp;Actualmente realizo la parte <b>frontend</b> de mis proyectos con <b>React</b> y <b>Next</b>.<br/>&emsp;&emsp;También tuve la oportunidad de desarrollar proyectos con <b>Python</b> y con <b>JavaScript</b> nativo, como también crear el <b>backend</b> de una aplicación, usando MongoDB, Express y Node.",
 			"description1":"Actualmente desarrollando con React y Next",
 			"description2":"Buscando ser parte de un gran equipo y colaborar en proyectos atrapantes",
 			"description3":"Constantemente busco formas de mejorar mis habilidades y ofrecer soluciones innovadoras a los desafíos técnicos",
@@ -92,7 +91,7 @@
 		},
 		"skills":{
 			"title":"Habilidades",
-			"skills":[
+			"items":[
 				{"name":"REACT.JS",
 				 "image_file":"reactjs.svg"
 				},

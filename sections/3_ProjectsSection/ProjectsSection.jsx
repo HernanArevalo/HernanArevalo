@@ -2,7 +2,6 @@ import { ProjectItem } from './components/ProjectItem';
 // import { ProjectItemReduced } from './components/ProjectItemReduced';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
-import Image from 'next/image';
 
 export const ProjectsSection = ({info}) => {
 
@@ -109,20 +108,17 @@ export const ProjectsSection = ({info}) => {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          height: calc(100vh - 300px);
           gap: 20px;
 
       }
 
-      .grid-projects{
-          display: flex;
-          flex-direction: row;
-          justify-content: end;
-          gap: 40px;
-      }
-
       .grid-projects.large{
-          height: 48%;
+          display: grid;
+          grid-template-columns: repeat(2, 4auto);
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 50px;
       }
       .grid-projects.small{
           height: 35%;
