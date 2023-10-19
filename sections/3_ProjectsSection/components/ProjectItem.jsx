@@ -72,16 +72,17 @@ export const ProjectItem = ( {project} ) => {
                     
 
             .project-item{
-                height: 100%;
+                box-shadow: 10px 10px ${ colors.yellow };
             }
 
             .project-image img{
-                width: 70px;
-
+                width: 50%;
             }
 
             .project-item.large{
                 width: fit-content;
+                background-color: ${ colors.orange };
+                color: ${ colors.orange };
             }
 
             .project-item.small{
@@ -117,8 +118,9 @@ export const ProjectItem = ( {project} ) => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: ${ colors.yellow };
-                transition: opacity 500ms;
+                background-color: ${ colors.black };
+                gap: 2px;
+                overflow: hidden;
 
             }
 
@@ -133,14 +135,15 @@ export const ProjectItem = ( {project} ) => {
 
 
             .project-name{
-                color: ${ colors.orange };
-                width: 70%;
+                color: ${ colors.blue };
+                font-weight: 700;
             }
 
             .project-info{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                padding: 10px 10px;
             }
 
             .project-info1{

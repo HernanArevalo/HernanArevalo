@@ -114,7 +114,7 @@ export const ProjectsSection = ({info}) => {
 
       .grid-projects.large{
           display: grid;
-          grid-template-columns: repeat(2, 4auto);
+          grid-template-columns: repeat(2, 35%);
           justify-content: center;
           align-items: center;
           width: 100%;
