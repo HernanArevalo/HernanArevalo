@@ -36,6 +36,7 @@ export const HomeSection = ( { info } ) => {
             <div className="profile-picture-div">
                 <img className='profile-picture' src="/profile.jpg " alt="profile-picture" priority={true}/>
             </div>
+            <box-icon name='code-alt'></box-icon>
 
             <div className="studies">
                 <div>• { info.home.studies1 }</div>

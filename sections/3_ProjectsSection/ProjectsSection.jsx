@@ -7,6 +7,8 @@ export const ProjectsSection = ({info}) => {
 
   const projects = data.projects
 
+  console.log( projects )
+  
   return (
     <>
     <div className="projects-container" id="projects">
@@ -114,9 +116,9 @@ export const ProjectsSection = ({info}) => {
 
       .grid-projects.large{
           display: grid;
-          grid-template-columns: repeat(2, 35%);
+          grid-template-columns: repeat(3, 25%);
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           width: 100%;
           gap: 50px;
       }

@@ -10,10 +10,10 @@
       "logo_name": "movies-app.png",
       "image1": "movies1",
       "image2": "movies2",
-      "github_url": "https://github.com/HernanArevalo/movies-app"
-      
-      
+      "github_url": "https://github.com/HernanArevalo/movies-app",
+      "technologies": ["react", "redux", "javascript"]
 
+      
     },
     {
       "name": "ToDo App",
@@ -26,7 +26,9 @@
       "logo_name": "todo-app.png",
       "image1": "todo1",
       "image2": "todo2",
-      "github_url": "https://github.com/HernanArevalo/todo-app"
+      "github_url": "https://github.com/HernanArevalo/todo-app",
+      "technologies": ["react", "redux", "javascript"]
+
 
     },
     {
@@ -40,13 +42,15 @@
       "logo_name": "journal-app.png",
       "image1": "journal1",
       "image2": "journal2",
-      "github_url": "https://github.com/HernanArevalo/journal-app"
+      "github_url": "https://github.com/HernanArevalo/journal-app",
+      "technologies": ["react", "redux", "javascript"]
+
 
     },
     {
       "name": "Valorant App",
       "pc": true,
-      "mobile": true,
+      "mobile": false,
       "url": "https://journal-app-ha.vercel.app/",
       "descriptionEn": "React.JS website to save your journal with comments and images.",
       "descriptionEs": "React.JS app para guardar tu diario con comentarios e imágenes.",
@@ -54,7 +58,9 @@
       "logo_name": "valo1.jpg",
       "image1": "valo1",
       "image2": "valo2",
-      "github_url": "https://github.com/HernanArevalo/journal-app"
+      "github_url": "https://github.com/HernanArevalo/journal-app",
+      "technologies": ["next","react", "redux", "javascript"]
+
 
     },
     {
@@ -64,11 +70,13 @@
       "url": "https://space-tourism-hernanarevalo.vercel.app/",
       "descriptionEn": "React.JS website about space travels.",
       "descriptionEs": "React.JS app sobre viajes en el espacio.",
-      "size": "s",
+      "size": "l",
       "logo_name": "space-tourism.png",
       "image1": "space1",
       "image2": "space2",
-      "github_url": "https://github.com/HernanArevalo/space-tourism-app"
+      "github_url": "https://github.com/HernanArevalo/space-tourism-app",
+      "technologies": ["react", "redux", "javascript"]
+
 
     },
     {
@@ -78,14 +86,15 @@
       "url": "https://twitter-app-alpha.vercel.app/",
       "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
       "descriptionEs": "Clon de twitter con React.js. Solo maquetado.",
-      "size": "s",
+      "size": "l",
       "logo_name": "twitter.png",
       "image1": "devter1",
       "image2": "devter2",
-      "github_url": "https://github.com/HernanArevalo/twitter-app"
+      "github_url": "https://github.com/HernanArevalo/devter",
+      "technologies": ["next","react", "redux", "javascript"]
+
 
     },
-
     {
       "name": "Landing 1",
       "pc": true,
@@ -93,13 +102,32 @@
       "url": "https://hernanarevalo.github.io/landing-1/",
       "descriptionEn": "SPA (Single-page application)",
       "descriptionEs": "Aplicación de una sola página.",
-      "size": "s",
+      "size": "l",
       "logo_name": "landing-1.png",
       "image1": "landing11",
       "image2": "landing12",
-      "github_url": "https://github.com/HernanArevalo/landing-1"
+      "github_url": "https://github.com/HernanArevalo/landing-1",
+      "technologies": ["javascript"]
+
 
     },
+    {
+      "name": "Calendar",
+      "pc": true,
+      "mobile": true,
+      "url": "https://calendar-app-topaz.vercel.app/",
+      "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
+      "descriptionEs": "Clon de twitter con React.js. Solo maquetado.",
+      "size": "l",
+      "logo_name": "calendar.png",
+      "image1": "calendar1",
+      "image2": "calendar2",
+      "github_url": "https://github.com/HernanArevalo/calendar-app",
+      "technologies": ["react", "redux", "javascript"]
+
+
+    },
+    
     {
       "name": "Landing 2",
       "pc": true,
@@ -107,27 +135,75 @@
       "url": "https://hernanarevalo.github.io/landing-2/",
       "descriptionEn": "SPA (Single-page application)",
       "descriptionEs": "Aplicación de una sola página.",
-      "size": "s",
+      "size": "l",
       "logo_name": "landing-2.png",
       "image1": "landing21",
       "image2": "landing22",
-      "github_url": "https://github.com/HernanArevalo/landing-2"
+      "github_url": "https://github.com/HernanArevalo/landing-2",
+      "technologies": ["javascript"]
+
 
     }
 ],
   "oterprojects":[
     {
-      "name": "Gifs App",
+      "name": "Twitter Lyrics Bot",
+      "pc": true,
+      " mobile": false,
+      "url": "https://twitter.com/frasesdentvg1",
+      "descriptionEn": "React.JS simple website to search gifs.",
+      "descriptionEs": "React.JS app simple para buscar gifs.",
+      "size": "s",
+      "logo_name": "gifs-app.png",
+      "image1": "",
+      "image2": "",
+      "github_url": "https://github.com/HernanArevalo/twitter-lyrics-bot",
+      "technologies": ["python"]
+
+    },
+    {
+      "name": "Calendar App Backend",
       "pc": true,
       " mobile": false,
       "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
       "descriptionEn": "React.JS simple website to search gifs.",
       "descriptionEs": "React.JS app simple para buscar gifs.",
-
       "size": "s",
       "logo_name": "gifs-app.png",
       "image1": "",
       "image2": "",
-      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app"
+      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app",
+      "technologies": ["mongo", "express", "react", "node"]
+
+    },
+    {
+      "name": "Blackjack with Python",
+      "pc": true,
+      " mobile": false,
+      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "descriptionEn": "React.JS simple website to search gifs.",
+      "descriptionEs": "React.JS app simple para buscar gifs.",
+      "size": "s",
+      "logo_name": "gifs-app.png",
+      "image1": "",
+      "image2": "",
+      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app",
+      "technologies": ["python"]
+
+    },
+    {
+      "name": "Conect a Discord Bot",
+      "pc": true,
+      " mobile": false,
+      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "descriptionEn": "React.JS simple website to search gifs.",
+      "descriptionEs": "React.JS app simple para buscar gifs.",
+      "size": "s",
+      "logo_name": "gifs-app.png",
+      "image1": "",
+      "image2": "",
+      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app",
+      "technologies": ["javascript", "node"]
+
     }
 ]}

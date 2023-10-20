@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "boxicons": "^2.1.4",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "firebase": "^9.21.0",
