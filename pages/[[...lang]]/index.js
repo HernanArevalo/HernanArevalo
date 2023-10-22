@@ -14,15 +14,19 @@ export default function Home() {
   const { asPath, query } = useRouter();
 
   const [info, setInfo] = useState( data.en );
+  const [lang, setLang] = useState( 'en' );
+
 
   useEffect(()=>{
     if(!router.isReady) return;
 
     if (asPath == '/es') {
       setInfo(data.es);
+      setLang('es')
     }else{
       router.push('/en');
       setInfo(data.en);
+      setLang('en')
 
     }
 
@@ -46,7 +50,7 @@ export default function Home() {
           <>
             <HomeSection info={ info }/>
             <MeSection info={ info }/>
-            <ProjectsSection info={info}/>
+            <ProjectsSection info={info} lang={lang}/>
             <SkillsSection info={info}/>
             <ContactSection info={info}/>
             <Footer />

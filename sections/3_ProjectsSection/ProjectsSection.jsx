@@ -3,12 +3,10 @@ import { ProjectItem } from './components/ProjectItem';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
 
-export const ProjectsSection = ({info}) => {
+export const ProjectsSection = ({info, lang}) => {
 
   const projects = data.projects
 
-  console.log( projects )
-  
   return (
     <>
     <div className="projects-container" id="projects">
@@ -37,13 +35,13 @@ export const ProjectsSection = ({info}) => {
         <div className="project2-container">
           <div className="grid-projects large">
             { projects.filter(project => project.size == "l").map(project => (
-              <ProjectItem key={ project.name } project={ project }/>
+              <ProjectItem key={ project.name } project={ project } lang={lang} />
             ))}
           </div>
 
           <div className="grid-projects small">
             { projects.filter(project => project.size == "s").map(project => (
-              <ProjectItem key={ project.name } project={ project }/>
+              <ProjectItem key={ project.name } project={ project } />
             ))}
 
           </div>

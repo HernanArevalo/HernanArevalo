@@ -1,17 +1,17 @@
 { "projects": [
     {
-      "name": "Movies App",
+      "name": "Movies",
       "pc": true,
       "mobile": true,
       "url": "https://movies-henanarevalo.netlify.app/",
-      "descriptionEn": "React.JS website to see movies information.",
-      "descriptionEs": "React.JS app para ver información sobre películas.",
+      "descriptionEn": "An informative movie platform powered by React.js to explore and discover details about your favorite films.",
+      "descriptionEs": "Una plataforma informativa sobre películas impulsada por React.js para explorar y descubrir información sobre tus películas favoritas.",
       "size": "l",
       "logo_name": "movies-app.png",
       "image1": "movies1",
       "image2": "movies2",
       "github_url": "https://github.com/HernanArevalo/movies-app",
-      "technologies": ["react", "redux", "javascript"]
+      "technologies": ["react", "javascript"]
 
       
     },
@@ -20,8 +20,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://todo-app-hernanarevalo.vercel.app/",
-      "descriptionEn": "React.JS website to manage your responsabilities.",
-      "descriptionEs": "React.JS app para manejar tus tareas.",
+      "descriptionEn": "A Todo List web app crafted with React.js for efficient activity management and task organization.",
+      "descriptionEs": "Una aplicación web de Listas de Tareas hecha con React.js para una gestión eficiente de actividades y organización de tareas.",
       "size": "l",
       "logo_name": "todo-app.png",
       "image1": "todo1",
@@ -59,7 +59,7 @@
       "image1": "valo1",
       "image2": "valo2",
       "github_url": "https://github.com/HernanArevalo/journal-app",
-      "technologies": ["next","react", "redux", "javascript"]
+      "technologies": ["next", "react", "javascript"]
 
 
     },
@@ -91,8 +91,7 @@
       "image1": "devter1",
       "image2": "devter2",
       "github_url": "https://github.com/HernanArevalo/devter",
-      "technologies": ["next","react", "redux", "javascript"]
-
+      "technologies": ["next","react", "javascript"]
 
     },
     {
@@ -100,8 +99,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-1/",
-      "descriptionEn": "SPA (Single-page application)",
-      "descriptionEs": "Aplicación de una sola página.",
+      "descriptionEn": "A nimble SPA (single page aplication) delivering seamless, interruption-free information for immersive web experiences.",
+      "descriptionEs": "SPA ágil que brinda información con fluidez y sin interrupciones para experiencias web inmersivas.",
       "size": "l",
       "logo_name": "landing-1.png",
       "image1": "landing11",
@@ -116,8 +115,8 @@
       "pc": true,
       "mobile": true,
       "url": "https://calendar-app-topaz.vercel.app/",
-      "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
-      "descriptionEs": "Clon de twitter con React.js. Solo maquetado.",
+      "descriptionEn": "A dynamic and customizable calendar web app built with React.js to manage your events and important dates.",
+      "descriptionEs": "Una web de calendario dinámico y personalizable creada con React.js para gestionar tus eventos y fechas importantes.",
       "size": "l",
       "logo_name": "calendar.png",
       "image1": "calendar1",
@@ -133,8 +132,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-2/",
-      "descriptionEn": "SPA (Single-page application)",
-      "descriptionEs": "Aplicación de una sola página.",
+      "descriptionEn": "A nimble SPA (single page aplication) delivering seamless, interruption-free information for immersive web experiences.",
+      "descriptionEs": "SPA ágil que brinda información con fluidez y sin interrupciones para experiencias web inmersivas.",
       "size": "l",
       "logo_name": "landing-2.png",
       "image1": "landing21",

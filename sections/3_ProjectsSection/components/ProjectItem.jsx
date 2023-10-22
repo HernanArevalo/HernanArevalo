@@ -1,19 +1,8 @@
 import { colors } from '@/app/theme'
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react'
 
-export const ProjectItem = ( {project} ) => {
-
-  const [lang, setLang] = useState('en')
-
-  // const pathname = window.location.pathname
-
-  
-  useEffect(() => {
-      
-    //setLang( pathname.includes('es')? 'es':'en' )
-    setLang( false? 'es':'en' )
-
-  }, [])
+export const ProjectItem = ( { project, lang } ) => {
 
 
   return (
@@ -246,6 +235,13 @@ export const ProjectItem = ( {project} ) => {
         .project-tech-icon{
             color: ${ colors.blue };
             font-size: 20px;
+        }
+        .project-tech{
+            display: flex;
+            gap: 10px;
+        }
+        .project-tech > img{
+            width: 50px;
         }
 
     `}</style>
