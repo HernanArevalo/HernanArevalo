@@ -7,10 +7,6 @@ export default function Footer() {
 
   return (
     <>
-    <Head>
-    <title>Footer</title>
-    </Head>
-
     <div className='footer'>
         <div className="footer-left">
             <div className="footer-name">

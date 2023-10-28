@@ -106,12 +106,12 @@ export const SkillsSection = ({ info }) => {
           display: flex;
           justify-content: center;
           align-items: center;
+          padding-bottom: 75px;
       }
 
       .skills-grid{
           display: grid;
-          grid-template-columns: repeat(3, auto);
-          grid-template-rows: auto auto auto;
+          grid-template-columns: repeat(4, auto);
           row-gap: 50px;
           column-gap: 0px;
       }

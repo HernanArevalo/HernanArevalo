@@ -5,17 +5,16 @@ import { colors } from '../../app/theme';
 
 export const ProjectsSection = ({info, lang}) => {
 
-  const projects = data.projects
+  const { projects, otherprojects } = data
 
   return (
     <>
     <div className="projects-container" id="projects">
-        <div className="project1-container">
 
-          <div className="project1-gri1-container">
-            <div className="section-title">
-              {info.projects.title}
-            </div>
+        <div className="projects-top">
+
+          <div className="section-title">
+            {info.projects.title}
           </div>
 
           <div className="github-repository">
@@ -29,46 +28,49 @@ export const ProjectsSection = ({info, lang}) => {
               ></box-icon>
             </a>
           </div>
+
         </div>
 
-
-        <div className="project2-container">
-          <div className="grid-projects large">
-            { projects.filter(project => project.size == "l").map(project => (
-              <ProjectItem key={ project.name } project={ project } lang={lang} />
-            ))}
-          </div>
-
-          <div className="grid-projects small">
-            { projects.filter(project => project.size == "s").map(project => (
-              <ProjectItem key={ project.name } project={ project } />
-            ))}
-
-          </div>
+        <div className="grid-projects large">
+          { projects.filter(project => project.size == "l").map(project => (
+            <ProjectItem key={ project.name } project={ project } lang={lang} />
+          ))}
         </div>
+
         <div className='projects-extra'>
-          <div className="project-extra bot-twitter">
-
+          <div className="projects-extra-title">
+            {info.otherprojects.title}
+          </div>
+          { otherprojects.filter(project => project.active).map(project => (
+            <div className="extra-project" key={project.name}>
               <div className="extra-project-info">
 
                 <div className="extra-project-title">
-                  Twitter Bot with Python
+                  { project.name }
                 </div>
 
                 <div className="extra-project-description">
-                  Created a Python Twitter Bot that tweets songs from a band at regular intervals using the Twitter API. 
-                  Increased engagement and reach within the music community, boosting followers and user interaction. 
-                  Developed skills include Python, Twitter API, bot programming, and problem-solving.
+                  { lang === 'es'? project.descriptionEs : project.descriptionEn }
+                </div>
+
+                <div className="project-tech">
+                {
+                    project.technologies.map(tech =>(
+                        <img key={tech}
+                             src={`/assets/projects-section/technologies/${tech}.png`} 
+                             alt="" 
+                             srcset="" 
+                        />
+                    ))
+                }
                 </div>
 
               </div>
+            </div>
 
-                <div className='twitter-bot-logo' >
-                  <img alt="twitter-bot-logo" src={`/assets/projects-section/bot-logo.svg`}></img>
-                </div>
-          </div>
-            
-      </div>
+          ))}
+
+        </div>
           
     </div>
 
@@ -85,32 +87,24 @@ export const ProjectsSection = ({info, lang}) => {
           text-align: left;
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 60px;
       }
       a{
           text-decoration: none;
       }
-      .project1-container{
+      .projects-top{
           display: flex;
           flex-direction: row;
           justify-content: space-between;
       }
 
-      .project1-container > span{
+      .projects-top > span{
           font-size: 220px;
           line-height: 180px;
           color: ${ colors.yellow };
           margin: 0;
       }
 
-      .project2-container{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          gap: 20px;
-
-      }
 
       .grid-projects.large{
           display: grid;
@@ -149,22 +143,25 @@ export const ProjectsSection = ({info, lang}) => {
       }
 
       .projects-extra{
-        width: 100%;
+        width: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 40px;
+        margin-bottom: 50px;
       }
-      .project-extra{
+      .projects-extra > div{
+        width: 60%;
+      }
+      .extra-project{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 20px;
-        margin: 20px;
         background-color: ${ colors.orange };
-        max-width: 800px;
-        border-radius: 25px;
+        box-shadow: 10px 10px ${ colors.yellow };
       }
 
       .extra-project-info{
@@ -174,36 +171,44 @@ export const ProjectsSection = ({info, lang}) => {
 
       .extra-project-title{
         color: ${ colors.blue };
-        font-size: 23px;
+        font-size: 25px;
+        font-weight: 700;
       }
       .extra-project-description{
         color: ${ colors.yellow };
         font-size: 18px;
+        margin-bottom: 30px;
       }
 
-      .twitter-bot-logo{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .project-tech{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
 
-      }
-      .twitter-bot-logo img{
-        filter: invert(56%) sepia(84%) saturate(2291%) hue-rotate(92deg) brightness(132%) contrast(112%);
-        width: 50px;
-        margin-left: 100px;
-      }
+        .project-tech > img{
+            width: 50px;
+        }
+
+        .projects-extra-title{
+          color: ${ colors.yellow };
+          font-size: 60px;
+          font-weight: 700;
+          font-family: 'Source Serif Pro', serif;
+          width: 100%;
+        }
 
 
       @media (max-width: 500px) {
           .projects-container{
               height: auto;
           }
-          .project1-container{
+          .projects-top{
               flex-direction: column;
               height: auto;
           }
-          .project1-container > div{
+          .projects-top > div{
               height: auto;
           }
           .project2-container{

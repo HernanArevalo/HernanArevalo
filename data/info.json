@@ -22,36 +22,48 @@
 			"title":"Projects",
 			"respository":"GitHub repository"
 		},
+		"otherprojects":{
+			"title":"Other Projects"
+		},
 		"skills":{
 			"title":"Skills",
 			"items":[
-				{"name":"REACT.JS",
-				 "image_file":"reactjs.svg"
-				},
 				{"name":"NEXT.JS",
 				 "image_file":"next.svg"
+				},
+				{"name":"REACT.JS",
+				 "image_file":"reactjs.svg"
 				},
 				{"name":"REACT REDUX",
 				 "image_file":"redux.svg"
 				},
-				{"name":"NODE.JS",
-				 "image_file":"node.svg"
-				},
 				{"name":"PYTHON",
 				 "image_file":"python.svg"
 				},
-				{"name":"HTML CSS",
-				 "image_file":"htmlcss.svg"
+				{"name":"NODE.JS",
+				 "image_file":"node.svg"
 				},
+				{"name":"JAVASCRIPT",
+				 "image_file":"javascript.svg"
+			    },
 				{"name":"TYPESCRIPT",
 				 "image_file":"typescript.svg"
+				},
+				{"name":"HTML CSS",
+				 "image_file":"htmlcss.svg"
 				},
 				{"name":"SCRUM",
 				 "image_file":"scrum.svg"
 				},
 				{"name":"FIGMA",
 				 "image_file":"figma.svg"
-				}
+				},
+				{"name":"MONGO DB",
+				"image_file":"mongo.svg"
+			   },
+				{"name":"EXPRESS",
+				"image_file":"express.svg"
+			   }
 			]
 		},
 		"contact":{
@@ -88,6 +100,9 @@
 		"projects":{
 			"title":"Proyectos",
 			"respository":"Repositorio GitHub"
+		},
+		"otherprojects":{
+			"title":"Otros proyectos"
 		},
 		"skills":{
 			"title":"Habilidades",
