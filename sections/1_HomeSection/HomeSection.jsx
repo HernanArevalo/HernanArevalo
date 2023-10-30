@@ -34,9 +34,9 @@ export const HomeSection = ( { info } ) => {
         <div className="home-container-2">
 
             <div className="profile-picture-div">
-                <img className='profile-picture' src="/profile.jpg " alt="profile-picture" priority={true}/>
+                <img className='profile-picture' src="/profile.jpg " alt="profile-picture" priority='true'/>
             </div>
-            <box-icon name='code-alt'></box-icon>
+            <i className='bx bx-code-alt'></i>
 
             <div className="studies">
                 <div>• { info.home.studies1 }</div>
@@ -174,6 +174,15 @@ export const HomeSection = ( { info } ) => {
         font-size: 20px;
         margin-top: 5px;
         font-weight: 600;
+    }
+
+    .bx-code-alt{
+        font-size: 140px;
+        color: ${ colors.yellow };
+        position: absolute;
+        top: 160px;
+        left: 0px;
+        opacity: 1;
     }
 
 

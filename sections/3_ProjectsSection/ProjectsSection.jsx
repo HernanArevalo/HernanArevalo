@@ -2,6 +2,7 @@ import { ProjectItem } from './components/ProjectItem';
 // import { ProjectItemReduced } from './components/ProjectItemReduced';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
+import Link from 'next/link';
 
 export const ProjectsSection = ({info, lang}) => {
 
@@ -38,37 +39,61 @@ export const ProjectsSection = ({info, lang}) => {
         </div>
 
         <div className='projects-extra'>
+
           <div className="projects-extra-title">
             {info.otherprojects.title}
           </div>
-          { otherprojects.filter(project => project.active).map(project => (
-            <div className="extra-project" key={project.name}>
-              <div className="extra-project-info">
 
-                <div className="extra-project-title">
-                  { project.name }
+          <div className="projects-extra-container">
+            { otherprojects.filter(project => project.active).map((project, idx) => (
+              <div className="extra-project" key={project.name}>
+
+                <div className="extra-project-info">
+                  <div className="extra-project-title">
+                    { project.name }
+                  </div>
+
+                  <div className="extra-project-description">
+                    { lang === 'es'? project.descriptionEs : project.descriptionEn }
+                  </div>
+
+                <div className="project-icons">
+                  <div className="url-icons">
+                    <a href={ project.github_url } target='blank'>
+                      <div className="github-logo">
+                        <i className='home-icon-font bx bxl-github' />
+                      </div>
+                    </a>
+
+                    { project.name == 'Twitter Lyrics Bot' &&
+                      <a href='https://twitter.com/frasesdentvg1' target='blank'>
+                        <div className="github-logo">
+                          <i className='bx bxl-twitter'></i>
+                        </div>
+                      </a>
+                    }
+                  </div>
+
+                  <div className="project-tech">
+                    {
+                      project.technologies.map(tech =>(
+                          <img key={tech}
+                              src={`/assets/projects-section/technologies/${tech}.png`} 
+                              alt="" 
+                          />
+                            
+                      ))
+                    }
+                  </div>
                 </div>
-
-                <div className="extra-project-description">
-                  { lang === 'es'? project.descriptionEs : project.descriptionEn }
-                </div>
-
-                <div className="project-tech">
-                {
-                    project.technologies.map(tech =>(
-                        <img key={tech}
-                             src={`/assets/projects-section/technologies/${tech}.png`} 
-                             alt="" 
-                             srcset="" 
-                        />
-                    ))
-                }
                 </div>
 
               </div>
-            </div>
 
-          ))}
+            ))}
+
+          </div>
+
 
         </div>
           
@@ -137,67 +162,110 @@ export const ProjectsSection = ({info, lang}) => {
           transition: .3s;
       }
 
+      .projects-extra{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 100px;
+        width: 100%;
+      }
+      
+      .projects-extra-title{
+        color: ${ colors.yellow };
+        font-size: 60px;
+        font-weight: 700;
+        font-family: 'Source Serif Pro', serif;
+        width: 85%;
+      }
+
       .github-repository a:hover{
         background-color: ${ colors.orange };
         color: ${ colors.yellow };
       }
 
-      .projects-extra{
-        width: auto;
-        display: flex;
-        flex-direction: column;
+      .projects-extra-container{
+        display: grid;
         justify-content: center;
-        align-items: center;
-        gap: 40px;
-        margin-bottom: 50px;
+        align-items: flex-start;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(2,45%);
+        gap: 50px;
+        width: 85%;
       }
-      .projects-extra > div{
-        width: 60%;
-      }
+
       .extra-project{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px;
         background-color: ${ colors.orange };
         box-shadow: 10px 10px ${ colors.yellow };
+        gap: 15px;
       }
 
       .extra-project-info{
         display: flex;
         flex-direction: column;
+        gap: 20px;
       }
 
       .extra-project-title{
         color: ${ colors.blue };
         font-size: 25px;
         font-weight: 700;
+        width: 100%;
       }
       .extra-project-description{
         color: ${ colors.yellow };
         font-size: 18px;
-        margin-bottom: 30px;
+      }
+      a{
+        text-decoration: none;
+        color: ${ colors.blue };
+      }
+      .project-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        color: ${ colors.blue };
+      }
+      .url-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
       }
 
-        .project-tech{
-            display: flex;
-            gap: 10px;
-            width: 100%;
-            justify-content: center;
-        }
+      .github-logo{
+        font-size: 40px;
+        background-color: ${ colors.yellow };
+        box-shadow: 5px 5px ${ colors.blue };
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 5px;
+        transition: .3s;
+      }
+      .github-logo:hover{
+        color: ${ colors.orange };
+        background-color: ${ colors.blue };
+        box-shadow: 5px 5px ${ colors.yellow };
+      }
 
-        .project-tech > img{
-            width: 50px;
-        }
+      .project-tech{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          justify-content: center;
+      }
 
-        .projects-extra-title{
-          color: ${ colors.yellow };
-          font-size: 60px;
-          font-weight: 700;
-          font-family: 'Source Serif Pro', serif;
-          width: 100%;
-        }
+      .project-tech > img{
+          width: 50px;
+      }
 
 
       @media (max-width: 500px) {

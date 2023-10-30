@@ -43,7 +43,7 @@ export const ProjectItem = ( { project, lang } ) => {
             <div className="project-tech">
                 {
                     project.technologies.map(tech =>(
-                        <img key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" srcset="" />
+                        <img key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" />
                     ))
                 }
 

@@ -178,11 +178,11 @@
 
     },
     {
-      "name": "Blackjack with Python",
+      "name": "Blackjack game",
       "active": true,
       "pc": true,
       " mobile": false,
-      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "url": "https://github.com/HernanArevalo/python-blackjack/blob/main/blackjack-game.py",
       "descriptionEn": "A Python project that recreates the casino game 'Blackjack,' perfect for learning the game methodology with fictional bets and for casual entertainment.",
       "descriptionEs": "Un proyecto en Python que recrea el juego de casino 'Blackjack', perfecto para aprender la metodología del juego con apuestas ficticias y disfrutar de momentos de entretenimiento casual.",
       "size": "s",
@@ -195,17 +195,17 @@
     },
     {
       "name": "Conect a Discord Bot",
-      "active": false,
+      "active": true,
       "pc": true,
       " mobile": false,
-      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
-      "descriptionEn": "A Node.js project designed to connect a Discord bot, enhancing the server's experience. This bot adds entertainment by providing games and special features through commands, while also improving communication and facilitating community interaction and organization.",
-      "descriptionEs": "Un proyecto desarrollado en Node.js que permite conectar un bot de Discord para enriquecer la experiencia en el servidor. Este bot puede agregar entretenimiento al proporcionar juegos y funciones especiales a través de comandos, además de mejorar la comunicación facilitando la interacción y organización de la comunidad.",
+      "url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord.js",
+      "descriptionEn": "A Javascript file designed to connect a Discord bot, enhancing the server's experience, adding entertainment and improving the communication.",
+      "descriptionEs": "Un archivo de JavaScript diseñado para conectar un bot de Discord, mejorando la experiencia del servidor, agregando entretenimiento y mejorando la comunicación.",
       "size": "s",
       "logo_name": "gifs-app.png",
       "image1": "",
       "image2": "",
-      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app",
+      "github_url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord.js",
       "technologies": ["javascript", "node"]
 
     }

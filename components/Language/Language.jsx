@@ -9,11 +9,14 @@ export const Language = () => {
   const { asPath } = useRouter();
 
 
-  const [spanish, setSpanish] = useState(asPath !== '/en');
+  const [spanish, setSpanish] = useState(asPath == '/es');
 
   useEffect(() => {
+    if(!router.isReady) return;
 
-    setSpanish(asPath !== '/en')
+    console.log(asPath)
+
+    setSpanish(asPath == '/es')
 
   }, []);
   
@@ -32,7 +35,7 @@ export const Language = () => {
     <>
       <div className='lang-container  animate__animated animate__fadeIn animate__delay-2s'>
         <div className='lang'>
-          <div className='lang-es active' onClick={ onClickActiveSpanish }>
+          <div className='lang-es' onClick={ onClickActiveSpanish }>
             ES
           </div>
           <div className='lang-en' onClick={ onClickActiveEnglish }>
