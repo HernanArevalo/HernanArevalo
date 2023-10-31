@@ -4,12 +4,11 @@ import Head from 'next/head'
 import { store } from '@/store'
 import { Language, Likes, Navbar } from '@/components'
 import { colors } from './theme'
-import { useEffect } from 'react'
+
 
 export default function RootLayout({ children }) {
 
-    
-  return (
+    return (
     <>
       <Head>
         <title>Hernán Arévalo</title>

@@ -1,50 +1,85 @@
 import { colors } from '@/app/theme'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
+import { usePathname } from 'next/navigation'
 
 export const Language = () => {
 
   const router = useRouter();
-  const { asPath } = useRouter();
+  const pathname = usePathname();
+  const { isLoaded } = useSelector( state => state.likes );
 
-
-  const [spanish, setSpanish] = useState(asPath == '/es');
-
-  useEffect(() => {
-    if(!router.isReady) return;
-
-    console.log(asPath)
-
-    setSpanish(asPath == '/es')
-
-  }, []);
+  const [spanish, setSpanish] = useState(router.query.lang == 'es');
   
-
-
+ 
+  useEffect(() => {
+    if (isLoaded) { setSpanish(pathname == '/es') };
+  }, [ isLoaded ])
+  
   const onClickActiveSpanish = () => {
-    setSpanish(true);
-    router.push('/es');  
-  }
+      if (router.query.lang[0] !== 'es') {
+        setSpanish(true);
+        localStorage.setItem('y-position', window.scrollY);
+        router.push('/es');
+    
+        setTimeout(() => {
+          window.scrollTo(0, localStorage.getItem('y-position'));
+          console.log(localStorage.getItem('y-position'))
+          
+        }, 50);
+        
+      };
+
+  };
   const onClickActiveEnglish = () => {
-    setSpanish(false);
-    router.push('/en');
+    if (router.query.lang[0] !== 'en') {
+      console.log(router.query.lang[0] !== 'en')
+      setSpanish(false);
+      localStorage.setItem('y-position', window.scrollY);
+      router.push('/en');
+  
+      setTimeout(() => {
+        window.scrollTo(0, localStorage.getItem('y-position'));
+        console.log(localStorage.getItem('y-position'));
+        
+      }, 50);
+      
+    };
+
+  };
+
+  const onClickChangeLanguage = (newLang) => {
+    if (router.query.lang[0] !== newLang) {
+      setSpanish('es' == newLang);
+      localStorage.setItem('y-position', window.scrollY);
+      router.push(`/${newLang}`);
+
+      setTimeout(() => {
+        window.scrollTo(0, localStorage.getItem('y-position'));
+      }, 50);
+      
+    };
+
   }
 
   return (
     <>
-      <div className='lang-container  animate__animated animate__fadeIn animate__delay-2s'>
+    { isLoaded &&
+
+      <div className='lang-container  animate__animated animate__fadeIn'>
         <div className='lang'>
-          <div className='lang-es' onClick={ onClickActiveSpanish }>
+          <div className='lang-es' onClick={ () => onClickChangeLanguage('es') }>
             ES
           </div>
-          <div className='lang-en' onClick={ onClickActiveEnglish }>
+          <div className='lang-en' onClick={ () => onClickChangeLanguage('en') }>
             EN
           </div>
           <div className={`background-active ${spanish? "es-active":"en-active"}`}></div>
 
         </div>
       </div>
+    }
 
       <style jsx>{`
         .lang-container{
