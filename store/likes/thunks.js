@@ -20,13 +20,12 @@ export const startAddingLike = () => {
     return async(dispatch, getState) =>{
 
         dispatch( isSaving() );
-        console.log('Adding like')
 
         const { likesCounter } = getState().likes;
         
         dispatch( addLike() );
 
-        await setDoc(doc( FirebaseDB, "likes", "counter"), {
+        setDoc(doc( FirebaseDB, "likes", "counter"), {
             count: likesCounter+1
           });
 
@@ -41,12 +40,11 @@ export const startRemovingLike = () => {
 
         dispatch( isSaving() );
 
-        console.log('Removing like');
         const { likesCounter } = getState().likes;
 
         dispatch( removeLike() );
 
-        await setDoc(doc( FirebaseDB, "likes", "counter"), {
+        setDoc(doc( FirebaseDB, "likes", "counter"), {
             count: likesCounter-1
         });
 
