@@ -123,7 +123,10 @@ export const Likes = () => {
 
         @media (max-width: 500px) {
             .likes-container{
-                top: 100px;
+                top: 65px;
+                right: 15px;
+                z-index: 10;
+
             }
         }
     `}</style>

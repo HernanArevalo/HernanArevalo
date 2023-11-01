@@ -9,16 +9,16 @@ export const MeSection = ( { info } ) => {
   return (
     <>
     <div className="me-container" id="me">
-        <div className="section-title">
+        <div className="section-title me-title">
             {info.me.title}
         </div>
         <div className="me-content">
 
-            <div className="me-content-descr" dangerouslySetInnerHTML={{ __html: info.me.description0 }}>
+            <div className="me-content-descr" 
+                dangerouslySetInnerHTML={{ __html: info.me.description0 }}>
             </div>
 
             <div className="me-content-grid">
-
                 <span className='span-2'>{ info.me.description1 }</span>
                 <span className='span-1'>{ info.me.description2 }</span>
                 <span className='span-1'>{ info.me.description3 }</span>
@@ -128,31 +128,7 @@ export const MeSection = ( { info } ) => {
             }
 
         }
-        @media (max-height: 750px) {
-            .me-content-descr{
-                font-size: 20px;
-                padding: 45px;
 
-            }
-            .me-content-grid span{
-                font-size: 17px;
-
-            }
-        }
-        @media (max-height: 750px) {
-            .me-content-descr{
-                font-size: 22px;
-                padding: 40px;
-            }
-            .me-content-grid{
-                grid-template-columns: repeat(2, 220px);
-
-            }
-            .me-content-grid span{
-                font-size: 17px;
-
-            }
-        }
         @media (max-width: 1400px) {
             .me-content-descr{
                 font-size: 20px;
@@ -176,26 +152,55 @@ export const MeSection = ( { info } ) => {
                 padding: 30px;
             }
             .me-content-grid{
-            color: ${ colors.yellow };
-            display: grid;
-            grid-template-columns: repeat(3, 200px);
-        
+                color: ${ colors.yellow };
+                display: grid;
+                grid-template-columns: repeat(3, 200px);
+            }
         }
-        @media (max-width: 500px) {
-            .me-content{
-                margin-top: 30px;
+        @media (max-width: 800px) {
+            .me-container{
+                padding: 0 0;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+            }
+            .me-title{
+                height: auto;
+                margin-bottom: 40px;
             }
             .me-content-grid{
-
-                grid-template-columns: repeat(2, calc((80% / 2)));
+                grid-template-columns: repeat(2, calc((60% / 2)));
                 justify-content: center;
                 font-size: 16px;
             }
 
 
+        }
+        @media (max-width: 500px) {
+            .me-content{
+                margin-top: 20px;
+            }
+            .me-title{
+                font-size: 16vw;
+            }
+            .me-content-descr{
+                width: 100%;
+                font-size: 16px;
+            }
+            .me-content-grid{
+                grid-template-columns: repeat(2, calc((90% / 2)));
+                justify-content: center;
+                font-size: 14px;
+            }
 
         }
+        @media (max-width: 500px) {
+            .me-content-descr{
+                font-size: 16px;
+            }
+            .me-content-grid{
 
+        }
       `}</style>
 
     </>

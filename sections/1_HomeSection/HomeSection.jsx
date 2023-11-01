@@ -178,11 +178,11 @@ export const HomeSection = ( { info } ) => {
 
     .bx-code-alt{
         font-size: 140px;
+        top: 160px;
         color: ${ colors.yellow };
         position: absolute;
-        top: 160px;
         left: 0px;
-        opacity: 1;
+        opacity: 0.9;
     }
 
 
@@ -266,6 +266,11 @@ export const HomeSection = ( { info } ) => {
             box-sizing: content-box;
 
         }
+        .bx-code-alt{
+            font-size: 110px;
+            top: 140px;
+            opacity: 1;
+        }
         .profile-picture{
             width: 100%;
             height: 100%;
@@ -289,7 +294,10 @@ export const HomeSection = ( { info } ) => {
             width: 160px;
             height: 160px;
             box-sizing: content-box;
-
+        }
+        .bx-code-alt{
+            font-size: 80px;
+            top: 105px;
         }
         .home-container-2{
             width: 35%;
@@ -302,16 +310,69 @@ export const HomeSection = ( { info } ) => {
         }
     }
 
-    @media (max-height: 730px) {
+    @media (max-width: 500px) {
+        .home-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            min-height: calc(100vh - 150px);
+            gap: 0px;
+            width: 100%;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+        .home-container-1 {
+            width: 85%;
+            align-items: flex-start;
+        }
+        .home-container-2 {
+            position: relative;
+            top: 0px;
+            width: 85%;
+            align-items: flex-end;
+            text-align: end;
+        }
 
+        .section-title-2{
+            font-size: 45vw;
+            line-height: 40vw;
+            width: fit-content;
+        }
+        .home-container-1 > h1{
+            font-size: 10vw;
+            line-height: normal;
+            position: relative;
+            top: -5vw;
+        }
 
+        .home-container-1 > h2{
+            font-size: 6vw;
+            top: -6vw;
+            line-height: normal;
+        }
+        .home-icons{
+            position: relative;
+            top: -4vw;
+        }
+        .home-icon-font{
+            font-size: 8vw;
+        }
+
+        .bx-code-alt{
+            font-size: 80px;
+            top: 105px;
+            left: 0px;
+            right: 100px;
+            
+        }
+
+        .studies{
+            align-items: end;
+            justify-content: end;
+        }
     }
 
-
-    @media (max-height: 700px) {
-
-
-    }
     `}</style>
 
     </>

@@ -21,12 +21,7 @@ export const ProjectsSection = ({info, lang}) => {
           <div className="github-repository">
             <a href="https://github.com/HernanArevalo" target="_blank">
               { info.projects.respository }
-              <box-icon type='logo' 
-                        name='github' 
-                        color={ colors.yellow } 
-                        size="50px" 
-                        className="github-logo"
-              ></box-icon>
+              <i className='bx bxl-github'></i>
             </a>
           </div>
 
@@ -105,7 +100,6 @@ export const ProjectsSection = ({info, lang}) => {
         height: 100px;
       }
 
-
       .projects-container{
           min-height: 100vh;
           width: 100%;
@@ -160,6 +154,10 @@ export const ProjectsSection = ({info, lang}) => {
           color: ${ colors.orange };
           font-size: 30px;
           transition: .3s;
+      }
+      .bxl-github{
+        color: ${ colors.yellow };
+        font-size: 50px;
       }
 
       .projects-extra{
@@ -285,7 +283,6 @@ export const ProjectsSection = ({info, lang}) => {
           }
 
           .github-repository{
-              margin-top: 0px;
               flex-direction: row-reverse;
               justify-content: flex-start;
               font-size: 6vw;
@@ -328,6 +325,25 @@ export const ProjectsSection = ({info, lang}) => {
           }
           
       }
+      @media (max-width: 500px) {
+        .section-title{
+          font-size: 18vw;
+        }
+        .github-repository {
+          margin-top: 0px;
+        }
+        .github-repository a{
+          font-size: 5vw;
+          padding: 5px;
+
+        }
+        .bxl-github{
+          font-size: 10vw;
+        }
+
+        .projects-container{
+          gap: 40px;
+        }
 
 
     `}</style>

@@ -141,12 +141,12 @@ export const Language = () => {
 
         @media (max-width: 500px){
             .lang-container{
-                top: auto;
-                bottom: 20px;
-                right: 20px;
-                left: auto;
-                height: 40px;
-                width: 80px;
+              position: absolute;
+              top: 65px;
+              left: 15px;
+              height: 40px;
+              width: 80px;
+              z-index: 10;
             }
         }
       `}</style>
