@@ -1,8 +1,9 @@
 import { boxShadow, colors } from "@/app/theme"
 
 export const SkillsItem = ({skill}) => {
+
   return (
-    <>
+<>
     <div className='skill-item'>
 
         <div className="skill-name">
@@ -28,7 +29,6 @@ export const SkillsItem = ({skill}) => {
 
 }
 
-
 .skill-name{
     width: 180px;
     display: flex;
@@ -40,7 +40,6 @@ export const SkillsItem = ({skill}) => {
     font-weight: 600;
     word-spacing: 9999rem;
 }
-
 
 .skill-image{
     width: 120px;
@@ -62,25 +61,34 @@ export const SkillsItem = ({skill}) => {
     transition: .5s;
 }
 
-{/* .skill-image:hover .skill-image-svg{
-    filter: invert(86%) sepia(20%) saturate(349%) hue-rotate(344deg) brightness(108%) contrast(104%);
-}
-
-.skill-image:hover .image-background{
-    background-color: ${ colors.orange };
-} */}
-
-
-
-
-
 @media (max-width: 1500px){
-    
+    .skill-item{
+        display: ${ skill.responsive ? "flex" : "none"};
+        margin-right: 20px;
 
+    }
+    .skill-name{
+        width: 100px;
+    }
+    .skill-image{
+        width: 100px;
+        height: 100px;
+    }
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1000px){
+    .skill-item{
+        display: flex;
+        margin-right: 20px;
 
+    }
+    .skill-image{
+        width: 7vw;
+        height: 7vw;
+    }
+    .skill-name{
+        font-size: 2.2vw;
+    }
 
 }
 

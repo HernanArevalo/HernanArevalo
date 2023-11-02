@@ -29,40 +29,52 @@
 			"title":"Skills",
 			"items":[
 				{"name":"NEXT.JS",
-				 "image_file":"next.svg"
+				 "image_file":"next.svg",
+				 "responsive": true
 				},
 				{"name":"REACT.JS",
-				 "image_file":"reactjs.svg"
+				 "image_file":"reactjs.svg",
+				 "responsive": true
 				},
 				{"name":"REACT REDUX",
-				 "image_file":"redux.svg"
+				 "image_file":"redux.svg",
+				 "responsive": false
 				},
 				{"name":"PYTHON",
-				 "image_file":"python.svg"
-				},
-				{"name":"NODE.JS",
-				 "image_file":"node.svg"
+				 "image_file":"python.svg",
+				 "responsive": true
 				},
 				{"name":"JAVASCRIPT",
-				 "image_file":"javascript.svg"
-			    },
+				 "image_file":"javascript.svg",
+				 "responsive": true
+				},
+				{"name":"NODE.JS",
+				 "image_file":"node.svg",
+				 "responsive": true
+				},
 				{"name":"TYPESCRIPT",
-				 "image_file":"typescript.svg"
+				 "image_file":"typescript.svg",
+				 "responsive": true
 				},
 				{"name":"HTML CSS",
-				 "image_file":"htmlcss.svg"
+				 "image_file":"htmlcss.svg",
+				 "responsive": true
 				},
 				{"name":"SCRUM",
-				 "image_file":"scrum.svg"
+				 "image_file":"scrum.svg",
+				 "responsive": false
 				},
 				{"name":"FIGMA",
-				 "image_file":"figma.svg"
+				 "image_file":"figma.svg",
+				 "responsive": false
 				},
 				{"name":"MONGO DB",
-				"image_file":"mongo.svg"
+				"image_file":"mongo.svg",
+				"responsive": true
 			   },
 				{"name":"EXPRESS",
-				"image_file":"express.svg"
+				"image_file":"express.svg",
+				"responsive": true
 			   }
 			]
 		},
