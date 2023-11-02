@@ -97,7 +97,10 @@ export const SkillsSection = ({ info }) => {
               margin-top: 20px;
           }
           .skills-grid{
-              grid-template-columns: repeat(3, 25vw);
+              grid-template-columns: repeat(2, auto);
+              width: 100vw;
+              justify-content: center;
+              align-items: center;
               row-gap: 30px;
               column-gap: 20px;
               align-items: start;

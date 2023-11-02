@@ -93,7 +93,9 @@ export const SkillsItem = ({skill}) => {
 }
 
 @media (max-width: 500px){
-
+    .skill-name{
+        width: 65px;
+    }
 
 }
       `}</style>
