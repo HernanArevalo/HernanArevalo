@@ -94,9 +94,17 @@ export const SkillsItem = ({skill}) => {
 
 @media (max-width: 500px){
     .skill-name{
-        width: 65px;
-    }
+        font-size: 2.2vw;
+        width: min-content;
 
+    }
+    .skill-image{
+        width: 14vw;
+        height: 14vw;
+    }
+    .skill-name{
+        font-size: 3.5vw;
+    }
 }
       `}</style>
     </>
