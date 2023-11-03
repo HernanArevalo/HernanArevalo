@@ -73,8 +73,8 @@ export const ProjectsSection = ({info, lang}) => {
                     {
                       project.technologies.map(tech =>(
                           <img key={tech}
-                              src={`/assets/projects-section/technologies/${tech}.png`} 
-                              alt="" 
+                               src={`/assets/projects-section/technologies/${tech}.png`} 
+                               alt="" 
                           />
                             
                       ))
@@ -155,8 +155,8 @@ export const ProjectsSection = ({info, lang}) => {
           font-size: 30px;
           transition: .3s;
       }
-      .bxl-github{
-        color: ${ colors.yellow };
+      .bxl-github, .bxl-twitter{
+        color: ${ colors.blue };
         font-size: 50px;
       }
 

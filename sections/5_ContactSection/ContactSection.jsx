@@ -313,16 +313,12 @@ export const ContactSection = ({info}) => {
             }
 
             .email, .linkedin-link{
-                font-size: 6vw;
+                font-size: 5vw;
             }
 
             .contact-right{
                 margin-top: 40px;
                 width: 85%;
-            }
-
-            input, textarea{
-                width: 100%;
             }
 
         }

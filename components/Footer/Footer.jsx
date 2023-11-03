@@ -96,6 +96,15 @@ export default function Footer() {
     a{
         text-decoration: none;
     }
+    @media (max-width: 500px){
+        .footer-name{
+            font-size: 16px;
+        }
+        .footer-email{
+            font-size: 12px;
+        }
+
+    }
 
     `}</style>
     </>
