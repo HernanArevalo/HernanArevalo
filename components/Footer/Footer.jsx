@@ -104,6 +104,10 @@ export default function Footer() {
             font-size: 12px;
         }
 
+        .footer{
+            padding: 10px 20px;
+        }
+
     }
 
     `}</style>
