@@ -1,5 +1,4 @@
 import { colors } from '@/app/theme'
-import Head from 'next/head'
 
 export default function Projectexta({ project, lang }) {
 
@@ -132,6 +131,9 @@ export default function Projectexta({ project, lang }) {
     box-shadow: 5px 5px ${ colors.yellow };
   }
 
+  .github-logo:hover .bxl-github, .github-logo:hover .bxl-twitter{
+    color: ${ colors.yellow };
+  }
   .project-tech{
       display: flex;
       flex-direction: row;

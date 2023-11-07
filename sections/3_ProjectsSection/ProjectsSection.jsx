@@ -3,7 +3,7 @@ import { ProjectItem } from './components/ProjectItem';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
 import Link from 'next/link';
-import Projectexta from './components/ProjectExtra';
+import Projectexta from './components/ProjectItemExtra';
 
 export const ProjectsSection = ({info, lang}) => {
 
@@ -200,10 +200,15 @@ export const ProjectsSection = ({info, lang}) => {
           grid-template-columns: repeat(1, 70vw);
           gap: 50px;
         }
+        .projects-extra{
+          margin-top: 45px;
+          gap: 20px;
+        }
 
       }
 
       @media (max-width: 500px) {
+
         .grid-projects{
           grid-template-columns: repeat(1,95%);
           padding-right: 10px;
@@ -213,7 +218,7 @@ export const ProjectsSection = ({info, lang}) => {
         .projects-extra{
           width: 100%;
           gap: 20px;
-          margin-bottom: 0px;
+          margin-top: 0px;
         }
         .projects-extra-container{
           display: flex;

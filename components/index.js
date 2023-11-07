@@ -1,4 +1,4 @@
 
-export * from './Navbar/Navbar'
-export * from './Likes/Likes'
-export * from './Language/Language'
+export * from './Navbar'
+export * from './Likes'
+export * from './Language'

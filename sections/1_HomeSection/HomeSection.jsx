@@ -1,7 +1,4 @@
 import { colors } from '@/app/theme'
-import Image from 'next/image'
-import Link from 'next/link'
-
 
 export const HomeSection = ( { info } ) => {
 
@@ -16,7 +13,7 @@ export const HomeSection = ( { info } ) => {
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
             <div className="home-icons">
-                <a href="https://www.linkedin.com/in/arevalo-hernan" target="_blank">
+                <a href="https://www.linkedin.com/in/hernanarevalo" target="_blank">
                     <div className="home-icon-div">
                         <i className='home-icon-font bx bxl-linkedin'></i>
                     </div>
