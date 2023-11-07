@@ -3,6 +3,7 @@ import { ProjectItem } from './components/ProjectItem';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
 import Link from 'next/link';
+import Projectexta from './components/ProjectExtra';
 
 export const ProjectsSection = ({info, lang}) => {
 
@@ -21,7 +22,7 @@ export const ProjectsSection = ({info, lang}) => {
           <div className="github-repository">
             <a href="https://github.com/HernanArevalo" target="_blank">
               { info.projects.respository }
-              <i className='bx bxl-github'></i>
+              <i className='bx bxl-github github-top'></i>
             </a>
           </div>
 
@@ -29,61 +30,20 @@ export const ProjectsSection = ({info, lang}) => {
 
         <div className="grid-projects large">
           { projects.filter(project => project.size == "l").map(project => (
-            <ProjectItem key={ project.name } project={ project } lang={lang} />
+            <ProjectItem key={ project.name } project={ project } lang={ lang } />
           ))}
         </div>
 
         <div className='projects-extra'>
 
           <div className="projects-extra-title">
-            {info.otherprojects.title}
+            {info.otherprojects.title }
           </div>
 
           <div className="projects-extra-container">
             { otherprojects.filter(project => project.active).map((project, idx) => (
-              <div className="extra-project" key={project.name}>
 
-                <div className="extra-project-info">
-                  <div className="extra-project-title">
-                    { project.name }
-                  </div>
-
-                  <div className="extra-project-description">
-                    { lang === 'es'? project.descriptionEs : project.descriptionEn }
-                  </div>
-
-                <div className="project-icons">
-                  <div className="url-icons">
-                    <a href={ project.github_url } target='blank'>
-                      <div className="github-logo">
-                        <i className='home-icon-font bx bxl-github' />
-                      </div>
-                    </a>
-
-                    { project.name == 'Twitter Lyrics Bot' &&
-                      <a href='https://twitter.com/frasesdentvg1' target='blank'>
-                        <div className="github-logo">
-                          <i className='bx bxl-twitter'></i>
-                        </div>
-                      </a>
-                    }
-                  </div>
-
-                  <div className="project-tech">
-                    {
-                      project.technologies.map(tech =>(
-                          <img key={tech}
-                               src={`/assets/projects-section/technologies/${tech}.png`} 
-                               alt="" 
-                          />
-                            
-                      ))
-                    }
-                  </div>
-                </div>
-                </div>
-
-              </div>
+              <Projectexta key={ project.name }project={ project } lang={ lang }/>
 
             ))}
 
@@ -124,17 +84,12 @@ export const ProjectsSection = ({info, lang}) => {
           margin: 0;
       }
 
-
-      .grid-projects.large{
+      .grid-projects{
           display: grid;
           grid-template-columns: repeat(3, 25%);
           justify-content: center;
-          align-items: flex-start;
           width: 100%;
           gap: 50px;
-      }
-      .grid-projects.small{
-          height: 35%;
       }
 
       .github-repository{
@@ -144,30 +99,25 @@ export const ProjectsSection = ({info, lang}) => {
       }
 
       .github-repository a{
-          padding: 15px;
+          align-items: center;
+          background-color: ${ colors.yellow };
           border-radius: 10px;
+          color: ${ colors.orange };
           display: flex;
           flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
-          gap: 10px;
-          color: ${ colors.orange };
           font-size: 30px;
+          gap: 10px;
+          justify-content: flex-end;
+          padding: 15px;
           transition: .3s;
       }
       .bxl-github, .bxl-twitter{
         color: ${ colors.blue };
         font-size: 50px;
       }
-
-      .projects-extra{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        margin-bottom: 100px;
-        width: 100%;
+      .github-repository a:hover{
+        background-color: ${ colors.orange };
+        color: ${ colors.yellow };
       }
       
       .projects-extra-title{
@@ -177,174 +127,104 @@ export const ProjectsSection = ({info, lang}) => {
         font-family: 'Source Serif Pro', serif;
         width: 85%;
       }
-
-      .github-repository a:hover{
-        background-color: ${ colors.orange };
-        color: ${ colors.yellow };
+      .projects-extra{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 100px;
+        width: 100%;
       }
+
 
       .projects-extra-container{
         display: grid;
         justify-content: center;
-        align-items: flex-start;
         grid-auto-rows: 1fr;
         grid-template-columns: repeat(2,45%);
         gap: 50px;
         width: 85%;
       }
 
-      .extra-project{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background-color: ${ colors.orange };
-        box-shadow: 10px 10px ${ colors.yellow };
-        gap: 15px;
-      }
-
-      .extra-project-info{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .extra-project-title{
-        color: ${ colors.blue };
-        font-size: 25px;
-        font-weight: 700;
-        width: 100%;
-      }
-      .extra-project-description{
-        color: ${ colors.yellow };
-        font-size: 18px;
-      }
-      a{
-        text-decoration: none;
-        color: ${ colors.blue };
-      }
-      .project-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 95%;
-        color: ${ colors.blue };
-      }
-      .url-icons{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-      }
-
-      .github-logo{
-        font-size: 40px;
-        background-color: ${ colors.yellow };
-        box-shadow: 5px 5px ${ colors.blue };
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: fit-content;
-        padding: 5px;
-        transition: .3s;
-      }
-      .github-logo:hover{
-        color: ${ colors.orange };
-        background-color: ${ colors.blue };
-        box-shadow: 5px 5px ${ colors.yellow };
-      }
-
-      .project-tech{
-          display: flex;
-          flex-direction: row;
-          gap: 10px;
-          justify-content: center;
-      }
-
-      .project-tech > img{
-          width: 50px;
-      }
-
-
-      @media (max-width: 500px) {
-          .projects-container{
-              height: auto;
-          }
-          .projects-top{
-              flex-direction: column;
-              height: auto;
-          }
-          .projects-top > div{
-              height: auto;
-          }
-          .project2-container{
-              height: auto;
-              margin-top: 40px;
-          }
-
-          .github-repository{
-              flex-direction: row-reverse;
-              justify-content: flex-start;
-              font-size: 6vw;
-              margin-top: 20px;
-          }
-
-          .github-repository a{
-              align-items: center;
-
-          }
-
-          .grid-projects.large,.grid-projects.small{
-              height: auto;
-              flex-direction: column;
-              align-items: center;
-          }
-
-          .project-description{
-              font-size: 5vw;
-              width: calc(100% - 40px);
-          }
-          .grid-projects.small{
-              margin-top: 50px;
-          }
-
-
-      }
-
-      @media (max-height: 830px) {
-          .project2-container{
-              gap: 40px;
-              height: auto;
-          }
-          
-      }
-
-      @media (max-height: 800px) {
-          .project2-container{
-              gap: 20px;
-          }
-          
-      }
-      @media (max-width: 500px) {
-        .section-title{
-          font-size: 18vw;
+      @media (max-width: 1500px) {
+        .grid-projects{
+          grid-template-columns: repeat(2,40%);
+          gap: 60px;
         }
-        .github-repository {
-          margin-top: 0px;
+        .projects-extra-container{
+          grid-template-columns: repeat(2,50%);
+          gap: 60px;
         }
+      }
+      @media (max-width: 1200px) {
         .github-repository a{
-          font-size: 5vw;
-          padding: 5px;
+            font-size: 22px;
+            padding: 10px;
 
         }
-        .bxl-github{
-          font-size: 10vw;
+        .github-top{
+          font-size: 40px;
+        }
+        .projects-top{
+          flex-direction: column;
+          gap: 60px;
+          width: 100%;
+          align-items: center;
+        }
+        .section-title{
+          height: auto;
+          width: 100%;
+
         }
 
         .projects-container{
-          gap: 40px;
+          gap: 30px
+        }
+        .projects-extra-container{
+          grid-template-columns: repeat(1, 60vw);
+          gap: 50px;
         }
 
+      }
+      @media (max-width: 900px) {
+        .grid-projects{
+          grid-template-columns: repeat(1,80%);
+          gap: 60px;
+
+        }
+        .project.description{
+          min-height: 0;
+        }
+        .projects-extra-container{
+          grid-template-columns: repeat(1, 70vw);
+          gap: 50px;
+        }
+
+      }
+
+      @media (max-width: 500px) {
+        .grid-projects{
+          grid-template-columns: repeat(1,95%);
+          padding-right: 10px;
+          gap: 60px;
+
+        }
+        .projects-extra{
+          width: 100%;
+          gap: 20px;
+          margin-bottom: 0px;
+        }
+        .projects-extra-container{
+          display: flex;
+          flex-direction: column;
+        }
+        .projects-extra-title{
+          font-size: 10vw;
+          margin-top: 50px;
+          width: 95%;
+        }
+      }
 
     `}</style>
     </>

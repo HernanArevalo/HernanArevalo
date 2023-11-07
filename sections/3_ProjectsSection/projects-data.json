@@ -32,22 +32,6 @@
 
     },
     {
-      "name": "Journal App",
-      "pc": true,
-      "mobile": true,
-      "url": "https://journal-app-ha.vercel.app/",
-      "descriptionEn": "React.JS website to save your journal with comments and images.",
-      "descriptionEs": "React.JS app para guardar tu diario con comentarios e imágenes.",
-      "size": "l",
-      "logo_name": "journal-app.png",
-      "image1": "journal1",
-      "image2": "journal2",
-      "github_url": "https://github.com/HernanArevalo/journal-app",
-      "technologies": ["react", "redux", "javascript"]
-
-
-    },
-    {
       "name": "Valorant App",
       "pc": true,
       "mobile": false,
@@ -60,21 +44,37 @@
       "image2": "valo2",
       "github_url": "https://github.com/HernanArevalo/journal-app",
       "technologies": ["next", "react", "javascript"]
-
-
+      
+      
     },
     {
       "name": "Space Tourism",
       "pc": true,
       "mobile": true,
       "url": "https://space-tourism-hernanarevalo.vercel.app/",
-      "descriptionEn": "Explore the cosmos with our SPA website, showcasing details on space travel destinations, crew, and cutting-edge technologies.",
-      "descriptionEs": "Explora el cosmos con nuestra página web SPA, que presenta información sobre destinos de viaje espacial, tripulación y tecnologías de vanguardia.",
+      "descriptionEn": "Explore the cosmos with our SPA website, showcasing details on space travel destinations, crew, and technologies.",
+      "descriptionEs": "Explora el cosmos con nuestra página web SPA, que presenta información sobre destinos de viaje espacial, tripulación y tecnologías.",
       "size": "l",
       "logo_name": "space-tourism.png",
       "image1": "space1",
       "image2": "space2",
       "github_url": "https://github.com/HernanArevalo/space-tourism-app",
+      "technologies": ["react", "redux", "javascript"]
+      
+      
+    },
+    {
+      "name": "Journal App",
+      "pc": true,
+      "mobile": true,
+      "url": "https://journal-app-ha.vercel.app/",
+      "descriptionEn": "React.JS website to save your journal with comments and images.",
+      "descriptionEs": "React.JS app para guardar tu diario con comentarios e imágenes.",
+      "size": "l",
+      "logo_name": "journal-app.png",
+      "image1": "journal1",
+      "image2": "journal2",
+      "github_url": "https://github.com/HernanArevalo/journal-app",
       "technologies": ["react", "redux", "javascript"]
 
 

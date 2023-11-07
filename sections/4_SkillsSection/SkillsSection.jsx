@@ -66,6 +66,9 @@ export const SkillsSection = ({ info }) => {
         .section-title{
             font-size: 20vw;
         }
+        .skills{
+            padding: 0;
+        }
 
       }
       @media (max-width: 1000px){

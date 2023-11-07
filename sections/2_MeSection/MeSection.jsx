@@ -71,7 +71,6 @@ export const MeSection = ( { info } ) => {
             gap: 30px;
             height: 100%;
 
-
         }
 
         .me-content-grid span{
@@ -81,7 +80,7 @@ export const MeSection = ( { info } ) => {
             align-items: center;
             text-align: center;
             padding: 15px;
-            box-shadow: 8px 8px 0px ;
+            box-shadow: 8px 8px;
             
         }
 

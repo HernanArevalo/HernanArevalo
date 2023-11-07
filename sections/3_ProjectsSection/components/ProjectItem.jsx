@@ -19,7 +19,11 @@ export const ProjectItem = ( { project, lang } ) => {
         <div className="project-info">
 
             <div className="project-info1">
-                <div className="project-name">{project.name}</div>
+
+                <div className="project-name">
+                    {project.name }
+                </div>
+
                 <div className="project-devices">
                   {project.mobile == true? 
                       <box-icon name='mobile' 
@@ -36,33 +40,36 @@ export const ProjectItem = ( { project, lang } ) => {
                 </div>
             </div>
               
-            <div className="project-description">
-                { lang === 'es'? project.descriptionEs : project.descriptionEn }
-            </div>
+            <div className="project-info2">
+                <div className="project-description">
+                    { lang === 'es'? project.descriptionEs : project.descriptionEn }
+                </div>
 
-            <div className="project-tech">
-                {
-                    project.technologies.map(tech =>(
-                        <img key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" />
-                    ))
-                }
+                <div className="project-tech">
+                    {
+                        project.technologies.map(tech =>(
+                            <img key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" />
+                        ))
+                    }
 
-            </div>
+                </div>
 
-            <div className="project-bottom">
-            
-                <a href={ project.github_url } target="_blank">
-                    <div className="project-button">
-                        <i className='button-icon bx bxl-github'></i>
-                        REPOSITORY
-                    </div>
-                </a>
-                <a href={ project.url } target="_blank">
-                    <div className="project-button">
-                        <i className='button-icon bx bx-fullscreen'></i>
-                        { lang === 'es'? 'DESPLEGAR' : 'DEPLOY' }
-                    </div>
-                </a>
+                <div className="project-bottom">
+                
+                    <a href={ project.github_url } target="_blank">
+                        <div className="project-button">
+                            <i className='button-icon bx bxl-github'></i>
+                            { lang === 'es'? 'REPOSITORIO' : 'REPOSITORY' }
+                        </div>
+                    </a>
+                    <a href={ project.url } target="_blank">
+                        <div className="project-button">
+                            <i className='button-icon bx bx-fullscreen'></i>
+                            { lang === 'es'? 'DESPLEGAR' : 'DEPLOY' }
+                        </div>
+                    </a>
+
+                </div>
 
             </div>
           </div>
@@ -70,7 +77,6 @@ export const ProjectItem = ( { project, lang } ) => {
         </div>
 
     <style jsx>{`
-                
 
         .project-item{
             box-shadow: 10px 10px ${ colors.yellow };
@@ -128,18 +134,25 @@ export const ProjectItem = ( { project, lang } ) => {
         .project-info{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            align-items: space-between;
             padding: 10px;
             padding-bottom: 20px;
             gap: 20px;
         }
 
         .project-info1{
-            width: 100%;
             display: flex;
             flex-direction: row;
+            width: 100%;
             justify-content: space-between;
+        }
+        .project-info2{
+            height: calc(100% - 41px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
         }
 
         .project-item.large .project-name{
@@ -167,12 +180,8 @@ export const ProjectItem = ( { project, lang } ) => {
             width: calc(100% - 50px);
         }
 
-        .large .project-description{
+        .project-description{
             font-size: 18px;
-
-        }
-        .small .project-description{
-            font-size: 17px;
 
         }
 
@@ -244,6 +253,13 @@ export const ProjectItem = ( { project, lang } ) => {
             width: 50px;
         }
 
+        @media (max-width: 900px) {
+        .project-description{
+            min-height: 0px;
+
+        }
+
+      }
     `}</style>
 
     </>

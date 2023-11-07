@@ -47,16 +47,16 @@ export const ContactSection = ({info}) => {
                     </box-icon>
                 </a>
                 <div className="email-container">
-                <div className='email' onClick={ onClickEmail }>
-                    hernanarevalo16@gmail.com
-                </div>
-                {copied? 
-                    <div className='copied'>
-                        { info.contact.emailCopied }
+                    <div className='email' onClick={ onClickEmail }>
+                        hernanarevalo16@gmail.com
                     </div>
-                    : 
-                    null
-                }
+                    {copied? 
+                        <div className='copied'>
+                            { info.contact.emailCopied }
+                        </div>
+                        : 
+                        null
+                    }
                 </div>
             </div>
 
@@ -241,6 +241,7 @@ export const ContactSection = ({info}) => {
         .copied{
             color: ${ colors.orange };
             font-size: 20px;
+            position: absolute;
         }
 
         .submit-button{
@@ -290,6 +291,53 @@ export const ContactSection = ({info}) => {
 
         }
 
+        @media (max-width: 1200px){
+            .contact-container{
+                height: auto;
+            }
+
+        
+            .contact{
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .contact-left{
+                width: 100%;
+            }
+
+            .email-container, .linkedin-link{
+                height: auto;
+                top: -10px;
+                position: relative;
+            }
+
+            .email, .linkedin-link, .copied{
+                font-size: 2.5vw;
+            }
+
+            .contact-right{
+                margin-top: 40px;
+                width: 85%;
+            }
+            .contact-email, .linkedin-email, .github-email{
+                gap: 10px;
+            }
+
+            form{
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+            label, textarea, input{
+                text-align: left;
+                width: 100%;
+
+            }
+
+        }
+
         @media (max-width: 500px){
             .contact-container{
                 height: auto;
@@ -312,7 +360,7 @@ export const ContactSection = ({info}) => {
                 position: relative;
             }
 
-            .email, .linkedin-link{
+            .email, .github-email, .linkedin-link, .copied{
                 font-size: 5vw;
             }
 
@@ -322,6 +370,7 @@ export const ContactSection = ({info}) => {
             }
 
         }
+        
       `}</style>
     </>
     )
