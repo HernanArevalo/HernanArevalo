@@ -55,7 +55,7 @@ export const Navbar = () => {
 						<a href="#projects">
               <span>Projects</span>
               <div className="navbar-icon">
-                <box-icon name='collection' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
+                <box-icon name='collection' type='solid' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
               </div>
 						</a>
 				</li>
@@ -64,7 +64,7 @@ export const Navbar = () => {
           <a href="#skills">
             <span>Skills</span>
             <div className="navbar-icon">
-              <box-icon name='select-multiple' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
+              <box-icon name='select-multiple' type='solid' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
             </div>
           </a>
 				</li>
