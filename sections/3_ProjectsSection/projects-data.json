@@ -160,7 +160,7 @@
       "pc": true,
       " mobile": false,
       "url": "https://twitter.com/frasesdentvg1",
-      "descriptionEn": "A Python project that creates and connects a Twitter bot to periodically share random song lyrics from the rock band 'No Te Va Gustar,' providing a unique musical experience on your timeline.",
+      "descriptionEn": "A Python project that creates and connects a Twitter bot to periodically share random song lyrics from the rock band 'No Te Va Gustar', providing a unique musical experience on your timeline.",
       "descriptionEs": "Proyecto en Python que crea y conecta un bot de Twitter para compartir de manera aleatoria, y cada cierto tiempo, frases de canciones de la banda de rock 'No Te Va Gustar', ofreciendo una experiencia musical única en tu timeline.",
       "size": "s",
       "logo_name": "gifs-app.png",

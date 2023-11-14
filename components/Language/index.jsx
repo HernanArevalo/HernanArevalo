@@ -139,7 +139,7 @@ export const Language = () => {
             left:50%;
         }
 
-        @media (max-width: 500px){
+        @media (max-width: 500px) {
             .lang-container{
               position: absolute;
               top: 65px;

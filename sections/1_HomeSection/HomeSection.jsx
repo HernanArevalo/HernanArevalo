@@ -313,10 +313,10 @@ export const HomeSection = ( { info } ) => {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            min-height: calc(100vh - 150px);
+            min-height: calc(100vh - 50px);
             gap: 0px;
             width: 100%;
-            margin-top: 70px;
+            padding-top: 50px;
             margin-bottom: 50px;
         }
         .home-container-1 {

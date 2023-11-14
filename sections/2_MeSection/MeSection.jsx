@@ -181,6 +181,7 @@ export const MeSection = ( { info } ) => {
             }
             .me-title{
                 font-size: 16vw;
+                margin-bottom: 20px;
             }
             .me-content-descr{
                 width: 100%;
@@ -191,9 +192,9 @@ export const MeSection = ( { info } ) => {
                 justify-content: center;
                 font-size: 14px;
             }
-
-        }
-        @media (max-width: 500px) {
+            .me-container{
+                padding-top: 80px;
+            }
             .me-content-descr{
                 font-size: 16px;
             }

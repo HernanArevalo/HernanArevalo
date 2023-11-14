@@ -2,14 +2,15 @@ import { colors } from '@/app/theme'
 import { SkillsItem } from './components/SkillsItem'
 
 
-export const SkillsSection = ({ info }) => {
+export const SkillsSection = ({ info, lang }) => {
 
+    console.log( lang )
 
   return (
     <>
         <div className="skills-container" id="skills">
             <div className="section-title">
-                {info.skills.title}
+                {lang == 'es'? 'Habilidades':'Skills'}
             </div>
 
             <div className="skills">
@@ -92,22 +93,28 @@ export const SkillsSection = ({ info }) => {
         }
     }          
     @media (max-width: 500px){
-          .skills-container{
-              height: auto;
-          }
-          .skills{
-              height: auto;
-              margin-top: 20px;
-          }
-          .skills-grid{
-              grid-template-columns: repeat(2, auto);
-              width: 100vw;
-              justify-content: center;
-              align-items: center;
-              row-gap: 30px;
-              column-gap: 20px;
-              align-items: start;
-          }
+        .skills-container{
+            padding-top: 80px;
+        }
+        .section-title{
+            font-size: ${lang == 'es'? '15vw':'Habilidades'};
+        }
+        .skills-container{
+            height: auto;
+        }
+        .skills{
+            height: auto;
+            margin-top: 20px;
+        }
+        .skills-grid{
+            grid-template-columns: repeat(2, auto);
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            row-gap: 30px;
+            column-gap: 20px;
+            align-items: start;
+        }
       }
     `}</style>
     </>

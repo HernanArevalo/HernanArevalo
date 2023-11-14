@@ -341,8 +341,9 @@ export const ContactSection = ({info}) => {
         @media (max-width: 500px){
             .contact-container{
                 height: auto;
-            }
+                padding-top: 80px;
 
+            }
         
             .contact{
                 flex-direction: column;

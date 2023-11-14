@@ -208,7 +208,9 @@ export const ProjectsSection = ({info, lang}) => {
       }
 
       @media (max-width: 500px) {
-
+        .projects-container{
+            padding-top: 80px;
+        }
         .grid-projects{
           grid-template-columns: repeat(1,95%);
           padding-right: 10px;
@@ -229,6 +231,9 @@ export const ProjectsSection = ({info, lang}) => {
           margin-top: 50px;
           width: 95%;
         }
+        .projects-top{
+          gap: 30px;
+
       }
 
     `}</style>

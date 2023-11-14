@@ -51,8 +51,8 @@ export default function Home() {
             <HomeSection info={ info }/>
             <MeSection info={ info }/>
             <ProjectsSection info={info} lang={lang}/>
-            <SkillsSection info={info}/>
-            <ContactSection info={info}/>
+            <SkillsSection info={info} lang={lang}/>
+            <ContactSection info={info} lang={lang}/>
             <Footer />
           </>
 
