@@ -143,7 +143,7 @@ export const Language = () => {
             .lang-container{
               position: absolute;
               top: 65px;
-              left: 15px;
+              left: 20px;
               height: 40px;
               width: 80px;
               z-index: 10;

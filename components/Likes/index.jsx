@@ -123,9 +123,9 @@ export const Likes = () => {
 
         @media (max-width: 500px) {
             .likes-container{
-                position: sticky;
+                position: absolute;
                 top: 65px;
-                left: 80vw;
+                right: 20px;
                 z-index: 10;
 
             }
