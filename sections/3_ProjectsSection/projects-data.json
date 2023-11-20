@@ -214,7 +214,7 @@
       "logo_name": "gifs-app.png",
       "image1": "",
       "image2": "",
-      "github_url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord.js",
+      "github_url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord/index.js",
       "technologies": ["javascript", "node"]
 
     }
