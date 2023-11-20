@@ -207,7 +207,7 @@
       "active": true,
       "pc": true,
       " mobile": false,
-      "url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord.js",
+      "url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord/index.js",
       "descriptionEn": "A Javascript file designed to connect a Discord bot, enhancing the server's experience, adding entertainment and improving the communication.",
       "descriptionEs": "Un archivo de JavaScript diseñado para conectar un bot de Discord, mejorando la experiencia del servidor, agregando entretenimiento y mejorando la comunicación.",
       "size": "s",

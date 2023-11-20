@@ -8,8 +8,10 @@ import data from '../../data/info.json'
 import Footer from '@/components/Footer'
 
 
-export default function Home() {
+export default function Home( params ) {
   
+  console.log(params)
+
   const router = useRouter()
   const { asPath, query } = useRouter();
 

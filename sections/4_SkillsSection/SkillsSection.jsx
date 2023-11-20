@@ -4,8 +4,6 @@ import { SkillsItem } from './components/SkillsItem'
 
 export const SkillsSection = ({ info, lang }) => {
 
-    console.log( lang )
-
   return (
     <>
         <div className="skills-container" id="skills">
