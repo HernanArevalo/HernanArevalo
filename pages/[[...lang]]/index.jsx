@@ -10,7 +10,6 @@ import Footer from '@/components/Footer'
 
 export default function Home( params ) {
   
-  console.log(params)
 
   const router = useRouter()
   const { asPath, query } = useRouter();
@@ -53,7 +52,7 @@ export default function Home( params ) {
             <HomeSection info={ info }/>
             <MeSection info={ info }/>
             <ProjectsSection info={info} lang={lang}/>
-            <SkillsSection info={info} lang={lang}/>
+            <SkillsSection lang={lang}/>
             <ContactSection info={info} lang={lang}/>
             <Footer />
           </>

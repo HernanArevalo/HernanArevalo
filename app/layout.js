@@ -8,6 +8,7 @@ import { colors } from './theme'
 
 export default function RootLayout({ children }) {
 
+
     return (
     <>
       <Head>
@@ -93,7 +94,7 @@ export default function RootLayout({ children }) {
 
         .section-title{
             font-size: 13vw;
-            height: 215px;
+            height: 185px;
 
         }
       }
