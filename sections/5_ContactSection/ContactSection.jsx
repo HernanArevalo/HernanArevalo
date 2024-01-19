@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useForm } from '../../hooks/useForm/useForm'
 import { colors } from '@/app/theme'
 
@@ -6,10 +6,10 @@ export const ContactSection = ({info}) => {
 
   const [copied, setCopied] = useState(false)
 
-  const onClickEmail = () => {
+  const onEmailClick = () => {
 
 
-    navigator.clipboard.writeText('hernanarevalo16@gmail.com')
+    navigatoR.clipboard.writeText('hernanarevalo16@gmail.com')
     setCopied(true)
 
     setTimeout(() => {
@@ -24,9 +24,29 @@ export const ContactSection = ({info}) => {
     message: ''
   })
 
+  const deleteForm = () => {
+    onResetForm()
+  }
+
+//   const sendEmail = () => {
+
+    // Email.send({
+    //     Host : "smtp.elasticemail.com",
+    //     Username : "username",
+    //     Password : "password",
+    //     To : 'hernanarevalo16@gmail.com',
+    //     From : "you@isp.com",
+    //     Subject : "This is the subject",
+    //     Body : "And this is the body"
+    // }).then(
+    //   message => alert(message)
+    // );
+
+//   }
 
   return (
     <>
+
       <div className="contact-container" id="contact">
 
         <div className="section-title">
@@ -42,12 +62,12 @@ export const ContactSection = ({info}) => {
                             color={ colors.orange }
                             name='at'
                             size="lg"
-                            onClick={ onClickEmail }
+                            onClick={ onEmailClick }
                             >
                     </box-icon>
                 </a>
                 <div className="email-container">
-                    <div className='email' onClick={ onClickEmail }>
+                    <div className='email' onClick={ onEmailClick }>
                         hernanarevalo16@gmail.com
                     </div>
                     {copied? 
@@ -122,7 +142,7 @@ export const ContactSection = ({info}) => {
                         value = { message }
                         onChange = { onInputChange }
                 />
-                <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button"type="submit" onClick={ onResetForm }>{ info.contact.send }</button>
+                <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button" type="submit">{ info.contact.send }</button>
               </form>
             </div>
           </div>
