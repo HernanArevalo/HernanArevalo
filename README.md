@@ -1,4 +1,4 @@
-﻿![Intro GIF](intro.gif)
+﻿ ![Intro GIF](intro.gif)
 
 ### 👋 Hello there!
 ### 👋 I'm Nan
