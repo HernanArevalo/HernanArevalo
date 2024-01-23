@@ -13,12 +13,12 @@ export const HomeSection = ( { info } ) => {
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
             <div className="home-icons">
-                <a href="https://www.linkedin.com/in/hernanarevalo" target="_blank">
+                <a href="https://www.linkedin.com/in/hernanarevalo" target="_blank" aria-label="Go to linkedin profile page">
                     <div className="home-icon-div">
                         <i className='home-icon-font bx bxl-linkedin'></i>
                     </div>
                 </a>
-                <a href="https://www.github.com/HernanArevalo" target="_blank">
+                <a href="https://www.github.com/HernanArevalo" target="_blank" aria-label="Go to github profile page">
                     <div className="home-icon-div">
                         <i className='home-icon-font bx bxl-github'></i>
                     </div>

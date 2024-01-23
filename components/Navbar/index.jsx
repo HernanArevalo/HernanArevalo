@@ -34,7 +34,7 @@ export const Navbar = () => {
 			<ul className="navbar-list">
 
         <li className="navbar-item">
-					<a href="#home">
+					<a href="#home" arial-label="Go to Home Section">
 						<span>Home</span>
 						<div className="navbar-icon">
 								<box-icon type='solid' name='home' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
@@ -43,7 +43,7 @@ export const Navbar = () => {
 				</li>
 
 				<li className="navbar-item">
-					<a href="#me">
+					<a href="#me" arial-label="Go to Me section">
 						<span>Me</span>
 						<div className="navbar-icon">
 								<box-icon type='solid' name='user' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
@@ -52,7 +52,7 @@ export const Navbar = () => {
 				</li>
 
 				<li className="navbar-item">
-						<a href="#projects">
+						<a href="#projects" arial-label="Go to Projects section">
               <span>Projects</span>
               <div className="navbar-icon">
                 <box-icon name='collection' type='solid' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
@@ -61,7 +61,7 @@ export const Navbar = () => {
 				</li>
 
 				<li className="navbar-item">
-          <a href="#skills">
+          <a href="#skills" arial-label="Go to Skills section">
             <span>Skills</span>
             <div className="navbar-icon">
               <box-icon name='select-multiple' type='solid' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
@@ -70,7 +70,7 @@ export const Navbar = () => {
 				</li>
 
 				<li className="navbar-item">
-          <a href="#contact">
+          <a href="#contact" arial-label="Go to Contact section">
             <span>Contact</span>
             <div className="navbar-icon">
               <box-icon type='solid' name='send' size={windowWidth > 500?"md":"25px"} color={ colors.blue }></box-icon>
