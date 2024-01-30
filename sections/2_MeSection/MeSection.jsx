@@ -19,12 +19,12 @@ export const MeSection = ( { info } ) => {
             </div>
 
             <div className="me-content-grid">
-                <span className='span-2'>{ info.me.description1 }</span>
-                <span className='span-1'>{ info.me.description2 }</span>
-                <span className='span-1'>{ info.me.description3 }</span>
-                <span className='span-2'>{ info.me.description4 }</span>
-                <span className='span-2'>{ info.me.description5 }</span>
-                <span className='span-1' dangerouslySetInnerHTML={{ __html: info.me.description6 }}></span>
+                <article className='article-2'>{ info.me.description1 }</article>
+                <article className='article-1'>{ info.me.description2 }</article>
+                <article className='article-1'>{ info.me.description3 }</article>
+                <article className='article-2'>{ info.me.description4 }</article>
+                <article className='article-2'>{ info.me.description5 }</article>
+                <article className='article-1' dangerouslySetInnerHTML={{ __html: info.me.description6 }}></article>
             </div>
 
         </div>
@@ -73,7 +73,7 @@ export const MeSection = ( { info } ) => {
 
         }
 
-        .me-content-grid span{
+        .me-content-grid article{
             font-weight: 600;
             display: flex;
             justify-content: center;
@@ -84,11 +84,11 @@ export const MeSection = ( { info } ) => {
             
         }
 
-        .me-content-grid > .span-1{
+        .me-content-grid > .article-1{
             color: ${ colors.yellow };
             background-color: ${ colors.orange };
         }
-        .me-content-grid > .span-2{
+        .me-content-grid > .article-2{
             color: ${ colors.orange };
             background-color: ${ colors.yellow };
         }
@@ -104,7 +104,7 @@ export const MeSection = ( { info } ) => {
                 grid-template-columns: repeat(2, 260px);
 
             }
-            .me-content-grid span{
+            .me-content-grid article{
                 padding: 15px;
             }
 
