@@ -33,6 +33,10 @@
     }
   ],
   "extraskills":[
+    {"name":"TAILWIND",
+    "image_file":"tailwind.svg",
+    "responsive": true
+    },
     {"name":"SCRUM",
      "image_file":"scrum.svg",
      "responsive": false
@@ -59,10 +63,6 @@
     },
     {"name":"BOOTSTRAP",
     "image_file":"bootstrap.svg",
-    "responsive": true
-    },
-    {"name":"TAILWIND",
-    "image_file":"tailwind.svg",
     "responsive": true
     }
   ]
