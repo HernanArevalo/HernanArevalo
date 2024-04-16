@@ -113,7 +113,7 @@
       "image1": "calendar1",
       "image2": "calendar2",
       "github_url": "https://github.com/HernanArevalo/calendar-app",
-      "technologies": ["react", "redux", "javascript"]
+      "technologies": ["react","mongo","express","node"]
 
 
     },
@@ -155,7 +155,7 @@
 ],
   "otherprojects":[
     {
-      "name": "Twitter Lyrics Bot",
+      "name": "Twitter Bot - 330k followers",
       "active": true,
       "pc": true,
       " mobile": false,
@@ -183,7 +183,7 @@
       "image1": "",
       "image2": "",
       "github_url": "https://github.com/HernanArevalo/calendar-app-backend",
-      "technologies": ["mongo", "express", "react", "node"]
+      "technologies": ["mongo", "express", "node"]
 
     },
     {
@@ -203,7 +203,7 @@
 
     },
     {
-      "name": "Conect a Discord Bot",
+      "name": "Discord Bot",
       "active": true,
       "pc": true,
       " mobile": false,
