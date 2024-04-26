@@ -27,23 +27,15 @@
      "image_file":"typescript.svg",
      "responsive": true
     },
-    {"name":"HTML CSS",
-     "image_file":"htmlcss.svg",
-     "responsive": true
+    {"name":"TAILWIND",
+      "image_file":"tailwind.svg",
+      "responsive": true
     }
   ],
   "extraskills":[
-    {"name":"TAILWIND",
-    "image_file":"tailwind.svg",
+    {"name":"POSTGRESQL",
+    "image_file":"postgresql.svg",
     "responsive": true
-    },
-    {"name":"SCRUM",
-     "image_file":"scrum.svg",
-     "responsive": false
-    },
-    {"name":"FIGMA",
-     "image_file":"figma.svg",
-     "responsive": true
     },
     {"name":"MONGO DB",
     "image_file":"mongo.svg",
@@ -56,6 +48,14 @@
     {"name":"FIREBASE DB",
     "image_file":"firebase.svg",
     "responsive": true
+    },
+    {"name":"SCRUM",
+     "image_file":"scrum.svg",
+     "responsive": false
+    },
+    {"name":"FIGMA",
+     "image_file":"figma.svg",
+     "responsive": true
     },
     {"name":"MATERIAL UI",
     "image_file":"mui.svg",
