@@ -49,8 +49,8 @@
     "image_file":"firebase.svg",
     "responsive": true
     },
-    {"name":"SCRUM",
-     "image_file":"scrum.svg",
+    {"name":"GIT",
+     "image_file":"git.svg",
      "responsive": false
     },
     {"name":"FIGMA",
