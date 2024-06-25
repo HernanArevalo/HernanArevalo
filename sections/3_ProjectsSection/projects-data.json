@@ -1,10 +1,12 @@
-{ "projects": [
+{
+  "projects": [
     {
       "name": "Movies",
+      "active": true,
       "pc": true,
       "mobile": true,
       "responsive": true,
-      "url": "https://movies-henanarevalo.netlify.app/",
+      "url": "https://movies.hernanarevalo.com.ar",
       "descriptionEn": "An informative movie platform powered by React.js to explore and discover details about your favorite films.",
       "descriptionEs": "Una plataforma informativa sobre películas impulsada por React.js para explorar y descubrir información sobre tus películas favoritas.",
       "size": "l",
@@ -12,6 +14,8 @@
       "image1": "movies1",
       "image2": "movies2",
       "github_url": "https://github.com/HernanArevalo/movies-app",
+      "technologies": ["react", "javascript", "tailwind"]
+    },
     {
       "name": "Teslo Shop",
       "active": true,
@@ -30,10 +34,11 @@
     },
     {
       "name": "ToDo App",
+      "active": true,
       "pc": true,
       "mobile": false,
       "responsive": true,
-      "url": "https://todo-app-hernanarevalo.vercel.app/",
+      "url": "https://todo.hernanarevalo.com.ar/",
       "descriptionEn": "A Todo List web app crafted with React.js for efficient activity management and task organization. Only in PC version.",
       "descriptionEs": "Una aplicación web de Listas de Tareas hecha con React.js para una gestión eficiente de actividades y organización de tareas. Solo en versión de escritorio",
       "size": "l",
@@ -42,15 +47,14 @@
       "image2": "todo2",
       "github_url": "https://github.com/HernanArevalo/todo-app",
       "technologies": ["react", "redux", "javascript"]
-
-
     },
     {
       "name": "Valorant App",
+      "active": true,
       "pc": true,
       "mobile": false,
       "responsive": true,
-      "url": "https://valo-app.vercel.app/",
+      "url": "https://valorant.hernanarevalo.com.ar/",
       "descriptionEn": "An informative platform about Valorant, powered by Next.js, immersing you in the game world with insights on agents, maps, and weapons.",
       "descriptionEs": "Una plataforma informativa sobre Valorant, impulsada por Next.js, que te sumerge en el mundo del juego con detalles sobre agentes, mapas y armas.",
       "size": "l",
@@ -59,15 +63,14 @@
       "image2": "valo2",
       "github_url": "https://github.com/HernanArevalo/valo-app",
       "technologies": ["next", "react", "javascript"]
-      
-      
     },
     {
       "name": "Space Tourism",
+      "active": true,
       "pc": true,
       "mobile": true,
       "responsive": true,
-      "url": "https://space-tourism-hernanarevalo.vercel.app/",
+      "url": "https://space.hernanarevalo.com.ar/",
       "descriptionEn": "Explore the cosmos with our SPA website, showcasing details on space travel destinations, crew, and technologies.",
       "descriptionEs": "Explora el cosmos con nuestra página web SPA, que presenta información sobre destinos de viaje espacial, tripulación y tecnologías.",
       "size": "l",
@@ -76,11 +79,10 @@
       "image2": "space2",
       "github_url": "https://github.com/HernanArevalo/space-tourism-app",
       "technologies": ["react", "redux", "javascript"]
-      
-      
     },
     {
       "name": "Journal App",
+      "active": true,
       "pc": true,
       "mobile": true,
       "responsive": true,
@@ -93,11 +95,10 @@
       "image2": "journal2",
       "github_url": "https://github.com/HernanArevalo/journal-app",
       "technologies": ["react", "redux", "javascript"]
-
-
     },
     {
       "name": "Devter",
+      "active": false,
       "pc": true,
       "mobile": true,
       "responsive": true,
@@ -109,11 +110,11 @@
       "image1": "devter1",
       "image2": "devter2",
       "github_url": "https://github.com/HernanArevalo/devter",
-      "technologies": ["next","react", "javascript"]
-
+      "technologies": ["next", "react", "javascript"]
     },
     {
       "name": "Calendar",
+      "active": true,
       "pc": true,
       "mobile": true,
       "responsive": true,
@@ -125,12 +126,11 @@
       "image1": "calendar1",
       "image2": "calendar2",
       "github_url": "https://github.com/HernanArevalo/calendar-app",
-      "technologies": ["react","mongo","express","node"]
-
-
+      "technologies": ["react", "mongo", "express", "node"]
     },
     {
       "name": "Landing 1",
+      "active": true,
       "pc": true,
       "mobile": false,
       "responsive": false,
@@ -143,12 +143,10 @@
       "image2": "landing12",
       "github_url": "https://github.com/HernanArevalo/landing-1",
       "technologies": ["javascript", "html", "css"]
-
-
     },
-    
     {
       "name": "Landing 2",
+      "active": true,
       "pc": true,
       "mobile": false,
       "responsive": false,
@@ -161,17 +159,15 @@
       "image2": "landing22",
       "github_url": "https://github.com/HernanArevalo/landing-2",
       "technologies": ["javascript", "html", "css"]
-
-
     }
-],
-  "otherprojects":[
+  ],
+  "otherprojects": [
     {
-      "name": "Twitter Bot - 300k followers",
+      "name": "Twitter Bot",
       "active": true,
       "pc": true,
-      " mobile": false,
-      "url": "https://twitter.com/frasesdentvg1",
+      "mobile": false,
+      "url": "https://x.com/FrasesDeNTVG1",
       "descriptionEn": "A Python project that creates and connects a Twitter bot to periodically share random song lyrics from the rock band 'No Te Va Gustar', providing a unique musical experience on your timeline.",
       "descriptionEs": "Proyecto en Python que crea y conecta un bot de Twitter para compartir de manera aleatoria, y cada cierto tiempo, frases de canciones de la banda de rock 'No Te Va Gustar', ofreciendo una experiencia musical única en tu timeline.",
       "size": "s",
@@ -180,14 +176,12 @@
       "image2": "",
       "github_url": "https://github.com/HernanArevalo/twitter-lyrics-bot",
       "technologies": ["python"]
-
     },
     {
       "name": "Calendar App Backend",
       "active": true,
       "pc": true,
-      " mobile": false,
-      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "mobile": false,
       "descriptionEn": "A project built with Node.js, MongoDB, and Express that handles the entire backend for a calendar application, providing robust features for organizing your events and commitments.",
       "descriptionEs": "Un proyecto desarrollado con Node.js, MongoDB y Express que gestiona todo el backend de una aplicación de calendario, brindando funcionalidades sólidas para organizar tus eventos y compromisos.",
       "size": "s",
@@ -196,14 +190,12 @@
       "image2": "",
       "github_url": "https://github.com/HernanArevalo/calendar-app-backend",
       "technologies": ["mongo", "express", "node"]
-
     },
     {
       "name": "Blackjack game",
       "active": true,
       "pc": true,
-      " mobile": false,
-      "url": "https://github.com/HernanArevalo/python-blackjack/blob/main/blackjack-game.py",
+      "mobile": false,
       "descriptionEn": "A Python project that recreates the casino game 'Blackjack,' perfect for learning the game methodology with fictional bets and for casual entertainment.",
       "descriptionEs": "Un proyecto en Python que recrea el juego de casino 'Blackjack', perfecto para aprender la metodología del juego con apuestas ficticias y disfrutar de momentos de entretenimiento casual.",
       "size": "s",
@@ -212,14 +204,12 @@
       "image2": "",
       "github_url": "https://github.com/HernanArevalo/python-blackjack/blob/main/blackjack-game.py",
       "technologies": ["python"]
-
     },
     {
       "name": "Discord Bot",
       "active": true,
       "pc": true,
-      " mobile": false,
-      "url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord/index.js",
+      "mobile": false,
       "descriptionEn": "A Javascript file designed to connect a Discord bot, enhancing the server's experience, adding entertainment and improving the communication.",
       "descriptionEs": "Un archivo de JavaScript diseñado para conectar un bot de Discord, mejorando la experiencia del servidor, agregando entretenimiento y mejorando la comunicación.",
       "size": "s",
@@ -228,6 +218,6 @@
       "image2": "",
       "github_url": "https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord/index.js",
       "technologies": ["javascript", "node"]
-
     }
-]}
+  ]
+}
