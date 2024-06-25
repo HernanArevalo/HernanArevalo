@@ -8,11 +8,11 @@ import data from '../../data/info.json'
 import Footer from '@/components/Footer'
 
 
-export default function Home( params ) {
+export default function Home() {
   
 
   const router = useRouter()
-  const { asPath, query } = useRouter();
+  const { asPath } = useRouter();
 
   const [info, setInfo] = useState( data.en );
   const [lang, setLang] = useState( 'en' );
