@@ -6,7 +6,8 @@ export const ProjectItem = ( { project, lang } ) => {
 
   return (
     <>
-    <div className={`project-item ${project.size == "s"? "small":"large"}`}>
+    { project.active &&
+        <div className={`project-item ${project.size == "s"? "small":"large"}`}>
 
         <a className="project-image" href={ project.url } target="_blank" rel="noopener noreferrer">
         <div className="project-image-div">
@@ -74,6 +75,7 @@ export const ProjectItem = ( { project, lang } ) => {
           </div>
 
         </div>
+    }
 
     <style jsx>{`
 
