@@ -6,6 +6,8 @@ export const likesSlice = createSlice({
         likesCounter: '',
         isLoaded: false,
         isSaving: true,
+        liked: false,
+        likedOnSession: false
     },
     reducers: {
         setLikes: (state, action ) => {
@@ -13,9 +15,12 @@ export const likesSlice = createSlice({
         },
         addLike: ( state, action ) => {
             state.likesCounter = state.likesCounter+1;
+            state.liked = true;
+            state.likedOnSession = true
         },
         removeLike: ( state, action ) => {
             state.likesCounter = state.likesCounter-1;
+            state.liked = false
         },
         isSaving: ( state ) => {
             state.isSaving = true;
@@ -29,9 +34,15 @@ export const likesSlice = createSlice({
         notLoaded: ( state ) => {
             state.isLoaded = false;
         },
+        isLiked: (state) => {
+            state.liked = true
+        },
+        isNotLiked: (state) => {
+            state.liked = false
+        }
     }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { setLikes, addLike, removeLike, isSaving, notSaving, isLoaded, notLoaded } = likesSlice.actions;
+export const { setLikes, addLike, removeLike, isSaving, liked, likedOnSession, notSaving, isLoaded, notLoaded, isLiked, isNotLiked } = likesSlice.actions;
