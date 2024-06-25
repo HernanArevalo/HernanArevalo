@@ -12,9 +12,21 @@
       "image1": "movies1",
       "image2": "movies2",
       "github_url": "https://github.com/HernanArevalo/movies-app",
-      "technologies": ["react", "javascript"]
-
-      
+    {
+      "name": "Teslo Shop",
+      "active": true,
+      "pc": true,
+      "mobile": true,
+      "responsive": true,
+      "url": "https://shop.hernanarevalo.com.ar",
+      "descriptionEn": "A Todo List web app crafted with React.js for efficient activity management and task organization. Only in PC version.",
+      "descriptionEs": "Una aplicación web de Listas de Tareas hecha con React.js para una gestión eficiente de actividades y organización de tareas. Solo en versión de escritorio",
+      "size": "l",
+      "logo_name": "todo-app.png",
+      "image1": "shop1",
+      "image2": "shop2",
+      "github_url": "https://github.com/HernanArevalo/teslo-shop",
+      "technologies": ["next", "tailwind", "postgresql"]
     },
     {
       "name": "ToDo App",
