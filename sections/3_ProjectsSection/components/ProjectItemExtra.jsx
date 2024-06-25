@@ -1,66 +1,59 @@
-import { colors } from '@/app/theme'
+import { colors } from '@/app/theme';
+import Image from 'next/image';
 
 export default function Projectexta({ project, lang }) {
-
-
   return (
-  <>
-  <div className="extra-project" key={project.name}>
+    <>
+      <div className="extra-project" key={project.name}>
+        <div className="extra-project-info">
+          <h4 className="extra-project-title">
+            {project.name}
+            {project.name.includes('Twitter Bot') && (
+              <a href={project.url} target="blank">
+                <div className="twitter-arroba">@FrasesDeNTVG1</div>
+                <div className="twitter-arroba">310k followers</div>
+              </a>
+            )}
+          </h4>
+          <p className="extra-project-description">
+            {lang === 'es' ? project.descriptionEs : project.descriptionEn}
+          </p>
 
-  <div className="extra-project-info">
-    <div className="extra-project-title">
-      { project.name }
-      { project.name == 'Twitter Lyrics Bot' &&
-        <a href='https://twitter.com/frasesdentvg1' target='blank'>
-          <div className="twitter-arroba">
-            @FrasesDeNTVG1
-          </div>
-          <div className="twitter-arroba">
-            310k followers
-          </div>
-        </a>
-      }
-    </div>
-    <div className="extra-project-description">
-      { lang === 'es'? project.descriptionEs : project.descriptionEn }
-    </div>
+          <div className="project-icons">
+            <div className="url-icons">
+              <a href={project.github_url} target="blank">
+                <div className="github-logo">
+                  <i className="home-icon-font bx bxl-github" />
+                </div>
+              </a>
 
-  <div className="project-icons">
-    <div className="url-icons">
-      <a href={ project.github_url } target='blank'>
-        <div className="github-logo">
-          <i className='home-icon-font bx bxl-github' />
+              {project.name.includes('Twitter Bot') && (
+                <a href="https://twitter.com/frasesdentvg1" target="blank">
+                  <div className="github-logo">
+                    <i className="bx bxl-twitter"></i>
+                  </div>
+                </a>
+              )}
+            </div>
+
+            <div className="project-tech">
+              {project.technologies.map((tech) => (
+                <Image
+                  key={tech}
+                  src={`/assets/projects-section/technologies/${tech}.png`}
+                  alt=""
+                  width={48}
+                  height={48}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </a>
+      </div>
 
-      { project.name == 'Twitter Lyrics Bot' &&
-        <a href='https://twitter.com/frasesdentvg1' target='blank'>
-          <div className="github-logo">
-            <i className='bx bxl-twitter'></i>
-          </div>
-        </a>
-      }
-    </div>
-
-    <div className="project-tech">
-      {
-        project.technologies.map(tech =>(
-            <img key={tech}
-                src={`/assets/projects-section/technologies/${tech}.png`} 
-                alt="" 
-            />
-              
-        ))
-      }
-    </div>
-  </div>
-  </div>
-
-  </div>
-
-<style jsx>{`
+      <style jsx>{`
   .bxl-github, .bxl-twitter{
-    color: ${ colors.blue };
+    color: ${colors.blue};
     font-size: 50px;
   }
 
@@ -70,8 +63,8 @@ export default function Projectexta({ project, lang }) {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: ${ colors.orange };
-    box-shadow: 10px 10px ${ colors.yellow };
+    background-color: ${colors.orange};
+    box-shadow: 10px 10px ${colors.yellow};
     gap: 15px;
   }
 
@@ -82,7 +75,7 @@ export default function Projectexta({ project, lang }) {
   }
 
   .extra-project-title{
-    color: ${ colors.blue };
+    color: ${colors.blue};
     font-size: 25px;
     font-weight: 700;
     width: 100%;
@@ -93,12 +86,12 @@ export default function Projectexta({ project, lang }) {
     font-weight: 600;
   }
   .extra-project-description{
-    color: ${ colors.yellow };
+    color: ${colors.yellow};
     font-size: 18px;
   }
   a{
     text-decoration: none;
-    color: ${ colors.blue };
+    color: ${colors.blue};
   }
   .project-icons{
     display: flex;
@@ -106,7 +99,7 @@ export default function Projectexta({ project, lang }) {
     justify-content: space-between;
     align-items: center;
     width: 95%;
-    color: ${ colors.blue };
+    color: ${colors.blue};
   }
   .url-icons{
     display: flex;
@@ -116,8 +109,8 @@ export default function Projectexta({ project, lang }) {
 
   .github-logo{
     font-size: 40px;
-    background-color: ${ colors.yellow };
-    box-shadow: 5px 5px ${ colors.blue };
+    background-color: ${colors.yellow};
+    box-shadow: 5px 5px ${colors.blue};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,13 +119,13 @@ export default function Projectexta({ project, lang }) {
     transition: .3s;
   }
   .github-logo:hover{
-    color: ${ colors.orange };
-    background-color: ${ colors.blue };
-    box-shadow: 5px 5px ${ colors.yellow };
+    color: ${colors.orange};
+    background-color: ${colors.blue};
+    box-shadow: 5px 5px ${colors.yellow};
   }
 
   .github-logo:hover .bxl-github, .github-logo:hover .bxl-twitter{
-    color: ${ colors.yellow };
+    color: ${colors.yellow};
   }
   .project-tech{
       display: flex;
@@ -163,5 +156,5 @@ export default function Projectexta({ project, lang }) {
   }
 `}</style>
     </>
-  )
+  );
 }
