@@ -3,9 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { startAddingLike, startLoadLikes, startRemovingLike } from '../../store/likes/thunks.js';
 
-//! NEW
 import { colors } from '@/app/theme.js';
-// !
 
 export const Likes = () => {
 
@@ -66,9 +64,7 @@ export const Likes = () => {
                 <div className="likes-counter">
                     { likesCounter }
                 </div>
-
             </button>
-
         }
 
     <style jsx>{`
@@ -120,7 +116,6 @@ export const Likes = () => {
             font-weight: 700;
             color: ${isSaving? colors.grey : colors.blue }
         }
-
         @media (max-width: 500px) {
             .likes-container{
                 position: absolute;
