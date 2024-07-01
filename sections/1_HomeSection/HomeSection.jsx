@@ -8,9 +8,9 @@ export const HomeSection = ( { info } ) => {
     <div className="home-container" id="home">
         <div className="home-container-1">
             
-            <div className="section-title-2 animate__animated animate__fadeInLeft">
+            <span className="section-title-2 animate__animated animate__fadeInLeft">
                 {info.home.title}
-            </div>
+            </span>
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
             <div className="home-icons">
@@ -37,9 +37,9 @@ export const HomeSection = ( { info } ) => {
             <i className='bx bx-code-alt'></i>
 
             <div className="studies">
-                <div>• { info.home.studies1 }</div>
-                <div>• { info.home.studies2 }</div>
-                <div>• { info.home.studies3 }</div>
+                <span>• { info.home.studies1 }</span>
+                <span>• { info.home.studies2 }</span>
+                <span>• { info.home.studies3 }</span>
             </div>
             <p className="ubication">
                 { info.home.location }

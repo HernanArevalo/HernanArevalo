@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { colors } from '@/app/theme'
+import Image from 'next/image'
 
 export const ProjectItem = ( { project, lang } ) => {
 
@@ -11,8 +12,8 @@ export const ProjectItem = ( { project, lang } ) => {
 
         <a className="project-image" href={ project.url } target="_blank" rel="noopener noreferrer">
         <div className="project-image-div">
-            <img src={`/assets/projects-section/projects/${project.image1}.jpg`} alt=""/>
-            <img src={`/assets/projects-section/projects/${project.image2}.jpg`} alt=""/>
+            <Image src={`/assets/projects-section/projects/${project.image1}.jpg`} alt="" width={300} height={150}/>
+            <Image src={`/assets/projects-section/projects/${project.image2}.jpg`} alt="" width={300} height={150}/>
         </div>
         </a>
 
@@ -48,7 +49,7 @@ export const ProjectItem = ( { project, lang } ) => {
                 <div className="project-tech">
                     {
                         project.technologies.map(tech =>(
-                            <img key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" />
+                            <Image key={tech}src={`/assets/projects-section/technologies/${tech}.png`} alt="" width={48} height={48}/>
                         ))
                     }
 
@@ -107,7 +108,8 @@ export const ProjectItem = ( { project, lang } ) => {
 
         .project-image-div{
             width: 100%;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2,auto);
             justify-content: center;
             align-items: center;
             background-color: ${ colors.black };
