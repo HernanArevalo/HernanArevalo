@@ -1,4 +1,5 @@
 import { colors } from '@/app/theme'
+import Image from 'next/image'
 
 export const HomeSection = ( { info } ) => {
 
@@ -31,7 +32,7 @@ export const HomeSection = ( { info } ) => {
         <div className="home-container-2">
 
             <div className="profile-picture-div">
-                <img className='profile-picture' src="/profile.jpg " alt="profile-picture" priority='true'/>
+                <Image className='profile-picture' src="/profile.jpg " alt="profile-picture" priority='true' width={280} height={280}/>
             </div>
             <i className='bx bx-code-alt'></i>
 
