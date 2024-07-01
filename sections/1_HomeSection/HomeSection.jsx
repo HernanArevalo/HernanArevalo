@@ -32,7 +32,7 @@ export const HomeSection = ( { info } ) => {
         <div className="home-container-2">
 
             <div className="profile-picture-div">
-                <Image className='profile-picture' src="/profile.jpg " alt="profile-picture" priority='true' width={280} height={280}/>
+                <Image className='profile-picture' src="/profile.jpg" alt="profile-picture" priority='true' width={280} height={280}/>
             </div>
             <i className='bx bx-code-alt'></i>
 
