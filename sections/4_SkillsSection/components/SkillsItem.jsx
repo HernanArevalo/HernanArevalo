@@ -1,4 +1,4 @@
-import { boxShadow, colors } from "@/app/theme"
+import { colors } from "@/app/theme"
 
 export const SkillsItem = ({skill}) => {
 
