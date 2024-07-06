@@ -102,7 +102,7 @@ export const ContactSection = ({info}) => {
                     action="https://formsubmit.co/hernanarevalo16@gmail.com" 
                     method="POST"
               >
-                <label for="name-input">{ info.contact.name }</label>
+                <label >{ info.contact.name }</label>
                 <input 
                         type="text" 
                         className='name-input'
@@ -111,7 +111,7 @@ export const ContactSection = ({info}) => {
                         value = { name }
                         onChange = { onInputChange }
                 />
-                <label for="email">{ info.contact.email }</label>
+                <label >{ info.contact.email }</label>
                 <input 
                         type="text" 
                         className='email-input'
@@ -120,7 +120,7 @@ export const ContactSection = ({info}) => {
                         value = { email }
                         onChange = { onInputChange }
                 />
-                <label for="message">{ info.contact.message }</label>
+                <label >{ info.contact.message }</label>
                 <textarea 
                         type="text" 
                         className='message-input'
