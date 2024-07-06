@@ -1,9 +1,10 @@
 import { colors } from '@/app/theme'
 import { SkillsItem, SkillsItemXS } from './components'
-import {skills, extraskills } from './skills.json'
+import data from './skills.json'
 
 export const SkillsSection = ({lang}) => {
 
+    const {skills, extraskills } = data
 
   return (
     <>
