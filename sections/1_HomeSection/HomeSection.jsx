@@ -1,5 +1,6 @@
 import { colors } from '@/app/theme'
 import Image from 'next/image'
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
 export const HomeSection = ( { info } ) => {
 
@@ -16,12 +17,12 @@ export const HomeSection = ( { info } ) => {
             <div className="home-icons">
                 <a href="https://www.linkedin.com/in/hernanarevalo" target="_blank" aria-label="Go to linkedin profile page">
                     <div className="home-icon-div">
-                        <i className='home-icon-font bx bxl-linkedin'></i>
+                        <IoLogoLinkedin  color={colors.blue} size={28}/>
                     </div>
                 </a>
                 <a href="https://www.github.com/HernanArevalo" target="_blank" aria-label="Go to github profile page">
                     <div className="home-icon-div">
-                        <i className='home-icon-font bx bxl-github'></i>
+                    <IoLogoGithub  color={colors.blue} size={28}/>
                     </div>
                 </a>
 
@@ -114,7 +115,7 @@ export const HomeSection = ( { info } ) => {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5px;
+        padding: 10px;
         border-radius: 5px;
         transition: .3s;
         box-shadow: 2px 2px ${ colors.yellow };
