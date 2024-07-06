@@ -14,7 +14,7 @@ export const SkillsItem = ({skill}) => {
         <div className="skill-image">
             <img src={`/assets/skills-section/${skill.image_file}`} 
                  className="skill-image-svg"
-                 aLt={`${skill.name.toLowerCase()} logo`}
+                 alt={`${skill.name.toLowerCase()} logo`}
             />
         </div>
 
