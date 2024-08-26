@@ -151,12 +151,13 @@ export const ContactSection = ({ info }) => {
 
       <style jsx>{`
         .contact-container {
-          height: 100vh;
+          min-height: calc(100vh - 100px);
           width: 100%;
           overflow-x: hidden;
         }
 
         .contact {
+          height: 100%;
           display: flex;
           flex-direction: row;
           justify-content: center;
