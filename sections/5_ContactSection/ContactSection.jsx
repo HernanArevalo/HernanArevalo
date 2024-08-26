@@ -19,9 +19,9 @@ export const ContactSection = ({ info }) => {
 
   const { formState, onInputChange, onResetForm, name, email, message } =
     useForm({
-      name: 'fernando',
-      email: 'fernando@gmail.com',
-      message: 'fdgfdgfgf',
+      name: '',
+      email: '',
+      message: '',
     });
 
   const deleteForm = () => {
