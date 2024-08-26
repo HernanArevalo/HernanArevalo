@@ -1,37 +1,44 @@
 import { useState } from 'react'
+
 import { useForm } from '../../hooks/useForm/useForm'
 import { colors } from '@/app/theme'
 
+
 export const ContactSection = ({info}) => {
+    // const resend = new Resend('re_R9cbHofR_HBqwanmrKqvBKxppEHaLZMCB');
 
   const [copied, setCopied] = useState(false)
 
   const onEmailClick = () => {
 
-
-    navigatoR.clipboard.writeText('hernanarevalo16@gmail.com')
+    navigator.clipboard.writeText('hernanarevalo16@gmail.com')
     setCopied(true)
 
     setTimeout(() => {
       setCopied(false)
     }, 3000);
-
   }
 
   const { formState, onInputChange, onResetForm, name, email, message } = useForm({
-    name: '',
-    email: '',
-    message: ''
+    name: 'fernando',
+    email: 'fernando@gmail.com',
+    message: 'fdgfdgfgf'
   })
 
   const deleteForm = () => {
     onResetForm()
   }
 
+  const onSendingEmail = async (e) => {
+    e.preventDefault();
+  
+    sendEmail
+  };
+  
+
   return (
     <>
-
-      <div className="contact-container" id="contact">
+      <div className="contact-container overflow-hidden" id="contact">
 
         <div className="section-title">
             {info.contact.title}
@@ -97,11 +104,7 @@ export const ContactSection = ({info}) => {
 
             </div>
             <div className="contact-right">
-              <form 
-                    target="_blank" 
-                    action="https://formsubmit.co/hernanarevalo16@gmail.com" 
-                    method="POST"
-              >
+              <form>
                 <label >{ info.contact.name }</label>
                 <input 
                         type="text" 
@@ -129,7 +132,7 @@ export const ContactSection = ({info}) => {
                         value = { message }
                         onChange = { onInputChange }
                 />
-                <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button" type="submit">{ info.contact.send }</button>
+                <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button" type="submit" onClick={ onSendingEmail }>{ info.contact.send }</button>
               </form>
             </div>
           </div>
@@ -145,9 +148,7 @@ export const ContactSection = ({info}) => {
         .contact{
             display: flex;
             flex-direction: row;
-            height: calc(100vh - 260px);
             font-size: 25px;
-            padding-bottom: 70px;
 
         }
 

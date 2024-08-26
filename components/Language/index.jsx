@@ -1,3 +1,4 @@
+"use client"
 import { colors } from '@/app/theme'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -15,7 +16,7 @@ export const Language = () => {
  
   useEffect(() => {
     if (isLoaded) { setSpanish(pathname == '/es') };
-  }, [ isLoaded ])
+  }, [ isLoaded, pathname ])
   
   const onClickActiveSpanish = () => {
       if (router.query.lang[0] !== 'es') {

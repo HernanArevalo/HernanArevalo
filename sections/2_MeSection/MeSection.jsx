@@ -1,6 +1,4 @@
 import { colors } from '@/app/theme'
-import Image from 'next/image'
-
 
 export const MeSection = ( { info } ) => {
 

@@ -1,9 +1,11 @@
+"use client"
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 
 import { startAddingLike, startLoadLikes, startRemovingLike } from '../../store/likes/thunks.js';
 
 import { colors } from '@/app/theme.js';
+import MotionNumber from 'motion-number';
 
 export const Likes = () => {
 
@@ -62,7 +64,11 @@ export const Likes = () => {
                     
 
                 <div className="likes-counter">
-                    { likesCounter }
+                    <MotionNumber 
+                        value={likesCounter}
+                        format={{ notation: 'compact'}}
+                        locales="es-MX"
+                    />
                 </div>
             </button>
         }

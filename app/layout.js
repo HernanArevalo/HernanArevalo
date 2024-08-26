@@ -2,8 +2,8 @@ import { Provider } from 'react-redux'
 import './globals.css'
 import Head from 'next/head'
 import { store } from '@/store'
-import { Confetti, Language, Likes, Navbar } from '@/components'
 import { colors } from './theme'
+import { Confetti, Language, Likes, Navbar } from '../components'
 
 
 export default function RootLayout({ children }) {

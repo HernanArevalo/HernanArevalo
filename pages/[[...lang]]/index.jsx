@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 
-import RootLayout from '@/app/layout'
 import { HomeSection, MeSection, ProjectsSection, SkillsSection, ContactSection } from '../../sections'
 import data from '../../data/info.json'
 import Footer from '@/components/Footer'
+import RootLayout from '../../app/layout'
 
 
 export default function Home() {
