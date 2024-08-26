@@ -107,7 +107,7 @@ export const ContactSection = ({ info }) => {
               </div>
             </div>
           </div>
-          <div className="contact-right">
+          {/* <div className="contact-right">
             <form>
               <label>{info.contact.name}</label>
               <input
@@ -145,7 +145,7 @@ export const ContactSection = ({ info }) => {
                 {info.contact.send}
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -159,6 +159,8 @@ export const ContactSection = ({ info }) => {
         .contact {
           display: flex;
           flex-direction: row;
+          justify-content: center;
+          align-items: center;
           font-size: 25px;
         }
 
