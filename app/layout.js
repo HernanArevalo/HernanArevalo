@@ -3,7 +3,7 @@ import './globals.css'
 import Head from 'next/head'
 import { store } from '@/store'
 import { colors } from './theme'
-import { Confetti, Language, Likes, Navbar } from '../components'
+import { Confetti, Language, Likes, Navbar } from '@/components'
 
 
 export default function RootLayout({ children }) {
