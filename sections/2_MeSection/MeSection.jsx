@@ -1,35 +1,31 @@
-import { colors } from '@/app/theme'
+import { colors } from '@/app/theme';
 
-export const MeSection = ( { info } ) => {
-
-
-
+export const MeSection = ({ info }) => {
   return (
     <>
-    <div className="me-container" id="me">
-        <div className="section-title me-title">
-            {info.me.title}
-        </div>
+      <div className="me-container" id="me">
+        <div className="section-title me-title">{info.me.title}</div>
         <div className="me-content">
+          <div
+            className="me-content-descr"
+            dangerouslySetInnerHTML={{ __html: info.me.description0 }}
+          ></div>
 
-            <div className="me-content-descr" 
-                dangerouslySetInnerHTML={{ __html: info.me.description0 }}>
-            </div>
-
-            <div className="me-content-grid">
-                <article className='article-2'>{ info.me.description1 }</article>
-                <article className='article-1'>{ info.me.description2 }</article>
-                <article className='article-1'>{ info.me.description3 }</article>
-                <article className='article-2'>{ info.me.description4 }</article>
-                <article className='article-2'>{ info.me.description5 }</article>
-                <article className='article-1' dangerouslySetInnerHTML={{ __html: info.me.description6 }}></article>
-            </div>
-
+          <div className="me-content-grid">
+            <article className="article-2">{info.me.description1}</article>
+            <article className="article-1">{info.me.description2}</article>
+            <article className="article-1">{info.me.description3}</article>
+            <article className="article-2">{info.me.description4}</article>
+            <article className="article-2">{info.me.description5}</article>
+            <article
+              className="article-1"
+              dangerouslySetInnerHTML={{ __html: info.me.description6 }}
+            ></article>
+          </div>
         </div>
-            
-    </div>
+      </div>
 
-    <style jsx>{`
+      <style jsx>{`
         .me-container{
           height: 100vh;
           width: 100%;
@@ -52,9 +48,9 @@ export const MeSection = ( { info } ) => {
         }
 
         .me-content-descr{
-            background-color: ${ colors.orange };
-            box-shadow: 8px 8px 0px ${ colors.yellow };
-            color: ${ colors.yellow };
+            background-color: ${colors.orange};
+            box-shadow: 8px 8px 0px ${colors.yellow};
+            color: ${colors.yellow};
             font-weight: 500;
             max-width: 700px;
             padding: 50px;
@@ -63,7 +59,7 @@ export const MeSection = ( { info } ) => {
         }
 
         .me-content-grid{
-            color: ${ colors.yellow };
+            color: ${colors.yellow};
             display: grid;
             grid-template-columns: repeat(2, 320px);
             gap: 30px;
@@ -83,12 +79,12 @@ export const MeSection = ( { info } ) => {
         }
 
         .me-content-grid > .article-1{
-            color: ${ colors.yellow };
-            background-color: ${ colors.orange };
+            color: ${colors.yellow};
+            background-color: ${colors.orange};
         }
         .me-content-grid > .article-2{
-            color: ${ colors.orange };
-            background-color: ${ colors.yellow };
+            color: ${colors.orange};
+            background-color: ${colors.yellow};
         }
 
         @media (max-width: 1600px) {
@@ -149,7 +145,7 @@ export const MeSection = ( { info } ) => {
                 padding: 30px;
             }
             .me-content-grid{
-                color: ${ colors.yellow };
+                color: ${colors.yellow};
                 display: grid;
                 grid-template-columns: repeat(3, 200px);
             }
@@ -200,7 +196,6 @@ export const MeSection = ( { info } ) => {
 
         }
       `}</style>
-
     </>
-  )
-}
+  );
+};
