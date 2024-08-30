@@ -35,7 +35,6 @@ export const MeSection = ({ info }) => {
           flex-direction: column;
           justify-content: flex-start;
         }
-
         .me-content{
             width: 100%;
             height: 65%;
@@ -46,7 +45,6 @@ export const MeSection = ({ info }) => {
             font-size: 24px;
 
         }
-
         .me-content-descr{
             background-color: ${colors.orange};
             box-shadow: 8px 8px 0px ${colors.yellow};
@@ -57,7 +55,6 @@ export const MeSection = ({ info }) => {
             text-align: justify;
 
         }
-
         .me-content-grid{
             color: ${colors.yellow};
             display: grid;
@@ -66,7 +63,6 @@ export const MeSection = ({ info }) => {
             height: 100%;
 
         }
-
         .me-content-grid article{
             font-weight: 600;
             display: flex;
@@ -75,9 +71,7 @@ export const MeSection = ({ info }) => {
             text-align: center;
             padding: 15px;
             box-shadow: 8px 8px;
-            
         }
-
         .me-content-grid > .article-1{
             color: ${colors.yellow};
             background-color: ${colors.orange};
@@ -86,7 +80,6 @@ export const MeSection = ({ info }) => {
             color: ${colors.orange};
             background-color: ${colors.yellow};
         }
-
         @media (max-width: 1600px) {
             .me-content{
                 font-size: 20px;
@@ -101,10 +94,7 @@ export const MeSection = ({ info }) => {
             .me-content-grid article{
                 padding: 15px;
             }
-
-            
         }
-
         @media (max-width: 1400px) {
             .me-content{
                 font-size: 20px;
@@ -114,20 +104,16 @@ export const MeSection = ({ info }) => {
             }
 
         }
-
         @media (max-height: 800px) {
             .me-content{
                 font-size: 19px;
             }
-
         }
-
         @media (max-width: 1400px) {
             .me-content-descr{
                 font-size: 20px;
                 padding: 40px;
             }
-            
         }
         @media (max-width: 1190px) {
             .me-container{
@@ -166,8 +152,6 @@ export const MeSection = ({ info }) => {
                 justify-content: center;
                 font-size: 16px;
             }
-
-
         }
         @media (max-width: 500px) {
             .me-content{
