@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <>
       <Head>
         <title>Hernán Arévalo | Frontend Dev</title>
-        <meta name="description" content="Hello! I'm a frontend developer and a student of Information Sistems Engineering. I'm developing on the frontend with Next and React. In the backend I usually use Node or PostgreSQL, depending the situation. If you want to know more about me, you can send me an email to hernanarevalo16@gmail.com. I'm excited to hear about your project!" />
+        <meta name="description" content="Hello! I am a frontend developer and a student of Information Systems Engineering. I'm developing on the frontend with Next and React. In the backend, I usually use Node or PostgreSQL, depending on the situation. If you want to know more about me, you can send me an email to hernanarevalo16@gmail.com. I'm excited to hear about your project!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.jpg" />
 
