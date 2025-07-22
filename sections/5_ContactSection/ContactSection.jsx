@@ -74,11 +74,11 @@ export const ContactSection = ({ info }) => {
               </a>
               <div className="linkedin-link">
                 <a
-                  href="https://linkedin.com/in/arevalo-hernan"
+                  href="https://www.linkedin.com/in/hernan-arevalo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  linkedin.com/in/arevalo-hernan
+                  linkedin.com/in/hernan-arevalo
                 </a>
               </div>
             </div>
