@@ -2,7 +2,6 @@ import { ProjectItem } from './components/ProjectItem';
 // import { ProjectItemReduced } from './components/ProjectItemReduced';
 import data from './projects-data.json'
 import { colors } from '../../app/theme';
-import Link from 'next/link';
 import Projectexta from './components/ProjectItemExtra';
 
 export const ProjectsSection = ({info, lang}) => {
