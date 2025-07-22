@@ -15,7 +15,7 @@ export const HomeSection = ( { info } ) => {
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
             <div className="home-icons">
-                <a href="https://www.linkedin.com/in/hernanarevalo" target="_blank" aria-label="Go to linkedin profile page">
+                <a href="https://www.linkedin.com/in/hernan-arevalo" target="_blank" aria-label="Go to linkedin profile page">
                     <div className="home-icon-div">
                         <IoLogoLinkedin  color={colors.blue} size={28}/>
                     </div>
