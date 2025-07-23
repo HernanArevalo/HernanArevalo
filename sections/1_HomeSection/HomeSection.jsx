@@ -1,4 +1,5 @@
 import { colors } from '@/app/theme'
+import { github_URL, linkedin_URL } from '@/constants';
 import Image from 'next/image'
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
@@ -15,12 +16,12 @@ export const HomeSection = ( { info } ) => {
             <h1>Hernán Arévalo</h1>
             <h2>{ info.home.charge }</h2>
             <div className="home-icons">
-                <a href="https://www.linkedin.com/in/hernan-arevalo" target="_blank" aria-label="Go to linkedin profile page">
+                <a href={linkedin_URL} target="_blank" aria-label="Go to linkedin profile page">
                     <div className="home-icon-div">
                         <IoLogoLinkedin  color={colors.blue} size={28}/>
                     </div>
                 </a>
-                <a href="https://www.github.com/HernanArevalo" target="_blank" aria-label="Go to github profile page">
+                <a href={github_URL} target="_blank" aria-label="Go to github profile page">
                     <div className="home-icon-div">
                     <IoLogoGithub  color={colors.blue} size={28}/>
                     </div>

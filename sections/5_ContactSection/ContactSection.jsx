@@ -2,14 +2,14 @@ import { useState } from 'react';
 
 import { useForm } from '../../hooks/useForm/useForm';
 import { colors } from '@/app/theme';
+import { email, github_URL, linkedin_URL } from '@/constants';
 
 export const ContactSection = ({ info }) => {
-  // const resend = new Resend('re_R9cbHofR_HBqwanmrKqvBKxppEHaLZMCB');
 
   const [copied, setCopied] = useState(false);
 
   const onEmailClick = () => {
-    navigator.clipboard.writeText('hernanarevalo16@gmail.com');
+    navigator.clipboard.writeText(email);
     setCopied(true);
 
     setTimeout(() => {
@@ -17,11 +17,11 @@ export const ContactSection = ({ info }) => {
     }, 3000);
   };
 
-  const { formState, onInputChange, onResetForm, name, email, message } =
+  const { formState, onInputChange, onResetForm, contactName, contactEmail, contactMessage } =
     useForm({
-      name: '',
-      email: '',
-      message: '',
+      contactName: '',
+      contactEmail: '',
+      contactMessage: '',
     });
 
   const deleteForm = () => {
@@ -51,7 +51,7 @@ export const ContactSection = ({ info }) => {
               </a>
               <div className="email-container">
                 <div className="email" onClick={onEmailClick}>
-                  hernanarevalo16@gmail.com
+                  { email }
                 </div>
                 {copied ? (
                   <div className="copied">{info.contact.emailCopied}</div>
@@ -61,7 +61,7 @@ export const ContactSection = ({ info }) => {
 
             <div className="linkedin-email">
               <a
-                href="https://linkedin.com/in/arevalo-hernan"
+                href={ linkedin_URL }
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,18 +74,18 @@ export const ContactSection = ({ info }) => {
               </a>
               <div className="linkedin-link">
                 <a
-                  href="https://www.linkedin.com/in/hernan-arevalo"
+                  href={ linkedin_URL }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  linkedin.com/in/hernan-arevalo
+                  { linkedin_URL.split(2) }
                 </a>
               </div>
             </div>
 
             <div className="github-email">
               <a
-                href="https://github.com/HernanArevalo"
+                href={ linkedin_URL }
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -98,7 +98,7 @@ export const ContactSection = ({ info }) => {
               </a>
               <div className="linkedin-link">
                 <a
-                  href="https://github.com/HernanArevalo"
+                  href={ github_URL }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
