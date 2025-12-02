@@ -41,10 +41,13 @@
 
 ### ⭐ GitHub Stats
 <div align="center">
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=HernanArevalo&show_icons=true&hide_border=true&title_color=FFF7D6&icon_color=FFF7D6&text_color=00B2FF&bg_color=0e3b61" alt="Hernán Arévalo Github Stats">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HernanArevalo&layout=compact&hide_border=true&title_color=FFF7D6&icon_color=00B2FF&text_color=FFF7D6&bg_color=0e3b61" alt="Hernán Arévalo Top Languages">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=HernanArevalo&theme=github_dark" width="32.5%">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HernanArevalo&theme=github_dark" width="32.5%">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=github_dark&utcOffset=3" width="32.5%">
 </div>
 
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="98%">
+</div>
 
 ---
 
