@@ -1,4 +1,5 @@
 ﻿﻿![Intro GIF](intro.gif)
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=naresh-khatri&label=Profile%20views&color=0e75b6&style=flat" alt="naresh-khatri" /> </p>
 
 ### 👋 Hello there!
 ### 👋 I'm Nan
