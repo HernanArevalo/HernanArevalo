@@ -167,7 +167,7 @@ const Footer = () => {
                       </a>
                       <br />
                       <a
-                        href="mailto:user123@gmail.com"
+                        href={`mailto:${email}`}
                         className="hover:text-gray-300 transition"
                       >
                         {email}
