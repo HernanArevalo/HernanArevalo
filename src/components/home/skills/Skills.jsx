@@ -3,22 +3,24 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { 
-  javascript,
-  react,
-  nextjs,
-  tailwind,
-  firebase,
-  photoshop,
-  illustrator,
-  redux,
-  typescript,
   angular,
-  postgresql,
-  nodejs,
-  python,
-  sql,
+  docker,
+  firebase,
+  illustrator,
+  javascript,
   n8n,
-  prisma
+  nextjs,
+  nodejs,
+  photoshop,
+  postgresql,
+  prisma,
+  python,
+  react,
+  redux,
+  sql,
+  supabase,
+  tailwind,
+  typescript,
 } from "@/../public/logos";
 
 
@@ -60,16 +62,18 @@ const Skills = () => {
     }, [controls, inView]);
 
     const skillsData = [
-        { icon: javascript, name: "JavaScript" },
-        { icon: typescript, name: "TypeScript" },
         { icon: react, name: "React" },
         { icon: nextjs, name: "Next.js" },
+        { icon: typescript, name: "TypeScript" },
+        { icon: javascript, name: "JavaScript" },
         { icon: n8n, name: "n8n" },
         { icon: nodejs, name: "NodeJS" },
-        { icon: sql, name: "SQL" },
+        { icon: docker, name: "Docker" },
         { icon: postgresql, name: "PostgreSQL" },
         { icon: prisma, name: "Prisma" },
-        { icon: tailwind, name: "TailwindCSS" },
+        { icon: supabase, name: "Supabase" },
+        { icon: sql, name: "SQL" },
+        { icon: tailwind, name: "Tailwind" },
         { icon: angular, name: "Angular" },
         { icon: redux, name: "Redux" },
         { icon: python, name: "Python" },
