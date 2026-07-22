@@ -1,34 +1,42 @@
 import {
-twitterBotImg,
-moviesImg,
-espacioBlank,
-spaceImg,
-todoImg,
-tesloShopImg,
-journalImg,
-valoImg,
+buronImg,
+cabusBurgerImg,
 calendarImg,
+espacioBlank,
+journalImg,
 landing1Img,
 landing2Img,
-smashAppImg,
+moviesImg,
 oldPortfolioImg,
-cabusBurgerImg,
+oesteGafasImg,
+oesteGafasAdminImg,
 paderImg,
-buronImg
+smashAppImg,
+spaceImg,
+tesloShopImg,
+todoImg,
+twitterBotImg,
+valoImg,
+
 } from "@/../public/projects";
 
 export const projects = [
-        {
-            name: "Cabus Burgers",
-            image: cabusBurgerImg,
-            link: "https://cabus-burgers.vercel.app",
-            githubLink: "https://github.com/HernanArevalo/cabus-burgers"
-        },
         {
             name: "Instituto Padre Juan Burón",
             image: buronImg,
             link: "https://jardinburon.vercel.app/",
             githubLink: "https://github.com/HernanArevalo/blog-jardin-buron"
+        },
+        {
+            name: "Oeste Gafas",
+            image: oesteGafasImg,
+            link: "https://oestegafas.com.ar",
+        },
+        {
+            name: "Cabus Burgers",
+            image: cabusBurgerImg,
+            link: "https://cabus-burgers.vercel.app",
+            githubLink: "https://github.com/HernanArevalo/cabus-burgers"
         },
         {
             name: "Pader",
@@ -41,6 +49,12 @@ export const projects = [
             image: twitterBotImg,
             link: "https://x.com/FrasesDeNTVG1",
             githubLink: "https://github.com/HernanArevalo/twitter-lyrics-bot"
+        },
+        {
+            name: "Oeste Gafas - Admin",
+            image: oesteGafasAdminImg,
+            link: "https://admin.oestegafas.com.ar",
+            githubLink: "https://github.com/HernanArevalo/oeste-admin-app"
         },
         {
             name: "Movies",
@@ -69,7 +83,7 @@ export const projects = [
         {
             name: "ToDo App",
             image: todoImg,
-            link: "https://todo.hernanarevalo.com.ar",
+            // link: "https://todo.hernanarevalo.com.ar",
             githubLink: "https://github.com/HernanArevalo/todo-app"
         },
         {
@@ -93,13 +107,13 @@ export const projects = [
         {
             name: "Journal App",
             image: journalImg,
-            link: "https://journal-app-ha.vercel.app/",
+            // link: "https://journal-app-ha.vercel.app/",
             githubLink: "https://github.com/HernanArevalo/journal-app"
         },
         {
             name: "Calendar",
             image: calendarImg,
-            link: "https://calendar-app-hernanarevalo.vercel.app",
+            // link: "https://calendar-app-hernanarevalo.vercel.app",
             githubLink: "https://github.com/HernanArevalo/calendar-app"
         },
         {
