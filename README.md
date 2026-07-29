@@ -117,16 +117,6 @@ Email → **hernanarevalo16@gmail.com**
 
 # 📊 GitHub Stats
 
-<div align="center">
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=HernanArevalo&theme=github_dark" width="32%">
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HernanArevalo&theme=github_dark" width="32%">
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=github_dark&utcOffset=-3" width="32%">
-
-</div>
-
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="100%">
 
 <div align="center">
