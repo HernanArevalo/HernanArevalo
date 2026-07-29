@@ -4,77 +4,123 @@
   <img src="https://komarev.com/ghpvc/?username=HernanArevalo&label=Profile%20views&color=0e75b6&style=flat" />
 </p>
 
-## 👋 Hi, I'm Hernán (Nan)
+# 👋 Hi, I'm Hernán (Nan)
 
-💻 Fullstack Developer & Systems Engineering Student  
-⚙️ Focused on building real-world solutions, combining frontend, backend and automation  
+### Fullstack Software Engineer • Automation • Product Development
 
----
+I'm a Systems Engineering student passionate about building software that solves real problems.
 
-### 🚀 About me
-
-- 🧠 I build fullstack applications using **React, Next.js and Node.js**
-- ⚙️ I work on **automation and process optimization** (n8n, scripts, integrations)
-- 🧩 I enjoy designing systems where **UX, business logic and scalability align**
-- 🤝 I like working in teams and collaborating on meaningful projects
-- 🔧 I’m always exploring new things (from bots to hardware projects)
+I enjoy creating products from end to end, combining frontend, backend, automation and AI to improve business processes and user experience.
 
 ---
 
-### 🧰 Tech Stack
+## 🚀 About me
 
-**Frontend**
+- 💻 Building applications with **React, Next.js, Node.js and TypeScript**
+- ⚙️ Automating workflows using **n8n, APIs, Webhooks and AI**
+- 🏗️ Designing systems where **UX, business logic and scalability** work together
+- 🤝 I enjoy collaborating with people who love building great products
+- 🔍 Always learning new technologies and exploring better ways to solve problems
+
+---
+
+## 🧰 Tech Stack
+
+### Frontend
 - React
 - Next.js
-- Tailwind
+- Tailwind CSS
 - Angular
+- React Native
 
-**Backend & APIs**
+### Backend & APIs
 - Node.js
-- Prisma (ORM)
+- Express.js
+- REST APIs
+- Prisma ORM
 
-**Database**
+### Database
 - PostgreSQL
+- MongoDB
+- Supabase
 
-**Automation**
+### Automation
 - n8n
 - Webhooks
-- Python / JavaScript scripting
+- AI Integrations
+- JavaScript & Python scripting
 
-**Languages**
+### Tools
+- Git
+- Docker
+
+### Languages
 - TypeScript
 - JavaScript
 - Python
 
 ---
 
-### 💻 Featured Work
+# 🚀 Featured Projects
 
-- 🏪 **Showroom Management System**  
-  Fullstack app to manage sales, stock and internal workflows  
+## 🏪 Showroom Management System
 
-- ⚙️ **Automation workflows**  
-  Bots and integrations to optimize repetitive tasks and processes  
+An internal management platform built from scratch for a retail business.
 
-- 🤖 **Bots development**  
-  Twitter / Twitch bots and API integrations  
+**Features**
+- Sales & inventory management
+- Internal dashboard
+- REST APIs
+- Automation workflows
+- AI integrations
+- PostgreSQL database
 
----
-
-### 🔗 Links
-
-- 🌐 Portfolio: https://hernanarevalo.com.ar  
-- 💼 LinkedIn: https://linkedin.com/in/HernanArevalo  
-- 📫 Contact: hernanarevalo16@gmail.com  
+**Stack**
+Next.js • Node.js • TypeScript • PostgreSQL • Prisma • n8n
 
 ---
 
-### ⭐ GitHub Stats
+## 🤖 Process Automation
+
+Automation workflows built to reduce manual work and connect different services.
+
+**Examples**
+- WhatsApp integrations
+- AI-powered workflows
+- API orchestration
+- Webhooks
+- Background automations
+
+---
+
+## 🖨️ Built my own 3D Printer
+
+One of my favorite personal projects.
+
+I assembled, calibrated and configured a complete 3D printer from scratch, combining mechanics, electronics and firmware.
+
+This project taught me a lot about problem solving, hardware and systems thinking.
+
+---
+
+## 🌐 Let's connect
+
+Portfolio → **https://hernanarevalo.com.ar**
+
+LinkedIn → **linkedin.com/in/HernanArevalo**
+
+GitHub → **github.com/HernanArevalo**
+
+Email → **hernanarevalo16@gmail.com**
+
+---
+
+# 📊 GitHub Stats
+
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=apprentice" width="100%">
 
 <div align="center">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=HernanArevalo&theme=apprentice" width="32.5%">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HernanArevalo&theme=apprentice" width="32.5%">
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=apprentice&utcOffset=-3" width="32.5%">
 </div>
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=apprentice" width="66%">
