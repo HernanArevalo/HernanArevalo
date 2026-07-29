@@ -29,13 +29,13 @@ export const ViewsCounter = () => {
   return (
     <div className="flex justify-end md:max-w-screen-lg xl:max-w-screen-xl items-center w-full mx-auto px-3">
       <div
-        className={`flex gap-1 px-1 items-center border-gray-600 text-gray-200 border-2 rounded-md w-fit transition-opacity duration-300
+        className={`flex flex-row justify-center gap-1 px-1 items-center border-gray-600 text-gray-200 border-2 rounded-md w-fit transition-opacity duration-300
           ${isReady ? "opacity-100" : "opacity-0"}
         `}
       >
         <FaEye />
-        <span className={fontCourier.className}>
-          {views}
+        <span className={fontCourier.className + "m-auto"}>
+          {(views).toLocaleString("es-AR")}
         </span>
       </div>
     </div>
