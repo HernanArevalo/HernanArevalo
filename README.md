@@ -103,15 +103,17 @@ This project taught me a lot about problem solving, hardware and systems thinkin
 
 ---
 
+
 ## 🌐 Let's connect
 
-Portfolio → **https://hernanarevalo.com.ar**
+Website → <a src="https://hernanarevalo.com.ar">**hernanarevalo.com.ar**</a>
+<br/>
+LinkedIn → <a src="https://linkedin.com/in/HernanArevalo">**linkedin.com/in/HernanArevalo**</a>
+<br/>
+GitHub → <a src="https://github.com/HernanArevalo">**github.com/HernanArevalo**</a>
+<br/>
+Email → <a src="mailto=hernanarevalo16@gmail.com">**hernanarevalo16@gmail.com**</a>
 
-LinkedIn → **linkedin.com/in/HernanArevalo**
-
-GitHub → **github.com/HernanArevalo**
-
-Email → **hernanarevalo16@gmail.com**
 
 ---
 
