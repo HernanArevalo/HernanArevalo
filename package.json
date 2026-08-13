@@ -1,6 +1,6 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "hernan-arevalo",
+  "version": "1.7.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
