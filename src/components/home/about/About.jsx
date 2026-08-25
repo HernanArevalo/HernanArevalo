@@ -43,8 +43,9 @@ const About = () => {
           <Heading tag="h1" text="About Me" styleType="h1" />
           <Heading
             tag="h2"
-            text="Unveiling the Layers of My Story"
+            text="Building Digital Solutions, From Code to Automation"
             styleType="h2"
+            maxWidth="1000px"
           />
           <div className="w-full flex lg:flex-row  flex-col lg:gap-y-0 gap-y-10 md:gap-x-0 gap-x-0  lg:gap-x-6 justify-between mt-10 lg:mt-20">
             <motion.div
