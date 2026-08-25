@@ -18,23 +18,28 @@ import tailwind from "@/../public/logos/tailwind.png";
 import typescript from "@/../public/logos/typescript.png";
 
 export const skills = [
-            { icon: react, name: "React" },
-            { icon: nextjs, name: "Next.js" },
-            { icon: typescript, name: "TypeScript" },
-            { icon: n8n, name: "n8n" },
-            { icon: nodejs, name: "NodeJS" },
-            { icon: javascript, name: "JavaScript" },
-            { icon: sql, name: "SQL" },
-            { icon: postgresql, name: "PostgreSQL" },
-            { icon: prisma, name: "Prisma" },
-            { icon: tailwind, name: "TailwindCSS" },
-            { icon: angular, name: "Angular" },
-            { icon: redux, name: "Redux" },
-            { icon: python, name: "Python" },
-            { icon: firebase, name: "Firebase" },
-            { icon: docker, name: "Docker" },
-            { icon: git, name: "Git" },
-            { icon: photoshop, name: "Photoshop" },
-            { icon: illustrator, name: "Illustrator" },
-    
-]
+  { icon: react, name: "React" },
+  { icon: nextjs, name: "Next.js" },
+  { icon: typescript, name: "TypeScript" },
+  { icon: javascript, name: "JavaScript" },
+
+  { icon: nodejs, name: "Node.js" },
+  { icon: n8n, name: "n8n" },
+  { icon: python, name: "Python" },
+
+  { icon: postgresql, name: "PostgreSQL" },
+  { icon: sql, name: "SQL" },
+  { icon: prisma, name: "Prisma" },
+
+  { icon: tailwind, name: "Tailwind CSS" },
+  { icon: angular, name: "Angular" },
+  { icon: redux, name: "Redux" },
+
+  { icon: docker, name: "Docker" },
+  { icon: git, name: "Git" },
+
+  { icon: firebase, name: "Firebase" },
+
+  { icon: photoshop, name: "Photoshop" },
+  { icon: illustrator, name: "Illustrator" },
+];
