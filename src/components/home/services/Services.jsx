@@ -9,27 +9,27 @@ const Services = () => {
 const services = [
   {
     icon: <IoCodeSlash />,
-    title: 'Frontend Development',
+    title: 'Fullstack Development',
     description:
-      'Building responsive and dynamic interfaces with React, Next.js, and Angular, always focusing on performance and great user experience.',
+      'Building modern and scalable web applications with React, Next.js, TypeScript, and Node.js, from interactive frontends to robust backend APIs.',
   },
   {
     icon: <BsDatabaseGear />,
-    title: 'Backend Development',
+    title: 'Backend & APIs',
     description:
-      'Designing and implementing scalable APIs with Node.js, PostgreSQL, and Sequelize, ensuring efficiency and reliability.',
+      'Designing reliable APIs and backend systems with Node.js, PostgreSQL, and Supabase, with a focus on performance, scalability, and clean architecture.',
+  },
+  {
+    icon: <PiLightbulb />,
+    title: 'Automation & AI',
+    description:
+      'Designing intelligent workflows with n8n, APIs, and AI services to automate repetitive processes, connect platforms, and build smarter business solutions.',
   },
   {
     icon: <PiShapes />,
     title: 'UI/UX Design',
     description:
-      'Creating clean, intuitive, and visually appealing interfaces where usability and aesthetics work together seamlessly.',
-  },
-  {
-    icon: <PiLightbulb />,
-    title: 'Creative Solutions',
-    description:
-      'From 3D printing projects to automation bots, I enjoy solving real-world problems through innovation and technology.',
+      'Creating clean, intuitive, and responsive interfaces where usability, visual design, and user experience work together seamlessly.',
   },
 ];
 
