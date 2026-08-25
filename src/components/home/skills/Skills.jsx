@@ -2,29 +2,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import { 
-  javascript,
-  react,
-  nextjs,
-  tailwind,
-  firebase,
-  photoshop,
-  illustrator,
-  redux,
-  typescript,
-  angular,
-  postgresql,
-  nodejs,
-  python,
-  sql,
-  n8n,
-  prisma
-} from "@/../public/logos";
-
-
-
 import Image from "next/image";
 import { Wrapper } from "../../shared/wrapper";
+import { skills } from "@/constants/skills";
 
 const skillVariants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -59,24 +39,6 @@ const Skills = () => {
         }
     }, [controls, inView]);
 
-    const skillsData = [
-        { icon: javascript, name: "JavaScript" },
-        { icon: typescript, name: "TypeScript" },
-        { icon: react, name: "React" },
-        { icon: nextjs, name: "Next.js" },
-        { icon: n8n, name: "n8n" },
-        { icon: nodejs, name: "NodeJS" },
-        { icon: sql, name: "SQL" },
-        { icon: postgresql, name: "PostgreSQL" },
-        { icon: prisma, name: "Prisma" },
-        { icon: tailwind, name: "TailwindCSS" },
-        { icon: angular, name: "Angular" },
-        { icon: redux, name: "Redux" },
-        { icon: python, name: "Python" },
-        { icon: firebase, name: "Firebase" },
-        { icon: photoshop, name: "Photoshop" },
-        { icon: illustrator, name: "Illustrator" },
-    ];
 
     return (
         <Wrapper>
@@ -88,7 +50,7 @@ const Skills = () => {
             // initial="hidden"
             // animate={controls}
             >
-                {skillsData.map((skill, idx) => (
+                {skills.map((skill, idx) => (
                     <motion.div
                         key={idx}
                         className="flex flex-col xl:gap-2 justify-center items-center"
