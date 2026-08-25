@@ -178,7 +178,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-primary-green text-sm xl:text-xl mb-5 xl:mb-0 mt-10 xl:mt-64">
-              Copyright © 2025 HernánArévalo. All rights reserved.
+              Copyright © 2026 HernánArévalo. All rights reserved.
             </div>
           </motion.div>
           <motion.div

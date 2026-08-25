@@ -108,11 +108,11 @@ const Cards = () => {
 const settings = {
   dots: false,
   dotsClass: 'slick-dots line-indicator',
-  infinite: false,
+  infinite: true,
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   arrows: true,
   nextArrow: <SampleNextArrow />,
@@ -124,7 +124,7 @@ const settings = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         infinite: true,
         dots: false,
