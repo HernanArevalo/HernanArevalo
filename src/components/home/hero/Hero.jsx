@@ -25,17 +25,25 @@ const Hero = () => {
     {
       icon: <TbBrandGithubFilled size={28} />,
       link: githubURL,
+      color: "#181717"
     },
     {
       icon: <TiSocialLinkedin size={28} />,
       link: linkedinURL,
+      color: "#0A66C2"
     },
     {
       icon: <FaInstagram size={28} />,
       link: instagramURL,
+      color: "#E1306C"
     },
-    { icon: <FaWhatsapp size={28} />, link: whatsappURL },
+    {
+      icon: <FaWhatsapp size={28} />,
+      link: whatsappURL,
+      color: "#25D366"
+    },
   ];
+
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -173,7 +181,7 @@ const Hero = () => {
             variants={pictureVariants}
             transition={{ delay: 2, duration: 0.5, ease: 'easeInOut' }}
             className="overflow-hidden w-full lg:w-[30%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl"
-          > 
+          >
             <Image
               src={profilePicture}
               alt="profile photo"
@@ -181,20 +189,21 @@ const Hero = () => {
               width={1080}
               className="lg:w-[500px] w-full object-cover lg:h-[500px]"
             />
-            
+
           </motion.div>
           <div className="flex flex-row lg:flex-col items-center gap-8 mt-10 lg:mt-0">
-          {socialIcon.map((e, index) => (
-            <a
-              href={e.link}
-              target="_blank"
-              key={index}
-              className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 hover:text-primary-green ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
-            >
-              <span>{e.icon}</span>
-            </a>
-          ))}
-        </div>
+            {socialIcon.map((e, index) => (
+              <a
+                href={e.link}
+                target="_blank"
+                key={index}
+                className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 hover:text-[var(--hover-color)] ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
+                style={{ "--hover-color": e.color }}
+              >
+                <span>{e.icon}</span>
+              </a>
+            ))}
+          </div>
         </motion.div>
       </Wrapper>
       <motion.div
@@ -203,7 +212,7 @@ const Hero = () => {
         variants={socialIconVariants}
         className="absolute hidden-element top-[40%] xl:right-7 md:right-[-4.5rem] xl:block md:hidden sm:hidden hidden"
       >
-        
+
       </motion.div>
     </div>
   );
